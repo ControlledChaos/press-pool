@@ -93,7 +93,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 
 
 			add_action( 'admin_init', array( $this, 'admin_init' ) );
-			add_action( $this->menu_hook, array( $this, 'admin_menu' ) );
+			// add_action( $this->menu_hook, array( $this, 'admin_menu' ) );
 
 			if ( isset( $_GET['page'] ) && ( $_GET['page'] == $this->plugin_slug ) ) {
 				add_action( 'admin_enqueue_scripts', array( $this, 'admin_css_js' ) );

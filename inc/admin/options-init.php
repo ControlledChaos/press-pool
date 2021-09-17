@@ -1921,7 +1921,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				'dev_mode'			 => false, // Show the time the page took to load, etc
 				'customizer'		 => true, // Enable basic customizer support
 				'page_priority'		 => null, // Order where the menu appears in the admin area. If there is any conflict, something will not show. Warning.
-				'page_parent'		 => function_exists('buddypress') && isset(buddypress()->boddyboss)? 'buddyboss-platform' : 'buddyboss-settings', // For a full list of options, visit: http://codex.wordpress.org/Function_Reference/add_submenu_page#Parameters
+				'page_parent'		 => 'themes.php', // For a full list of options, visit: http://codex.wordpress.org/Function_Reference/add_submenu_page#Parameters
 				'page_permissions'	 => 'manage_options', // Permissions needed to access the options panel.
 				'menu_icon'			 => '', // Specify a custom URL to an icon
 				'last_tab'			 => '', // Force your panel to always open to a specific tab (by id)
