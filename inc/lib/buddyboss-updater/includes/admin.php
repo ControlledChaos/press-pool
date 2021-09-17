@@ -77,7 +77,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 			$this->network_activated = $this->is_network_activated();
 
 			//if the plugin is activated network wide in multisite, we need to override few variables
-			if ( $this->network_activated && 'press-pool' === $root_template ) {
+			if ( $this->network_activated && 'buddyboss-theme' === $root_template ) {
 				// Main settings page - menu hook
 				$this->menu_hook = 'network_admin_menu';
 
@@ -91,8 +91,10 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 				$this->plugin_settings_url = network_admin_url( 'admin.php?page=' . $this->plugin_slug );
 			}
 
+			// Disable updates from original theme author.
+			// add_action( 'admin_init', array( $this, 'admin_init' ) );
 
-			add_action( 'admin_init', array( $this, 'admin_init' ) );
+
 			// add_action( $this->menu_hook, array( $this, 'admin_menu' ) );
 
 			if ( isset( $_GET['page'] ) && ( $_GET['page'] == $this->plugin_slug ) ) {
@@ -245,7 +247,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 
 		public function admin_menu() {
 			$this->page_hook_suffix = add_submenu_page(
-				$this->settings_page, __( 'BuddyBoss License Keys', 'press-pool' ), __( 'License Keys', 'press-pool' ), $this->capability, $this->plugin_slug, array(
+				$this->settings_page, __( 'BuddyBoss License Keys', 'buddyboss-theme' ), __( 'License Keys', 'buddyboss-theme' ), $this->capability, $this->plugin_slug, array(
 					$this,
 					'options_page'
 				)
@@ -508,7 +510,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 				}
 
 				echo "<div class='notice notice-warning is-dismissible'>" . $notice
-				     . "<button type='button' class='notice-dismiss' onClick='BBossULDissmissNotice(this);'><span class='screen-reader-text'>" . __( 'Dismiss this notice.', 'press-pool' ) . "</span></button>"
+				     . "<button type='button' class='notice-dismiss' onClick='BBossULDissmissNotice(this);'><span class='screen-reader-text'>" . __( 'Dismiss this notice.', 'buddyboss-theme' ) . "</span></button>"
 				     . "</div>";
 				?>
                 <script type="text/javascript">
@@ -540,8 +542,8 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 					} else {
 						$url = admin_url( 'admin.php?page=' . $this->plugin_slug );
 					}
-					$settings_link = "<a href='" . $url . "'>" . __( 'activate your product licenses', 'press-pool' ) . "</a>";
-					$notice        = sprintf( __( "<strong>Your BuddyBoss products are almost ready.</strong> To get started, please %s.", 'press-pool' ), $settings_link );
+					$settings_link = "<a href='" . $url . "'>" . __( 'activate your product licenses', 'buddyboss-theme' ) . "</a>";
+					$notice        = sprintf( __( "<strong>Your BuddyBoss products are almost ready.</strong> To get started, please %s.", 'buddyboss-theme' ), $settings_link );
 
 					echo "<div class='notice notice-error'><p>{$notice}</p></div>";
 
@@ -570,8 +572,8 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 
 							//we have some buddyboss packages but no license info in db
 							//display admin notice
-							$settings_link = "Please click <a href='" . $url . "'>" . __( 'here', 'press-pool' ) . "</a> and update your license.";
-							$notice        = sprintf( __( "This license for <strong>%s</strong> is invalid or incomplete. %s", 'press-pool' ), $package['name'], $settings_link );
+							$settings_link = "Please click <a href='" . $url . "'>" . __( 'here', 'buddyboss-theme' ) . "</a> and update your license.";
+							$notice        = sprintf( __( "This license for <strong>%s</strong> is invalid or incomplete. %s", 'buddyboss-theme' ), $package['name'], $settings_link );
 
 							echo "<div class='notice notice-error'><p>{$notice}</p></div>";
 						}
@@ -723,7 +725,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 				'message'     => 'Done',
 				'redirect_to' => $this->plugin_settings_url
 			);
-			$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'press-pool' );
+			$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'buddyboss-theme' );
 
 
 			$licenses = @$_POST['licenses'];
@@ -755,7 +757,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 				'message'     => 'Done',
 				'redirect_to' => $this->plugin_settings_url
 			);
-			$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'press-pool' );
+			$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'buddyboss-theme' );
 
 
 			$licenses_updated          = array();
@@ -816,7 +818,7 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 			}
 
 			if ( ! empty( $licenses_updated ) ) {
-				$retval['message'] = sprintf( __( 'Congratulations! License keys for the following product(s) have been activated: %s', 'press-pool' ), implode( ', ', $licenses_updated ) );
+				$retval['message'] = sprintf( __( 'Congratulations! License keys for the following product(s) have been activated: %s', 'buddyboss-theme' ), implode( ', ', $licenses_updated ) );
 
 				$current = get_site_transient( 'update_plugins' );	//Get the current update info
 				$current->last_checked = 0;						//wp_update_plugins() checks this value when determining
@@ -834,20 +836,20 @@ if ( ! class_exists( 'BuddyBoss_Updater_Admin' ) ):
 
 				//1. $licenses is empty
 				if ( empty( $licenses ) ) {
-					$retval['message'] = __( 'The connection was successful, however, no license key was activated. We could not find any active license in your account, for any of the installed BuddyBoss products.', 'press-pool' );
+					$retval['message'] = __( 'The connection was successful, however, no license key was activated. We could not find any active license in your account, for any of the installed BuddyBoss products.', 'buddyboss-theme' );
 				}
 
 				//2. $this->packages are empty
 				if ( empty( $this->packages ) ) {
-					$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'press-pool' );
+					$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'buddyboss-theme' );
 				}
 
 				//3. no active licenses found
 				if ( ! empty( $licenses ) && ! empty( $this->packages ) ) {
 					if ( $old_active_licenses_count > 0 ) {
-						$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'press-pool' );
+						$retval['message'] = __( 'Your account was successfully connected. No new activations have been made. If you are attempting to activate a new license key, please make sure that the product is installed on your site, and that an active license key is available in your BuddyBoss.com account.', 'buddyboss-theme' );
 					} else {
-						$retval['message'] = __( 'The connection was successful, however, no license key was activated. We could not find any active license in your account, for any of the installed BuddyBoss products.', 'press-pool' );
+						$retval['message'] = __( 'The connection was successful, however, no license key was activated. We could not find any active license in your account, for any of the installed BuddyBoss products.', 'buddyboss-theme' );
 					}
 				}
 			}
