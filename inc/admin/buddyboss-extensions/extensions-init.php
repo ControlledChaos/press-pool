@@ -1,6 +1,6 @@
 <?php
 
-$redux_opt_name = "buddyboss_theme_options";
+$redux_opt_name = "press_pool_options";
 
 // Place any extra hooks/configs in here for extensions and
 // place the actual extension within the /extensions dir

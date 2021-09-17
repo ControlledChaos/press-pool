@@ -207,7 +207,7 @@ if ( !function_exists( 'boss_custom_panel_styles_scripts' ) ) {
 	}
 
 	// This example assumes your opt_name is set to redux_demo, replace with your opt_name value
-	add_action( 'redux/page/buddyboss_theme_options/enqueue', 'boss_custom_panel_styles_scripts' );
+	add_action( 'redux/page/press_pool_options/enqueue', 'boss_custom_panel_styles_scripts' );
 }
 
 /**
@@ -220,8 +220,8 @@ if ( !function_exists( 'boss_remove_redux_ads' ) ) {
 		#wpbody-content .redux-messageredux-notice,
 		.redux-message.redux-notice,
 		#redux-header .rAds,
-		#buddyboss_theme_options-favicon,
-		#buddyboss_theme_options-admin_custom_colors {
+		#press_pool_options-favicon,
+		#press_pool_options-admin_custom_colors {
 			display: none !important;
 			opacity: 0;
 			visibility: hidden;
@@ -238,7 +238,7 @@ if ( !function_exists( 'boss_remove_redux_ads' ) ) {
 if ( !function_exists( 'redux_disable_dev_mode_plugin' ) ) {
 
 	function redux_disable_dev_mode_plugin( $redux ) {
-		if ( $redux->args[ 'opt_name' ] != 'buddyboss_theme_options' ) {
+		if ( $redux->args[ 'opt_name' ] != 'press_pool_options' ) {
 			$redux->args[ 'dev_mode' ]				 = false;
 			$redux->args[ 'forced_dev_mode_off' ]	 = false;
 		}
@@ -255,7 +255,7 @@ if ( !function_exists('redux_options_buddyboss_theme_saved' ) ) {
     function redux_options_buddyboss_theme_saved() {
 
 	    if ( isset( $_POST['action'] ) && in_array( $_POST['action'], array(
-				    'buddyboss_theme_options_ajax_save',
+				    'press_pool_options_ajax_save',
 				    'customize_save'
 			    ) ) ) {
 		    delete_transient( 'buddyboss_theme_typography' );
@@ -274,7 +274,7 @@ if ( !function_exists('redux_options_buddyboss_theme_saved' ) ) {
 
     }
 
-    add_action( 'redux/options/buddyboss_theme_options/saved', 'redux_options_buddyboss_theme_saved' );
+    add_action( 'redux/options/press_pool_options/saved', 'redux_options_buddyboss_theme_saved' );
     add_action( 'customize_save', 'redux_options_buddyboss_theme_saved' );
 }
 

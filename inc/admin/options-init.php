@@ -1906,7 +1906,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			$this->args = array(
 				// TYPICAL -> Change these values as you need/desire
-				'opt_name'			 => 'buddyboss_theme_options', // This is where your data is stored in the database and also becomes your global variable name.
+				'opt_name'			 => 'press_pool_options', // This is where your data is stored in the database and also becomes your global variable name.
 				'display_name'		 => $theme->get( 'Name' ), // Name that appears at the top of your panel
 				'display_version'	 => $theme->get( 'Version' ), // Version that appears at the top of your panel
 				'menu_type'			 => 'submenu', //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
@@ -1926,7 +1926,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				'menu_icon'			 => '', // Specify a custom URL to an icon
 				'last_tab'			 => '', // Force your panel to always open to a specific tab (by id)
 				'page_icon'			 => 'icon-themes', // Icon displayed in the admin panel next to your menu_title
-				'page_slug'			 => 'buddyboss_theme_options', // Page slug used to denote the panel
+				'page_slug'			 => 'press_pool_options', // Page slug used to denote the panel
 				'save_defaults'		 => true, // On load save the defaults to DB before user clicks save or not
 				'default_show'		 => false, // If true, shows the default value next to each field that is not the default value.
 				'default_mark'		 => '', // What to print by the field's title if the value shown is default. Suggested: *
