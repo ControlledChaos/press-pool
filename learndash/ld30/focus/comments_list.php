@@ -40,7 +40,7 @@ if ( ! function_exists( 'learndash_focus_mode_comments_list' ) ) {
 
 			<?php if ( $comment->comment_approved == '0' ) : ?>
 				<span class="ld-comment-alert"><?php esc_html_e( 'Your response is awaiting for approval.',
-						'buddyboss-theme' ); ?></span>
+						'press-pool' ); ?></span>
 			<?php endif; ?>
 
 			<div class="ld-comment-avatar">
@@ -57,7 +57,7 @@ if ( ! function_exists( 'learndash_focus_mode_comments_list' ) ) {
 					<a class="ld-comment-permalink" href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 					<?php
 					printf( // translators: placeholders: %1$s: Comment Date, %2$s: Comment Time
-						esc_html_x( '%1$s at %2$s', 'placeholders: comment date, comment time', 'buddyboss-theme' ),
+						esc_html_x( '%1$s at %2$s', 'placeholders: comment date, comment time', 'press-pool' ),
 						'<span> ' . get_comment_date( 'm/d/Y' ) . '</span>',
 						'<span> ' . get_comment_time() . '</span>' );
 					?>

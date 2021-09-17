@@ -106,29 +106,29 @@ if ( ! class_exists( '\BuddyBossTheme\BeaverThemerHelper' ) ) {
 				array(
 					'label' => 'Page',
 					'hooks' => array(
-						THEME_HOOK_PREFIX . 'before_page'   => __( 'Before Page', 'buddyboss-theme' ),
-						THEME_HOOK_PREFIX . 'after_page'	=> __( 'After Page', 'buddyboss-theme' ),
+						THEME_HOOK_PREFIX . 'before_page'   => __( 'Before Page', 'press-pool' ),
+						THEME_HOOK_PREFIX . 'after_page'	=> __( 'After Page', 'press-pool' ),
 					),
 				),
 				array(
 					'label' => 'Header',
 					'hooks' => array(
-						THEME_HOOK_PREFIX . 'before_header' => __( 'Before Header', 'buddyboss-theme' ),
-						THEME_HOOK_PREFIX . 'after_header'  => __( 'After Header', 'buddyboss-theme' ),
+						THEME_HOOK_PREFIX . 'before_header' => __( 'Before Header', 'press-pool' ),
+						THEME_HOOK_PREFIX . 'after_header'  => __( 'After Header', 'press-pool' ),
 					),
 				),
 				array(
 					'label' => 'Content',
 					'hooks' => array(
-						THEME_HOOK_PREFIX . 'before_content'    => __( 'Before Content', 'buddyboss-theme' ),
-						THEME_HOOK_PREFIX . 'after_content'		=> __( 'After Content', 'buddyboss-theme' ),
+						THEME_HOOK_PREFIX . 'before_content'    => __( 'Before Content', 'press-pool' ),
+						THEME_HOOK_PREFIX . 'after_content'		=> __( 'After Content', 'press-pool' ),
 					),
 				),
 				array(
 					'label' => 'Footer',
 					'hooks' => array(
-						THEME_HOOK_PREFIX . 'before_footer' => __( 'Before Footer', 'buddyboss-theme' ),
-						THEME_HOOK_PREFIX . 'after_footer'  => __( 'After Footer', 'buddyboss-theme' ),
+						THEME_HOOK_PREFIX . 'before_footer' => __( 'Before Footer', 'press-pool' ),
+						THEME_HOOK_PREFIX . 'after_footer'  => __( 'After Footer', 'press-pool' ),
 					),
 				)
 			);

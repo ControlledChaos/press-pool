@@ -5,42 +5,42 @@
     <div class="buddyboss-updater-block-container">
         <div class="buddyboss-updater-block">
             <div class="inside">
-                <h2><?php _e( 'Auto Connect (Recommended)', 'buddyboss-theme' ); ?></h2>
+                <h2><?php _e( 'Auto Connect (Recommended)', 'press-pool' ); ?></h2>
                 <p>
-					<?php printf( __( 'Click the "Connect to BuddyBoss" button to log into your BuddyBoss account. Then click "Allow" to have your license automatically filled in to activate your products.', 'buddyboss-theme' ) ); ?>
+					<?php printf( __( 'Click the "Connect to BuddyBoss" button to log into your BuddyBoss account. Then click "Allow" to have your license automatically filled in to activate your products.', 'press-pool' ) ); ?>
                 </p>
                 <br/>
                 <button id="btn_bb_connect" class="button button-primary">
-					<?php _e( 'Connect to BuddyBoss', 'buddyboss-theme' ); ?>
+					<?php _e( 'Connect to BuddyBoss', 'press-pool' ); ?>
                 </button>
-                <span class="connecting" style="display:none;"><?php _e( 'Connecting', 'buddyboss-theme' ); ?></span>
+                <span class="connecting" style="display:none;"><?php _e( 'Connecting', 'press-pool' ); ?></span>
             </div>
         </div>
 
         <div class="buddyboss-updater-block">
             <div class="inside">
-                <h2><?php _e( 'Manual Connect', 'buddyboss-theme' ); ?></h2>
+                <h2><?php _e( 'Manual Connect', 'press-pool' ); ?></h2>
                 <p>
                 <li>
-					<?php printf( __( 'Log into %s', 'buddyboss-theme' ), '<a href="https://www.buddyboss.com/wp-admin">BuddyBoss.com</a>' ); ?>
+					<?php printf( __( 'Log into %s', 'press-pool' ), '<a href="https://www.buddyboss.com/wp-admin">BuddyBoss.com</a>' ); ?>
                 </li>
                 <li>
-					<?php printf( __( 'Go to your %s', 'buddyboss-theme' ), '<a href="https://www.buddyboss.com/my-account/">Account</a>' ); ?>
+					<?php printf( __( 'Go to your %s', 'press-pool' ), '<a href="https://www.buddyboss.com/my-account/">Account</a>' ); ?>
                 </li>
                 <li>
-					<?php _e( 'Go to the "Subscriptions" tab', 'buddyboss-theme' ); ?>
+					<?php _e( 'Go to the "Subscriptions" tab', 'press-pool' ); ?>
                 </li>
                 <li>
-					<?php _e( 'Find your product\'s license key', 'buddyboss-theme' ); ?>
+					<?php _e( 'Find your product\'s license key', 'press-pool' ); ?>
                 </li>
                 <li>
-					<?php _e( 'Enter your license key below', 'buddyboss-theme' ); ?>
+					<?php _e( 'Enter your license key below', 'press-pool' ); ?>
                 </li>
                 <li>
-					<?php _e( 'Enter your BuddyBoss account email', 'buddyboss-theme' ); ?>
+					<?php _e( 'Enter your BuddyBoss account email', 'press-pool' ); ?>
                 </li>
                 <li>
-					<?php _e( 'Click "Update License"', 'buddyboss-theme' ); ?>
+					<?php _e( 'Click "Update License"', 'press-pool' ); ?>
                 </li>
                 </p>
             </div>
@@ -48,19 +48,19 @@
 
         <div class="buddyboss-updater-block">
             <div class="inside">
-                <h2><?php _e( 'Benefits of a License', 'buddyboss-theme' ); ?></h2>
+                <h2><?php _e( 'Benefits of a License', 'press-pool' ); ?></h2>
                 <ul>
                     <li>
-                        <strong><?php _e( 'Stay Up to Date', 'buddyboss-theme' ); ?></strong><br/>
-						<?php _e( 'Get the latest features right away', 'buddyboss-theme' ); ?>
+                        <strong><?php _e( 'Stay Up to Date', 'press-pool' ); ?></strong><br/>
+						<?php _e( 'Get the latest features right away', 'press-pool' ); ?>
                     </li>
                     <li>
-                        <strong><?php _e( 'Admin Notifications', 'buddyboss-theme' ); ?></strong><br/>
-						<?php _e( 'Get updates in WordPress', 'buddyboss-theme' ); ?>
+                        <strong><?php _e( 'Admin Notifications', 'press-pool' ); ?></strong><br/>
+						<?php _e( 'Get updates in WordPress', 'press-pool' ); ?>
                     </li>
                     <li>
-                        <strong><?php _e( 'Professional Support', 'buddyboss-theme' ); ?></strong><br/>
-						<?php _e( 'Get help with any questions', 'buddyboss-theme' ); ?>
+                        <strong><?php _e( 'Professional Support', 'press-pool' ); ?></strong><br/>
+						<?php _e( 'Get help with any questions', 'press-pool' ); ?>
                     </li>
                 </ul>
             </div>

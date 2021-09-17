@@ -7,7 +7,7 @@ $unread_notification_count = ! empty( $notifications ) ? $notifications : 0;
     <a href="<?php echo $menu_link ?>"
        ref="notification_bell"
        class="notification-link">
-       <span data-balloon-pos="down" data-balloon="<?php _e( 'Notifications', 'buddyboss-theme' ); ?>">
+       <span data-balloon-pos="down" data-balloon="<?php _e( 'Notifications', 'press-pool' ); ?>">
             <i class="bb-icon-bell-small"></i>
     		<?php if ( $unread_notification_count > 0 ): ?>
                 <span class="count"><?php echo $unread_notification_count; ?></span>
@@ -16,7 +16,7 @@ $unread_notification_count = ! empty( $notifications ) ? $notifications : 0;
     </a>
     <section class="notification-dropdown">
         <header class="notification-header">
-            <h2 class="title"><?php _e( 'Notifications', 'buddyboss-theme' ); ?></h2>
+            <h2 class="title"><?php _e( 'Notifications', 'press-pool' ); ?></h2>
         </header>
 
         <ul class="notification-list">
@@ -25,7 +25,7 @@ $unread_notification_count = ! empty( $notifications ) ? $notifications : 0;
 
 		<footer class="notification-footer">
 			<a href="<?php echo $menu_link ?>" class="delete-all">
-				<?php _e( 'View Notifications', 'buddyboss-theme' ); ?>
+				<?php _e( 'View Notifications', 'press-pool' ); ?>
 				<i class="bb-icon-angle-right"></i>
 			</a>
 		</footer>

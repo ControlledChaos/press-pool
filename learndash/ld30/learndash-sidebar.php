@@ -63,16 +63,16 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
 
 		<div class="bb-elementor-header-items">
 			<a href="#" id="bb-toggle-theme">
-				<span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Dark Mode', 'buddyboss-theme' ); ?>"><i class="bb-icon-moon-circle"></i></span>
-				<span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Light Mode', 'buddyboss-theme' ); ?>"><i class="bb-icon-sun"></i></span>
+				<span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Dark Mode', 'press-pool' ); ?>"><i class="bb-icon-moon-circle"></i></span>
+				<span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Light Mode', 'press-pool' ); ?>"><i class="bb-icon-sun"></i></span>
 			</a>
-			<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Maximize', 'buddyboss-theme' ); ?>"><i class="bb-icon-maximize"></i></a>
-			<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Minimize', 'buddyboss-theme' ); ?>"><i class="bb-icon-minimize"></i></a>
+			<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Maximize', 'press-pool' ); ?>"><i class="bb-icon-maximize"></i></a>
+			<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Minimize', 'press-pool' ); ?>"><i class="bb-icon-minimize"></i></a>
 		</div>
 
         <div class="lms-topic-sidebar-course-navigation">
             <div class="ld-course-navigation">
-                <a title="<?php echo $parent_course_title; ?>" href="<?php echo get_permalink( $parent_course->ID ); ?>" class="course-entry-link"><span><i class="bb-icons bb-icon-chevron-left"></i><?php echo sprintf( esc_html_x('Back to %s', 'link: Back to Course', 'buddyboss-theme'), LearnDash_Custom_Label::get_label( 'course' ) );?></span></a>
+                <a title="<?php echo $parent_course_title; ?>" href="<?php echo get_permalink( $parent_course->ID ); ?>" class="course-entry-link"><span><i class="bb-icons bb-icon-chevron-left"></i><?php echo sprintf( esc_html_x('Back to %s', 'link: Back to Course', 'press-pool'), LearnDash_Custom_Label::get_label( 'course' ) );?></span></a>
                 <h2 class="course-entry-title"><?php echo $parent_course_title; ?></h2>
             </div>
         </div>
@@ -143,11 +143,11 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
 
                                 <?php
                                 if( $lesson_progress['percentage'] == '100' ) {
-                                    $lesson_progress_data_balloon = __( 'Completed', 'buddyboss-theme' );
+                                    $lesson_progress_data_balloon = __( 'Completed', 'press-pool' );
                                 } elseif( $lesson_progress['percentage'] == '0' ) {
-                                    $lesson_progress_data_balloon = __( 'Not Completed', 'buddyboss-theme' );
+                                    $lesson_progress_data_balloon = __( 'Not Completed', 'press-pool' );
                                 } else {
-                                    $lesson_progress_data_balloon = $lesson_progress['percentage'] . __( '% Completed', 'buddyboss-theme' );
+                                    $lesson_progress_data_balloon = $lesson_progress['percentage'] . __( '% Completed', 'press-pool' );
                                 }
                                 ?>
 
@@ -192,14 +192,14 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
 														<?php if ( ( ! empty( $course_progress[ $course_id ]['topics'][ $lesson->ID ][ $lesson_topic->ID ] ) && 1 === $course_progress[ $course_id ]['topics'][ $lesson->ID ][ $lesson_topic->ID ] ) ) : ?>
                                                             <div class="bb-completed bb-lms-status"
                                                                  data-balloon-pos="left"
-                                                                 data-balloon="<?php _e( 'Completed', 'buddyboss-theme' ); ?>">
+                                                                 data-balloon="<?php _e( 'Completed', 'press-pool' ); ?>">
                                                                 <div class="i-progress i-progress-completed"><i
                                                                             class="bb-icon-check"></i></div>
                                                             </div>
 														<?php else : ?>
                                                             <div class="bb-not-completed bb-lms-status"
                                                                  data-balloon-pos="left"
-                                                                 data-balloon="<?php _e( 'Not Completed', 'buddyboss-theme' ); ?>">
+                                                                 data-balloon="<?php _e( 'Not Completed', 'press-pool' ); ?>">
                                                                 <div class="i-progress i-progress-not-completed"><i
                                                                             class="bb-icon-circle"></i></div>
                                                             </div>
@@ -224,7 +224,7 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
 																			<?php if ( learndash_is_quiz_complete( $user_id, $topic_quiz['post']->ID ) ) : ?>
                                                                                 <div class="bb-completed bb-lms-status"
                                                                                      data-balloon-pos="left"
-                                                                                     data-balloon="<?php _e( 'Completed', 'buddyboss-theme' ); ?>">
+                                                                                     data-balloon="<?php _e( 'Completed', 'press-pool' ); ?>">
                                                                                     <div class="i-progress i-progress-completed">
                                                                                         <i class="bb-icon-check"></i>
                                                                                     </div>
@@ -232,7 +232,7 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
 																			<?php else: ?>
                                                                                 <div class="bb-not-completed bb-lms-status"
                                                                                      data-balloon-pos="left"
-                                                                                     data-balloon="<?php _e( 'Not Completed', 'buddyboss-theme' ); ?>">
+                                                                                     data-balloon="<?php _e( 'Not Completed', 'press-pool' ); ?>">
                                                                                     <div class="i-progress i-progress-not-completed">
                                                                                         <i class="bb-icon-circle"></i>
                                                                                     </div>
@@ -262,11 +262,11 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
                                                 <span class="bb-lms-ico bb-lms-ico-quiz"><i class="bb-icons bb-icon-question-thin"></i></span>
                                                 <span class="flex-1 bb-lms-title <?php echo learndash_is_quiz_complete($user_id,$lesson_quiz['post']->ID) ? 'bb-completed-item' : 'bb-not-completed-item'; ?>"><?php echo $lesson_quiz['post']->post_title; ?></span>
                                                 <?php if ( learndash_is_quiz_complete($user_id,$lesson_quiz['post']->ID) ) : ?>
-                                                    <div class="bb-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Completed', 'buddyboss-theme' ); ?>">
+                                                    <div class="bb-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Completed', 'press-pool' ); ?>">
                                                         <div class="i-progress i-progress-completed"><i class="bb-icon-check"></i></div>
                                                     </div>
 												<?php else: ?>
-													<div class="bb-not-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Not Completed', 'buddyboss-theme' ); ?>">
+													<div class="bb-not-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Not Completed', 'press-pool' ); ?>">
                                                         <div class="i-progress i-progress-not-completed"><i class="bb-icon-circle"></i></div>
                                                     </div>
 												<?php endif; ?>
@@ -306,11 +306,11 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
                                     <?php echo $atts_access_marker; ?>
                                 </span>
                                 <?php if ( learndash_is_quiz_complete($user_id,$course_quiz['post']->ID) ) : ?>
-									<div class="bb-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Completed', 'buddyboss-theme' ); ?>">
+									<div class="bb-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Completed', 'press-pool' ); ?>">
                                         <div class="i-progress i-progress-completed"><i class="bb-icon-check"></i></div>
                                     </div>
 								<?php else: ?>
-									<div class="bb-not-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Not Completed', 'buddyboss-theme' ); ?>">
+									<div class="bb-not-completed bb-lms-status" data-balloon-pos="left" data-balloon="<?php _e( 'Not Completed', 'press-pool' ); ?>">
                                         <div class="i-progress i-progress-not-completed"><i class="bb-icon-circle"></i></div>
                                     </div>
 								<?php endif; ?>
@@ -370,7 +370,7 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
                             <div href="#" class="group-flag-index">
                                 <a class="ld-set-cookie" data-course-id="<?php echo esc_attr( $parent_course->ID ); ?>" data-group-id="<?php echo esc_attr( $bp_group_id ); ?>" href="<?php echo bp_get_group_permalink( $group_obj ); ?>"><?php echo bp_core_fetch_avatar( array ( 'item_id' => $bp_group_id, 'object' => 'group', 'class' => 'lms-flag-group-avatar' ) ); ?></a>
                                 <div class="lms-group-heading">
-                                    <a class="ld-set-cookie" data-course-id="<?php echo esc_attr( $parent_course->ID ); ?>" data-group-id="<?php echo esc_attr( $bp_group_id ); ?>" href="<?php echo bp_get_group_permalink( $group_obj ); ?>"><span><?php echo bp_get_group_name( $group_obj );?></span></a> <span><?php esc_html_e( 'Group', 'buddyboss-theme' ); ?></span>
+                                    <a class="ld-set-cookie" data-course-id="<?php echo esc_attr( $parent_course->ID ); ?>" data-group-id="<?php echo esc_attr( $bp_group_id ); ?>" href="<?php echo bp_get_group_permalink( $group_obj ); ?>"><span><?php echo bp_get_group_name( $group_obj );?></span></a> <span><?php esc_html_e( 'Group', 'press-pool' ); ?></span>
                                 </div>
                                 <?php
                                 if ( $count_groups > 1 ) { ?>
@@ -408,7 +408,7 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
 	                $leader_arr       = array_merge( $group_admins, $group_moderators );
 	                ?>
                     <div class="lms-group-exec">
-                        <h4 class="lms-course-sidebar-heading"><?php _e( 'Group Leaders', 'buddyboss-theme' ); ?>
+                        <h4 class="lms-course-sidebar-heading"><?php _e( 'Group Leaders', 'press-pool' ); ?>
                             <span class="lms-count"><?php echo count( $leader_arr ) ?></span>
                         </h4>
                         <ul class="group-exec-list">
@@ -465,7 +465,7 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
         <?php
         if( buddyboss_theme_get_option( 'learndash_course_participants', null, true ) && ! empty( $members ) ) : ?>
             <div class="lms-course-members-list">
-                <h4 class="lms-course-sidebar-heading"><?php _e( 'Participants', 'buddyboss-theme' ); ?><span class="lms-count"><?php echo $members_count; ?></span></h4>
+                <h4 class="lms-course-sidebar-heading"><?php _e( 'Participants', 'press-pool' ); ?><span class="lms-count"><?php echo $members_count; ?></span></h4>
 	            <input type="hidden" name="buddyboss_theme_learndash_course_participants_course_id" id="buddyboss_theme_learndash_course_participants_course_id" value="<?php echo esc_attr( $course_id ); ?>">
     			<div class="bb-course-member-wrap">
 
@@ -497,7 +497,7 @@ if ( ( isset( $_COOKIE['lessonpanel'] ) && 'closed' == $_COOKIE['lessonpanel'] )
                     <ul class="course-members-list course-members-list-extra">
                     </ul>
                     <?php if( $members_count > 5 ) { ?>
-    				<a href="javascript:void(0);" class="list-members-extra lme-more"><span class="members-count-g"></span> <?php _e( 'Show more', 'buddyboss-theme' ); ?><i class="bb-icons bb-icon-chevron-down"></i></a>
+    				<a href="javascript:void(0);" class="list-members-extra lme-more"><span class="members-count-g"></span> <?php _e( 'Show more', 'press-pool' ); ?><i class="bb-icons bb-icon-chevron-down"></i></a>
                     <?php } ?>
     			</div>
             </div>

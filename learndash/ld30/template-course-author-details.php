@@ -11,7 +11,7 @@ $course = $post;
 	
     <?php if( buddyboss_theme_get_option('learndash_course_author') ) { ?>
 	<div class="bb-about-instructor">
-		<h4><?php _e( 'About Instructor', 'buddyboss-theme' ); ?></h4>
+		<h4><?php _e( 'About Instructor', 'press-pool' ); ?></h4>
 		<div class="bb-grid">
             <div class="bb-instructor-wrap flex">
                 <div class="bb-avatar-wrap">
@@ -45,7 +45,7 @@ $course = $post;
                 <?php
                 if ( ( ( bp_is_active( 'messages' ) && ! bp_force_friendship_to_message() ) ||
                            ( bp_force_friendship_to_message() && bp_is_active( 'friends' ) && friends_check_friendship( bp_loggedin_user_id(), $course->post_author ) ) ) && is_user_logged_in() && ( get_current_user_id() != get_the_author_meta( 'ID', $course->post_author ) ) ) { ?>
-					<a href="<?php echo apply_filters( 'bp_get_send_private_message_link', wp_nonce_url( bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $course->post_author ) ) ); ?>" class="button small push-bottom"><i class="bb-icons bb-icon-chat"></i><?php _e( 'Message', 'buddyboss-theme' ); ?></a>
+					<a href="<?php echo apply_filters( 'bp_get_send_private_message_link', wp_nonce_url( bp_loggedin_user_domain() . bp_get_messages_slug() . '/compose/?r=' . bp_core_get_username( $course->post_author ) ) ); ?>" class="button small push-bottom"><i class="bb-icons bb-icon-chat"></i><?php _e( 'Message', 'press-pool' ); ?></a>
 				<?php } ?>
             </div>
 		</div>

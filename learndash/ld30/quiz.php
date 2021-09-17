@@ -77,7 +77,7 @@ if ( empty( $course ) ) {
                     <div id="learndash-course-header" class="bb-lms-header quiz-fix">
                         <div class="flex bb-position">
                             <div class="sfwd-course-position">
-                                <span class="bb-pages"><?php echo LearnDash_Custom_Label::get_label( 'quiz' ); ?> <?php echo $current_quiz_ke; ?> <span class="bb-total"><?php _e( 'of', 'buddyboss-theme' ); ?> <?php echo count( $quiz_urls ); ?></span></span>
+                                <span class="bb-pages"><?php echo LearnDash_Custom_Label::get_label( 'quiz' ); ?> <?php echo $current_quiz_ke; ?> <span class="bb-total"><?php _e( 'of', 'press-pool' ); ?> <?php echo count( $quiz_urls ); ?></span></span>
                             </div>
                             <div class="sfwd-course-nav">
                                 <?php
@@ -87,7 +87,7 @@ if ( empty( $course ) ) {
                                 $date_format         = get_option( 'date_format' );
                                 $expire_date         = date_i18n( $date_format, $expire_date_calc );
                                 $current             = time();
-                                $expire_string       = ( $expire_date_calc > $current ) ? __( 'Expires at', 'buddyboss-theme' ) : __( 'Expired at', 'buddyboss-theme' );
+                                $expire_string       = ( $expire_date_calc > $current ) ? __( 'Expires at', 'press-pool' ) : __( 'Expired at', 'press-pool' );
                                 if ( $expire_date_calc > 0 && abs( intval( $expire_access_days ) )  > 0 && ( !empty( $user_id ) ) ) { ?>
                                 <div class="sfwd-course-expire">
                                     <span data-balloon-pos="up" data-balloon="<?php echo $expire_string; ?>"><i class="bb-icons bb-icon-watch-alarm"></i><?php echo $expire_date; ?></span>
@@ -196,7 +196,7 @@ if ( empty( $course ) ) {
                             learndash_get_template_part( 'modules/alert.php', array(
                                 'type'      =>  'warning',
                                 'icon'      =>  'alert',
-                                'message' => sprintf( esc_html_x( 'You have already taken this %1$s %2$d time(s) and may not take it again.', 'placeholders: quiz, attempts count', 'buddyboss-theme' ), learndash_get_custom_label_lower('quiz'), $attempts_count )
+                                'message' => sprintf( esc_html_x( 'You have already taken this %1$s %2$d time(s) and may not take it again.', 'placeholders: quiz, attempts count', 'press-pool' ), learndash_get_custom_label_lower('quiz'), $attempts_count )
                             ), true );
                             /**
                              * Action to add custom content after the quiz attempts alert

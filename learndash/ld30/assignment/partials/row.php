@@ -39,8 +39,8 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID );  ?>
           */
          if( !learndash_is_assignment_approved_by_meta($assignment->ID) ):
              if( ( isset($post_settings['lesson_assignment_deletion_enabled']) && $post_settings['lesson_assignment_deletion_enabled'] == 'on' && $assignment->post_author == $user_id ) || ( learndash_is_admin_user( $user_id ) ) || ( learndash_is_group_leader_of_user( $user_id, $post->post_author ) ) ): ?>
-                <a href="<?php echo add_query_arg('learndash_delete_attachment', $assignment->ID) ?>" title="<?php esc_html_e('Delete this uploaded Assignment', 'buddyboss-theme'); ?>">
-                    <span class="ld-icon ld-icon-delete" aria-label="<?php esc_html_e( 'Delete Assignment', 'buddyboss-theme' ); ?>"></span>
+                <a href="<?php echo add_query_arg('learndash_delete_attachment', $assignment->ID) ?>" title="<?php esc_html_e('Delete this uploaded Assignment', 'press-pool'); ?>">
+                    <span class="ld-icon ld-icon-delete" aria-label="<?php esc_html_e( 'Delete Assignment', 'press-pool' ); ?>"></span>
                 </a>
             <?php
             endif;
@@ -55,7 +55,7 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID );  ?>
 
          <a href='<?php echo esc_attr( get_post_meta( $assignment->ID, 'file_link', true ) ); ?>' target="_blank">
              <span class="ld-item-icon">
-                 <span class="ld-icon ld-icon-download" aria-label="<?php esc_html_e( 'Download Assignment', 'buddyboss-theme' ); ?>"></span>
+                 <span class="ld-icon ld-icon-download" aria-label="<?php esc_html_e( 'Download Assignment', 'press-pool' ); ?>"></span>
              </span>
          </a>
 
@@ -105,7 +105,7 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID );  ?>
                  */
                 do_action( 'learndash-assignment-row-comments-before', $assignment, get_the_ID(), $course_id, $user_id ); ?>
 
-                <a href='<?php echo esc_attr( get_comments_link( $assignment->ID ) ); ?>' data-balloon-pos="up" data-balloon="<?php echo sprintf( esc_attr( '%d Comments', 'placeholder: commentd count', 'buddyboss-theme'), get_comments_number($assignment->ID) ); ?>">
+                <a href='<?php echo esc_attr( get_comments_link( $assignment->ID ) ); ?>' data-balloon-pos="up" data-balloon="<?php echo sprintf( esc_attr( '%d Comments', 'placeholder: commentd count', 'press-pool'), get_comments_number($assignment->ID) ); ?>">
                     <?php
                     echo esc_html(get_comments_number( $assignment->ID )); ?>
                     <span class="ld-icon ld-icon-comments"></span>
@@ -131,7 +131,7 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID );  ?>
 
             <span class="ld-status ld-status-waiting ld-tertiary-background">
                 <span class="ld-icon ld-icon-calendar"></span>
-                <span class="ld-text"><?php esc_html_e( 'Waiting Review', 'buddyboss-theme' ); ?></span>
+                <span class="ld-text"><?php esc_html_e( 'Waiting Review', 'press-pool' ); ?></span>
             </span> <!--/.ld-status-waiting-->
 
             <?php
@@ -145,10 +145,10 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID );  ?>
                 <span class="ld-icon ld-icon-checkmark"></span>
                 <?php
                 if( $assignment_points ):
-                    echo sprintf( esc_html__( '%s/%s Points Awarded ', 'buddyboss-theme' ), $assignment_points['current'], $assignment_points['max'] ) . ' - ';
+                    echo sprintf( esc_html__( '%s/%s Points Awarded ', 'press-pool' ), $assignment_points['current'], $assignment_points['max'] ) . ' - ';
                 endif;
 
-                esc_html_e( 'Approved', 'buddyboss-theme' );
+                esc_html_e( 'Approved', 'press-pool' );
                 ?>
             </span>
 

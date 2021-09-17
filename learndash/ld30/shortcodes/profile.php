@@ -69,7 +69,7 @@ endif; ?>
 
                     <?php
                     if( current_user_can('read') && isset($shortcode_atts['profile_link']) && true === $shortcode_atts['profile_link'] && apply_filters( 'learndash_show_profile_link', $shortcode_atts['profile_link'] ) ): ?>
-        				<a class="ld-profile-edit-link" href='<?php echo get_edit_user_link(); ?>'><?php esc_html_e( 'Edit profile', 'buddyboss-theme' ); ?></a>
+        				<a class="ld-profile-edit-link" href='<?php echo get_edit_user_link(); ?>'><?php esc_html_e( 'Edit profile', 'press-pool' ); ?></a>
                     <?php endif; ?>
                 </div> <!--/.ld-profile-card-->
                 <div class="ld-profile-stats">
@@ -82,19 +82,19 @@ endif; ?>
                             'value' =>  $user_stats['courses'],
                         ),
                         array(
-                            'title' =>  __( 'Completed', 'buddyboss-theme' ),
+                            'title' =>  __( 'Completed', 'press-pool' ),
                             'value' =>  $user_stats['completed'],
                         ),
 
                         array(
-                            'title' => __( 'Certificates', 'buddyboss-theme' ),
+                            'title' => __( 'Certificates', 'press-pool' ),
                             'value' => $user_stats['certificates'],
                         )
                     );
 
 					if( isset($shortcode_atts['course_points_user']) && $shortcode_atts['course_points_user'] == 'yes' ) {
 						$ld_profile_stats[] = array(
-		                            'title' => esc_html__( 'Points', 'buddyboss-theme' ),
+		                            'title' => esc_html__( 'Points', 'press-pool' ),
 		                            'value' => $user_stats['points']
 		                        );
 					}
@@ -113,14 +113,14 @@ endif; ?>
         <div class="ld-item-list ld-course-list">
 
             <div class="ld-section-heading">
-                <h3><?php printf( esc_html_x( 'Your %s', 'Profile Course Content Label', 'buddyboss-theme' ), esc_attr( LearnDash_Custom_Label::get_label( 'courses' ) ) ); ?></h3>
+                <h3><?php printf( esc_html_x( 'Your %s', 'Profile Course Content Label', 'press-pool' ), esc_attr( LearnDash_Custom_Label::get_label( 'courses' ) ) ); ?></h3>
                 <div class="ld-item-list-actions">
                     <div class="ld-search-prompt" data-ld-expands="ld-course-search">
-                        <?php echo esc_html__( 'Search', 'buddyboss-theme' ); ?> <span class="ld-icon-search ld-icon"></span>
+                        <?php echo esc_html__( 'Search', 'press-pool' ); ?> <span class="ld-icon-search ld-icon"></span>
                     </div> <!--/.ld-search-prompt-->
-                    <div class="ld-expand-button" data-ld-expands="ld-main-course-list" data-ld-expand-text="<?php echo esc_attr_e( 'Expand All', 'buddyboss-theme' ); ?>" data-ld-collapse-text="<?php echo esc_attr_e( 'Collapse All', 'buddyboss-theme' ); ?>">
+                    <div class="ld-expand-button" data-ld-expands="ld-main-course-list" data-ld-expand-text="<?php echo esc_attr_e( 'Expand All', 'press-pool' ); ?>" data-ld-collapse-text="<?php echo esc_attr_e( 'Collapse All', 'press-pool' ); ?>">
                         <span class="ld-icon-arrow-down ld-icon"></span>
-                        <span class="ld-text"><?php echo esc_html_e( 'Expand All', 'buddyboss-theme' ); ?></span>
+                        <span class="ld-text"><?php echo esc_html_e( 'Expand All', 'press-pool' ); ?></span>
                     </div> <!--/.ld-expand-button-->
                 </div> <!--/.ld-course-list-actions-->
             </div> <!--/.ld-section-heading-->
@@ -149,7 +149,7 @@ endif; ?>
 					$alert = array(
                         'icon'    => 'alert',
                         // translators: placeholder: Courses.
-				        'message' => sprintf( esc_html_x( 'No %s found', 'placeholder: Courses', 'buddyboss-theme' ), esc_html( LearnDash_Custom_Label::get_label('courses') ) ),
+				        'message' => sprintf( esc_html_x( 'No %s found', 'placeholder: Courses', 'press-pool' ), esc_html( LearnDash_Custom_Label::get_label('courses') ) ),
 				        'type'    => 'warning',
 				    );
 					learndash_get_template_part( 'modules/alert.php', $alert, true );

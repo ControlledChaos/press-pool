@@ -282,77 +282,77 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 
 			// Load class strings.
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', 'buddyboss-theme' ),
-				'menu_title'                      => __( 'Install Plugins', 'buddyboss-theme' ),
+				'page_title'                      => __( 'Install Required Plugins', 'press-pool' ),
+				'menu_title'                      => __( 'Install Plugins', 'press-pool' ),
 				/* translators: %s: plugin name. */
-				'installing'                      => __( 'Installing Plugin: %s', 'buddyboss-theme' ),
+				'installing'                      => __( 'Installing Plugin: %s', 'press-pool' ),
 				/* translators: %s: plugin name. */
-				'updating'                        => __( 'Updating Plugin: %s', 'buddyboss-theme' ),
-				'oops'                            => __( 'Something went wrong with the plugin API.', 'buddyboss-theme' ),
+				'updating'                        => __( 'Updating Plugin: %s', 'press-pool' ),
+				'oops'                            => __( 'Something went wrong with the plugin API.', 'press-pool' ),
 				/* translators: 1: plugin name(s). */
 				'notice_can_install_required'     => _n_noop(
 					'This theme requires the following plugin: %1$s.',
 					'This theme requires the following plugins: %1$s.',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				/* translators: 1: plugin name(s). */
 				'notice_can_install_recommended'  => _n_noop(
 					'This theme recommends the following plugin: %1$s.',
 					'This theme recommends the following plugins: %1$s.',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				/* translators: 1: plugin name(s). */
 				'notice_ask_to_update'            => _n_noop(
 					'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
 					'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				/* translators: 1: plugin name(s). */
 				'notice_ask_to_update_maybe'      => _n_noop(
 					'There is an update available for: %1$s.',
 					'There are updates available for the following plugins: %1$s.',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				/* translators: 1: plugin name(s). */
 				'notice_can_activate_required'    => _n_noop(
 					'The following required plugin is currently inactive: %1$s.',
 					'The following required plugins are currently inactive: %1$s.',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				/* translators: 1: plugin name(s). */
 				'notice_can_activate_recommended' => _n_noop(
 					'The following recommended plugin is currently inactive: %1$s.',
 					'The following recommended plugins are currently inactive: %1$s.',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				'install_link'                    => _n_noop(
 					'Begin installing plugin',
 					'Begin installing plugins',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				'update_link'                     => _n_noop(
 					'Begin updating plugin',
 					'Begin updating plugins',
-					'buddyboss-theme'
+					'press-pool'
 				),
 				'activate_link'                   => _n_noop(
 					'Begin activating plugin',
 					'Begin activating plugins',
-					'buddyboss-theme'
+					'press-pool'
 				),
-				'return'                          => __( 'Return to Required Plugins Installer', 'buddyboss-theme' ),
-				'dashboard'                       => __( 'Return to the Dashboard', 'buddyboss-theme' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'buddyboss-theme' ),
-				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'buddyboss-theme' ),
+				'return'                          => __( 'Return to Required Plugins Installer', 'press-pool' ),
+				'dashboard'                       => __( 'Return to the Dashboard', 'press-pool' ),
+				'plugin_activated'                => __( 'Plugin activated successfully.', 'press-pool' ),
+				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'press-pool' ),
 				/* translators: 1: plugin name. */
-				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'buddyboss-theme' ),
+				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'press-pool' ),
 				/* translators: 1: plugin name. */
-				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'buddyboss-theme' ),
+				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'press-pool' ),
 				/* translators: 1: dashboard link. */
-				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'buddyboss-theme' ),
-				'dismiss'                         => __( 'Dismiss this notice', 'buddyboss-theme' ),
-				'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'buddyboss-theme' ),
-				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'buddyboss-theme' ),
+				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'press-pool' ),
+				'dismiss'                         => __( 'Dismiss this notice', 'press-pool' ),
+				'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'press-pool' ),
+				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'press-pool' ),
 			);
 
 			do_action( 'bbta_register' );
@@ -423,7 +423,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 		 */
 		public function correct_plugin_mofile( $mofile, $domain ) {
 			// Exit early if not our domain (just in case).
-			if ( 'buddyboss-theme' !== $domain ) {
+			if ( 'press-pool' !== $domain ) {
 				return $mofile;
 			}
 			return preg_replace( '`/([a-z]{2}_[A-Z]{2}.mo)$`', '/bbta-$1', $mofile );
@@ -496,8 +496,8 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 			$actions['update'] = sprintf(
 				'<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
 				esc_url( $this->get_bbta_status_url( 'update' ) ),
-				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'buddyboss-theme' ),
-				esc_html__( 'Update Required', 'buddyboss-theme' )
+				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'press-pool' ),
+				esc_html__( 'Update Required', 'press-pool' )
 			);
 
 			return $actions;
@@ -612,7 +612,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 		 */
 		protected function add_admin_menu( array $args ) {
 			if ( has_filter( 'bbta_admin_menu_use_add_theme_page' ) ) {
-				_deprecated_function( 'The "bbta_admin_menu_use_add_theme_page" filter', '1.0.0', esc_html__( 'Set the parent_slug config variable instead.', 'buddyboss-theme' ) );
+				_deprecated_function( 'The "bbta_admin_menu_use_add_theme_page" filter', '1.0.0', esc_html__( 'Set the parent_slug config variable instead.', 'press-pool' ) );
 			}
 
 			if ( 'themes.php' === $this->parent_slug ) {
@@ -919,7 +919,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 					} else {
 						return new WP_Error(
 							'rename_failed',
-							esc_html__( 'The remote plugin package does not contain a folder with the desired slug and renaming did not work.', 'buddyboss-theme' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'buddyboss-theme' ),
+							esc_html__( 'The remote plugin package does not contain a folder with the desired slug and renaming did not work.', 'press-pool' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'press-pool' ),
 							array(
 								'found'    => $subdir_name,
 								'expected' => $desired_slug,
@@ -929,7 +929,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 				} elseif ( empty( $subdir_name ) ) {
 					return new WP_Error(
 						'packaged_wrong',
-						esc_html__( 'The remote plugin package consists of more than one file, but the files are not packaged in a folder.', 'buddyboss-theme' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'buddyboss-theme' ),
+						esc_html__( 'The remote plugin package consists of more than one file, but the files are not packaged in a folder.', 'press-pool' ) . ' ' . esc_html__( 'Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines.', 'press-pool' ),
 						array(
 							'found'    => $subdir_name,
 							'expected' => $desired_slug,
@@ -1118,12 +1118,12 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 						$count          = count( $plugin_group );
 						$linked_plugins = array_map( array( 'BBTA_Utils', 'wrap_in_em' ), $linked_plugins );
 						$last_plugin    = array_pop( $linked_plugins ); // Pop off last name to prep for readability.
-						$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'buddyboss-theme' ) . ' ' . $last_plugin );
+						$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'press-pool' ) . ' ' . $last_plugin );
 
 						$rendered .= sprintf(
 							$line_template,
 							sprintf(
-								translate_nooped_plural( $this->strings[ $type ], $count, 'buddyboss-theme' ),
+								translate_nooped_plural( $this->strings[ $type ], $count, 'press-pool' ),
 								$imploded,
 								$count
 							)
@@ -1136,7 +1136,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 				}
 
 				// Register the nag messages and prepare them to be processed.
-				add_settings_error( 'bbta', 'buddyboss-theme', $rendered, $this->get_admin_notice_class() );
+				add_settings_error( 'bbta', 'press-pool', $rendered, $this->get_admin_notice_class() );
 			}
 
 			// Admin options pages already output settings_errors, so this is to avoid duplication.
@@ -1171,14 +1171,14 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 				if ( $install_count > 0 ) {
 					$action_links['install'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['install_link'], $install_count, 'buddyboss-theme' ),
+						translate_nooped_plural( $this->strings['install_link'], $install_count, 'press-pool' ),
 						esc_url( $this->get_bbta_status_url( 'install' ) )
 					);
 				}
 				if ( $update_count > 0 ) {
 					$action_links['update'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['update_link'], $update_count, 'buddyboss-theme' ),
+						translate_nooped_plural( $this->strings['update_link'], $update_count, 'press-pool' ),
 						esc_url( $this->get_bbta_status_url( 'update' ) )
 					);
 				}
@@ -1187,7 +1187,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 			if ( current_user_can( 'activate_plugins' ) && $activate_count > 0 ) {
 				$action_links['activate'] = sprintf(
 					$link_template,
-					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'buddyboss-theme' ),
+					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'press-pool' ),
 					esc_url( $this->get_bbta_status_url( 'activate' ) )
 				);
 			}
@@ -1987,7 +1987,7 @@ if ( ! class_exists( 'BB_Theme_Activation' ) ) {
 			esc_html(
 				sprintf(
 				/* translators: %s: version number */
-					__( 'BBTA v%s', 'buddyboss-theme' ),
+					__( 'BBTA v%s', 'press-pool' ),
 					self::BBTA_VERSION
 				)
 			),
@@ -2281,10 +2281,10 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 		 */
 		protected function get_plugin_advise_type_text( $required ) {
 			if ( true === $required ) {
-				return __( 'Required', 'buddyboss-theme' );
+				return __( 'Required', 'press-pool' );
 			}
 
-			return __( 'Recommended', 'buddyboss-theme' );
+			return __( 'Recommended', 'press-pool' );
 		}
 
 		/**
@@ -2300,13 +2300,13 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 
 			switch ( $type ) {
 				case 'repo':
-					$string = __( 'WordPress Repository', 'buddyboss-theme' );
+					$string = __( 'WordPress Repository', 'press-pool' );
 					break;
 				case 'external':
-					$string = __( 'External Source', 'buddyboss-theme' );
+					$string = __( 'External Source', 'press-pool' );
 					break;
 				case 'bundled':
-					$string = __( 'Pre-Packaged', 'buddyboss-theme' );
+					$string = __( 'Pre-Packaged', 'press-pool' );
 					break;
 			}
 
@@ -2323,25 +2323,25 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 		 */
 		protected function get_plugin_status_text( $slug ) {
 			if ( ! $this->bbta->is_plugin_installed( $slug ) ) {
-				return __( 'Not Installed', 'buddyboss-theme' );
+				return __( 'Not Installed', 'press-pool' );
 			}
 
 			if ( ! $this->bbta->is_plugin_active( $slug ) ) {
-				$install_status = __( 'Installed But Not Activated', 'buddyboss-theme' );
+				$install_status = __( 'Installed But Not Activated', 'press-pool' );
 			} else {
-				$install_status = __( 'Active', 'buddyboss-theme' );
+				$install_status = __( 'Active', 'press-pool' );
 			}
 
 			$update_status = '';
 
 			if ( $this->bbta->does_plugin_require_update( $slug ) && false === $this->bbta->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Required Update not Available', 'buddyboss-theme' );
+				$update_status = __( 'Required Update not Available', 'press-pool' );
 
 			} elseif ( $this->bbta->does_plugin_require_update( $slug ) ) {
-				$update_status = __( 'Requires Update', 'buddyboss-theme' );
+				$update_status = __( 'Requires Update', 'press-pool' );
 
 			} elseif ( false !== $this->bbta->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Update recommended', 'buddyboss-theme' );
+				$update_status = __( 'Update recommended', 'press-pool' );
 			}
 
 			if ( '' === $update_status ) {
@@ -2350,7 +2350,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 
 			return sprintf(
 			/* translators: 1: install status, 2: update status */
-				_x( '%1$s, %2$s', 'Install/Update Status', 'buddyboss-theme' ),
+				_x( '%1$s, %2$s', 'Install/Update Status', 'press-pool' ),
 				$install_status,
 				$update_status
 			);
@@ -2396,19 +2396,19 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 				switch ( $type ) {
 					case 'all':
 						/* translators: 1: number of plugins. */
-						$text = _nx( 'All <span class="count">(%s)</span>', 'All <span class="count">(%s)</span>', $count, 'plugins', 'buddyboss-theme' );
+						$text = _nx( 'All <span class="count">(%s)</span>', 'All <span class="count">(%s)</span>', $count, 'plugins', 'press-pool' );
 						break;
 					case 'install':
 						/* translators: 1: number of plugins. */
-						$text = _n( 'To Install <span class="count">(%s)</span>', 'To Install <span class="count">(%s)</span>', $count, 'buddyboss-theme' );
+						$text = _n( 'To Install <span class="count">(%s)</span>', 'To Install <span class="count">(%s)</span>', $count, 'press-pool' );
 						break;
 					case 'update':
 						/* translators: 1: number of plugins. */
-						$text = _n( 'Update Available <span class="count">(%s)</span>', 'Update Available <span class="count">(%s)</span>', $count, 'buddyboss-theme' );
+						$text = _n( 'Update Available <span class="count">(%s)</span>', 'Update Available <span class="count">(%s)</span>', $count, 'press-pool' );
 						break;
 					case 'activate':
 						/* translators: 1: number of plugins. */
-						$text = _n( 'To Activate <span class="count">(%s)</span>', 'To Activate <span class="count">(%s)</span>', $count, 'buddyboss-theme' );
+						$text = _n( 'To Activate <span class="count">(%s)</span>', 'To Activate <span class="count">(%s)</span>', $count, 'press-pool' );
 						break;
 					default:
 						$text = '';
@@ -2490,7 +2490,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 			$output = array();
 
 			if ( $this->bbta->is_plugin_installed( $item['slug'] ) ) {
-				$installed = ! empty( $item['installed_version'] ) ? $item['installed_version'] : _x( 'unknown', 'as in: "version nr unknown"', 'buddyboss-theme' );
+				$installed = ! empty( $item['installed_version'] ) ? $item['installed_version'] : _x( 'unknown', 'as in: "version nr unknown"', 'press-pool' );
 
 				$color = '';
 				if ( ! empty( $item['minimum_version'] ) && $this->bbta->does_plugin_require_update( $item['slug'] ) ) {
@@ -2498,7 +2498,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'buddyboss-theme' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'press-pool' ) . '</p>',
 					$color,
 					$installed
 				);
@@ -2506,7 +2506,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 
 			if ( ! empty( $item['minimum_version'] ) ) {
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'buddyboss-theme' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'press-pool' ) . '</p>',
 					$item['minimum_version']
 				);
 			}
@@ -2518,7 +2518,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'buddyboss-theme' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'press-pool' ) . '</p>',
 					$color,
 					$item['available_version']
 				);
@@ -2541,7 +2541,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 		 * @since 1.0.0
 		 */
 		public function no_items() {
-			echo esc_html__( 'No plugins to install, update or activate.', 'buddyboss-theme' ) . ' <a href="' . esc_url( self_admin_url() ) . '"> ' . esc_html( $this->bbta->strings['dashboard'] ) . '</a>';
+			echo esc_html__( 'No plugins to install, update or activate.', 'press-pool' ) . ' <a href="' . esc_url( self_admin_url() ) . '"> ' . esc_html( $this->bbta->strings['dashboard'] ) . '</a>';
 			echo '<style>#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 		}
 
@@ -2555,14 +2555,14 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 		public function get_columns() {
 			$columns = array(
 				'cb'     => '<input type="checkbox" />',
-				'plugin' => __( 'Plugin', 'buddyboss-theme' ),
-				'source' => __( 'Source', 'buddyboss-theme' ),
-				'type'   => __( 'Type', 'buddyboss-theme' ),
+				'plugin' => __( 'Plugin', 'press-pool' ),
+				'source' => __( 'Source', 'press-pool' ),
+				'type'   => __( 'Type', 'press-pool' ),
 			);
 
 			if ( 'all' === $this->view_context || 'update' === $this->view_context ) {
-				$columns['version'] = __( 'Version', 'buddyboss-theme' );
-				$columns['status']  = __( 'Status', 'buddyboss-theme' );
+				$columns['version'] = __( 'Version', 'press-pool' );
+				$columns['status']  = __( 'Status', 'press-pool' );
 			}
 
 			return apply_filters( 'bbta_table_columns', $columns );
@@ -2611,18 +2611,18 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 			// Display the 'Install' action link if the plugin is not yet available.
 			if ( ! $this->bbta->is_plugin_installed( $item['slug'] ) ) {
 				/* translators: %2$s: plugin name in screen reader markup */
-				$actions['install'] = __( 'Install %2$s', 'buddyboss-theme' );
+				$actions['install'] = __( 'Install %2$s', 'press-pool' );
 			} else {
 				// Display the 'Update' action link if an update is available and WP complies with plugin minimum.
 				if ( false !== $this->bbta->does_plugin_have_update( $item['slug'] ) && $this->bbta->can_plugin_update( $item['slug'] ) ) {
 					/* translators: %2$s: plugin name in screen reader markup */
-					$actions['update'] = __( 'Update %2$s', 'buddyboss-theme' );
+					$actions['update'] = __( 'Update %2$s', 'press-pool' );
 				}
 
 				// Display the 'Activate' action link, but only if the plugin meets the minimum version.
 				if ( $this->bbta->can_plugin_activate( $item['slug'] ) ) {
 					/* translators: %2$s: plugin name in screen reader markup */
-					$actions['activate'] = __( 'Activate %2$s', 'buddyboss-theme' );
+					$actions['activate'] = __( 'Activate %2$s', 'press-pool' );
 				}
 			}
 
@@ -2694,7 +2694,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 				<tr class="plugin-update-tr">
 					<td colspan="', absint( $this->get_column_count() ), '" class="plugin-update colspanchange">
 						<div class="update-message">',
-			esc_html__( 'Upgrade message from the plugin author:', 'buddyboss-theme' ),
+			esc_html__( 'Upgrade message from the plugin author:', 'press-pool' ),
 			' <strong>', wp_kses_data( $item['upgrade_notice'] ), '</strong>
 						</div>
 					</td>
@@ -2727,16 +2727,16 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 
 			if ( 'update' !== $this->view_context && 'activate' !== $this->view_context ) {
 				if ( current_user_can( 'install_plugins' ) ) {
-					$actions['bbta-bulk-install'] = __( 'Install', 'buddyboss-theme' );
+					$actions['bbta-bulk-install'] = __( 'Install', 'press-pool' );
 				}
 			}
 
 			if ( 'install' !== $this->view_context ) {
 				if ( current_user_can( 'update_plugins' ) ) {
-					$actions['bbta-bulk-update'] = __( 'Update', 'buddyboss-theme' );
+					$actions['bbta-bulk-update'] = __( 'Update', 'press-pool' );
 				}
 				if ( current_user_can( 'activate_plugins' ) ) {
-					$actions['bbta-bulk-activate'] = __( 'Activate', 'buddyboss-theme' );
+					$actions['bbta-bulk-activate'] = __( 'Activate', 'press-pool' );
 				}
 			}
 
@@ -2767,9 +2767,9 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 				// Did user actually select any plugins to install/update ?
 				if ( empty( $_POST['plugin'] ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins were selected to be installed. No action taken.', 'buddyboss-theme' );
+						$message = __( 'No plugins were selected to be installed. No action taken.', 'press-pool' );
 					} else {
-						$message = __( 'No plugins were selected to be updated. No action taken.', 'buddyboss-theme' );
+						$message = __( 'No plugins were selected to be updated. No action taken.', 'press-pool' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2810,9 +2810,9 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 				// No need to proceed further if we have no plugins to handle.
 				if ( empty( $plugins_to_install ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins are available to be installed at this time.', 'buddyboss-theme' );
+						$message = __( 'No plugins are available to be installed at this time.', 'press-pool' );
 					} else {
-						$message = __( 'No plugins are available to be updated at this time.', 'buddyboss-theme' );
+						$message = __( 'No plugins are available to be updated at this time.', 'press-pool' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2919,7 +2919,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 
 				// Did user actually select any plugins to activate ?
 				if ( empty( $_POST['plugin'] ) ) {
-					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins were selected to be activated. No action taken.', 'buddyboss-theme' ), '</p></div>';
+					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins were selected to be activated. No action taken.', 'press-pool' ), '</p></div>';
 
 					return false;
 				}
@@ -2945,7 +2945,7 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 
 				// Return early if there are no plugins to activate.
 				if ( empty( $plugins_to_activate ) ) {
-					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins are available to be activated at this time.', 'buddyboss-theme' ), '</p></div>';
+					echo '<div id="message" class="error"><p>', esc_html__( 'No plugins are available to be activated at this time.', 'press-pool' ), '</p></div>';
 
 					return false;
 				}
@@ -2959,11 +2959,11 @@ if ( ! class_exists( 'BBTA_List_Table' ) ) {
 					$count        = count( $plugin_names ); // Count so we can use _n function.
 					$plugin_names = array_map( array( 'BBTA_Utils', 'wrap_in_strong' ), $plugin_names );
 					$last_plugin  = array_pop( $plugin_names ); // Pop off last name to prep for readability.
-					$imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'buddyboss-theme' ) . ' ' . $last_plugin );
+					$imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'press-pool' ) . ' ' . $last_plugin );
 
 					printf( // WPCS: xss ok.
 						'<div id="message" class="updated"><p>%1$s %2$s.</p></div>',
-						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'buddyboss-theme' ) ),
+						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'press-pool' ) ),
 						$imploded
 					);
 
@@ -3169,8 +3169,8 @@ if ( ! function_exists( 'bbta_load_bulk_installer' ) ) {
 					 * @since 1.0.0
 					 */
 					public function activate_strings() {
-						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'buddyboss-theme' );
-						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'buddyboss-theme' );
+						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'press-pool' );
+						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'press-pool' );
 					}
 
 					/**
@@ -3513,34 +3513,34 @@ if ( ! function_exists( 'bbta_load_bulk_installer' ) ) {
 						if ( 'update' === $this->options['install_type'] ) {
 							parent::add_strings();
 							/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'buddyboss-theme' );
+							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'press-pool' );
 						} else {
 							/* translators: 1: plugin name, 2: error message. */
-							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'buddyboss-theme' );
+							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'press-pool' );
 							/* translators: 1: plugin name. */
-							$this->upgrader->strings['skin_update_failed'] = __( 'The installation of %1$s failed.', 'buddyboss-theme' );
+							$this->upgrader->strings['skin_update_failed'] = __( 'The installation of %1$s failed.', 'press-pool' );
 
 							if ( $this->bbta->is_automatic ) {
 								// Automatic activation strings.
-								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'buddyboss-theme' );
+								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'press-pool' );
 								/* translators: 1: plugin name. */
-								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed and activated successfully.', 'buddyboss-theme' );
-								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations and activations have been completed.', 'buddyboss-theme' );
+								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed and activated successfully.', 'press-pool' );
+								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations and activations have been completed.', 'press-pool' );
 								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'buddyboss-theme' );
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'press-pool' );
 							} else {
 								// Default installation strings.
-								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'buddyboss-theme' );
+								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'press-pool' );
 								/* translators: 1: plugin name. */
-								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed successfully.', 'buddyboss-theme' );
-								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations have been completed.', 'buddyboss-theme' );
+								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed successfully.', 'press-pool' );
+								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations have been completed.', 'press-pool' );
 								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'buddyboss-theme' );
+								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'press-pool' );
 							}
 
 							// Add "read more" link only for WP < 4.8.
 							if ( version_compare( $this->bbta->wp_version, '4.8', '<' ) ) {
-								$this->upgrader->strings['skin_update_successful'] .= ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'buddyboss-theme' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'buddyboss-theme' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_update_successful'] .= ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'press-pool' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'press-pool' ) . '</span>.</a>';
 							}
 						}
 					}

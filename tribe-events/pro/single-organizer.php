@@ -28,13 +28,13 @@ $organizer_id = get_the_ID();
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<div class="tribe-events-organizer">
-			<h1 class="page-title"><?php echo __( 'Organizer', 'buddyboss-theme' ); ?></h1>
+			<h1 class="page-title"><?php echo __( 'Organizer', 'press-pool' ); ?></h1>
         
         <div class="bs-organizer-wrap">
     		
     		<div class="tribe-events-organizer-meta bs-organizer-meta tribe-clearfix">
                 <p class="tribe-events-back">
-    				<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" rel="bookmark"><?php printf( __( '<i class="bb-icon-angle-left"></i> Back to %s', 'buddyboss-theme' ), tribe_get_event_label_plural() ); ?></a>
+    				<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" rel="bookmark"><?php printf( __( '<i class="bb-icon-angle-left"></i> Back to %s', 'press-pool' ), tribe_get_event_label_plural() ); ?></a>
     			</p>
                 <?php do_action( 'tribe_events_single_organizer_before_organizer' ) ?>
                 <div class="bs-organizer-cols">
@@ -45,7 +45,7 @@ $organizer_id = get_the_ID();
                         <div class="bs-organize-sq-wr">
             				<?php do_action( 'tribe_events_single_organizer_before_title' ) ?>
             				<h2 class="tribe-organizer-name"><?php echo tribe_get_organizer( $organizer_id ); ?></h2>
-                            <h4 class="tribe-organizer-label"><?php echo __( 'Organizer', 'buddyboss-theme' ); ?></h4>
+                            <h4 class="tribe-organizer-label"><?php echo __( 'Organizer', 'press-pool' ); ?></h4>
             				<?php do_action( 'tribe_events_single_organizer_after_title' ) ?>
             
             				<!-- Organizer Meta -->
@@ -67,7 +67,7 @@ $organizer_id = get_the_ID();
             </div>
  			
             <div class="bs-organizer-up-events">
-                <h4 class="bs-organizer-up-label"><?php echo __( 'Upcoming Events', 'buddyboss-theme' ); ?></h4>
+                <h4 class="bs-organizer-up-label"><?php echo __( 'Upcoming Events', 'press-pool' ); ?></h4>
     
         		<!-- Upcoming event list -->
         		<?php do_action( 'tribe_events_single_organizer_before_upcoming_events' ) ?>

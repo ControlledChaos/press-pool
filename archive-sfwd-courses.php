@@ -27,10 +27,10 @@ $view = llms_page_display();
                         <div id="courses-dir-search" class="bs-dir-search" role="search">
                             <div id="search-members-form" class="bs-search-form">
                                 <label for="bs_members_search"
-                                       class="bp-screen-reader-text"><?php _e( 'Search', 'buddyboss-theme' ); ?></label>
+                                       class="bp-screen-reader-text"><?php _e( 'Search', 'press-pool' ); ?></label>
                                 <input type="text" name="search" id="bs_members_search"
                                        value="<?php echo ! empty( $_GET['search'] ) ? $_GET['search'] : ''; ?>"
-                                       placeholder="<?php _e( 'Search', 'buddyboss-theme' ); ?> <?php echo LearnDash_Custom_Label::get_label( 'courses' ) . '...'; ?>">
+                                       placeholder="<?php _e( 'Search', 'press-pool' ); ?> <?php echo LearnDash_Custom_Label::get_label( 'courses' ) . '...'; ?>">
                             </div>
                         </div>
                     </div>
@@ -39,11 +39,11 @@ $view = llms_page_display();
                 		<ul class="component-navigation courses-nav">
                             <?php 
                             $navs = array(
-                                'all' => __( 'All', 'buddyboss-theme' ) . ' ' . LearnDash_Custom_Label::get_label( 'courses' ) . '<span class="count">' . buddyboss_theme()->learndash_helper()->get_all_courses_count() . '</span>',
+                                'all' => __( 'All', 'press-pool' ) . ' ' . LearnDash_Custom_Label::get_label( 'courses' ) . '<span class="count">' . buddyboss_theme()->learndash_helper()->get_all_courses_count() . '</span>',
                             );
                             
                             if ( is_user_logged_in() ) {
-                                $navs[ 'my-courses' ] = __( 'My', 'buddyboss-theme' ) . ' ' . LearnDash_Custom_Label::get_label( 'courses' ) . '<span class="count">' . buddyboss_theme()->learndash_helper()->get_my_courses_count() . '</span>';
+                                $navs[ 'my-courses' ] = __( 'My', 'press-pool' ) . ' ' . LearnDash_Custom_Label::get_label( 'courses' ) . '<span class="count">' . buddyboss_theme()->learndash_helper()->get_my_courses_count() . '</span>';
                             }
                             
                             $navs = apply_filters(  'BuddyBossTheme/Learndash/Archive/Navs', $navs );
@@ -146,7 +146,7 @@ $view = llms_page_display();
 								<div class="bb-lms-pagination"><?php
 									global $wp_query;
 									$big        = 999999999; // need an unlikely integer
-									$translated = __( 'Page', 'buddyboss-theme' ); // Supply translatable string
+									$translated = __( 'Page', 'press-pool' ); // Supply translatable string
 
 									echo paginate_links( array(
 										'base'               => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
@@ -158,7 +158,7 @@ $view = llms_page_display();
 							} else { ?>
 								<aside class="bp-feedback bp-template-notice ld-feedback info">
 									<span class="bp-icon" aria-hidden="true"></span>
-									<p><?php _e( 'Sorry, no courses were found.', 'buddyboss-theme' ); ?></p>
+									<p><?php _e( 'Sorry, no courses were found.', 'press-pool' ); ?></p>
 								</aside><?php
 							} ?>
                         </div>

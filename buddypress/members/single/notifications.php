@@ -8,7 +8,7 @@
 ?>
 
 <header class="entry-header notifications-header flex">
-	<h1 class="entry-title flex-1"><?php esc_html_e( 'Notifications', 'buddyboss-theme' ); ?></h1>
+	<h1 class="entry-title flex-1"><?php esc_html_e( 'Notifications', 'press-pool' ); ?></h1>
 	<?php bp_get_template_part( 'members/single/parts/item-subnav' ); ?>
 	<?php bp_get_template_part( 'common/search-and-filters-bar' ); ?>
 </header>

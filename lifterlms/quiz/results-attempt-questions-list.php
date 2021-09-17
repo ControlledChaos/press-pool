@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<?php if ( $quiz_question->get( 'points' ) ) : ?>
 					<span class="llms-points">
-						<?php printf( __( '%1$d / %2$d points', 'buddyboss-theme' ), $attempt_question->get( 'earned' ), $attempt_question->get( 'points' ) ); ?>
+						<?php printf( __( '%1$d / %2$d points', 'press-pool' ), $attempt_question->get( 'earned' ), $attempt_question->get( 'points' ) ); ?>
 					</span>
 				<?php endif; ?>
                 
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php if ( $attempt_question->get( 'answer' ) ) : ?>
 				<div class="llms-quiz-attempt-answer-section llms-student-answer">
-					<p class="llms-quiz-results-label student-answer"><?php _e( 'Selected answer: ', 'buddyboss-theme' ); ?></p>
+					<p class="llms-quiz-results-label student-answer"><?php _e( 'Selected answer: ', 'press-pool' ); ?></p>
 					<?php echo $attempt_question->get_answer(); ?>
 				</div>
 			<?php endif; ?>
@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php if ( llms_parse_bool( $quiz_question->get_quiz()->get( 'show_correct_answer' ) ) ) : ?>
 					<?php if ( in_array( $quiz_question->get_auto_grade_type(), array( 'choices', 'conditional' ) ) ) : ?>
 						<div class="llms-quiz-attempt-answer-section llms-correct-answer">
-							<p class="llms-quiz-results-label correct-answer"><?php _e( 'Correct answer: ', 'buddyboss-theme' ); ?></p>
+							<p class="llms-quiz-results-label correct-answer"><?php _e( 'Correct answer: ', 'press-pool' ); ?></p>
 							<?php echo $attempt_question->get_correct_answer(); ?>
 						</div>
 					<?php endif; ?>
@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<?php if ( llms_parse_bool( $quiz_question->get( 'clarifications_enabled' ) ) ) : ?>
 					<div class="llms-quiz-attempt-answer-section llms-clarifications">
-						<p class="llms-quiz-results-label clarification"><?php _e( 'Clarification: ', 'buddyboss-theme' ); ?></p>
+						<p class="llms-quiz-results-label clarification"><?php _e( 'Clarification: ', 'press-pool' ); ?></p>
 						<?php echo $quiz_question->get( 'clarifications' ); ?>
 					</div>
 				<?php endif; ?>
@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php if ( $attempt_question->has_remarks() ) : ?>
 				<div class="llms-quiz-attempt-answer-section llms-remarks">
-					<p class="llms-quiz-results-label remarks"><?php _e( 'Instructor remarks: ', 'buddyboss-theme' ); ?></p>
+					<p class="llms-quiz-results-label remarks"><?php _e( 'Instructor remarks: ', 'press-pool' ); ?></p>
 					<div class="llms-remarks"><?php echo wpautop( $attempt_question->get( 'remarks' ) ); ?></div>
 				</div>
 			<?php endif; ?>

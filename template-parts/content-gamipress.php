@@ -42,7 +42,7 @@ global $post;
 			else :
 				$prefix = "";
 				if( has_post_format( 'link' ) ){
-					$prefix = __( '[Link]', 'buddyboss-theme' );
+					$prefix = __( '[Link]', 'press-pool' );
 					$prefix .= " ";//whitespace
 				}
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $prefix, '</a></h2>' );
@@ -80,7 +80,7 @@ global $post;
 				the_content( sprintf(
 				wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'buddyboss-theme' ), array(
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'press-pool' ), array(
 					'span' => array(
 						'class' => array(),
 					),

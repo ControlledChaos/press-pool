@@ -37,16 +37,16 @@ $author_link = esc_url( $author_link );
                 					'action_type'	 => 'like',
                 					'wrapper_class'	 => 'bb-like-wrap',
                 					'icon_class'	 => 'bb-icon-like',
-                					'text_template'	 => '{{bookmarks_count}} ' . __( 'Likes', 'buddyboss-theme' ),
-                					'title_add'		 => __( 'Like this entry', 'buddyboss-theme' ),
-                					'title_remove'	 => __( 'Remove like', 'buddyboss-theme' ),
+                					'text_template'	 => '{{bookmarks_count}} ' . __( 'Likes', 'press-pool' ),
+                					'title_add'		 => __( 'Like this entry', 'press-pool' ),
+                					'title_remove'	 => __( 'Remove like', 'press-pool' ),
                 				) );
                 			}
                 		?>
                     <?php } ?>
                     <?php 
                     if ( comments_open() || get_comments_number() ) { ?>
-                        <a href="<?php echo get_comments_link( get_the_ID() ); ?>" class="flex align-items-center"><i class="bb-icon-comment"></i><span class="comments-count"><?php printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'buddyboss-theme' ), number_format_i18n( get_comments_number() ) ); ?></span></a>
+                        <a href="<?php echo get_comments_link( get_the_ID() ); ?>" class="flex align-items-center"><i class="bb-icon-comment"></i><span class="comments-count"><?php printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'press-pool' ), number_format_i18n( get_comments_number() ) ); ?></span></a>
                     <?php } ?>
         		<?php } ?>
              
@@ -66,14 +66,14 @@ $author_link = esc_url( $author_link );
 					'action_type'	 => 'like',
 					'wrapper_class'	 => 'bb-like-wrap',
 					'icon_class'	 => 'bb-icon-like',
-					'text_template'	 => '{{bookmarks_count}} ' . __( 'Likes', 'buddyboss-theme' ),
-					'title_add'		 => __( 'Like this entry', 'buddyboss-theme' ),
-					'title_remove'	 => __( 'Remove like', 'buddyboss-theme' ),
+					'text_template'	 => '{{bookmarks_count}} ' . __( 'Likes', 'press-pool' ),
+					'title_add'		 => __( 'Like this entry', 'press-pool' ),
+					'title_remove'	 => __( 'Remove like', 'press-pool' ),
 				) );
 			}
 			?>
 
-			<a href="<?php echo get_comments_link( get_the_ID() ); ?>" class="flex align-items-center"><i class="bb-icon-comment"></i><span class="comments-count"><?php printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'buddyboss-theme' ), number_format_i18n( get_comments_number() ) ); ?></span></a>
+			<a href="<?php echo get_comments_link( get_the_ID() ); ?>" class="flex align-items-center"><i class="bb-icon-comment"></i><span class="comments-count"><?php printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'press-pool' ), number_format_i18n( get_comments_number() ) ); ?></span></a>
 
 		<?php } ?>
         
@@ -89,8 +89,8 @@ $author_link = esc_url( $author_link );
         				'wrapper_class'	 => 'bookmark-link-container',
         				'icon_class'	 => 'bb-bookmark bb-icon-bookmark-small',
         				'text_template'	 => '',
-        				'title_add'		 => __( 'Bookmark this story to read later', 'buddyboss-theme' ),
-        				'title_remove'	 => __( 'Remove bookmark', 'buddyboss-theme' ),
+        				'title_add'		 => __( 'Bookmark this story to read later', 'press-pool' ),
+        				'title_remove'	 => __( 'Remove bookmark', 'press-pool' ),
 						'tooltip_pos'   => $tooltip_pos,
         			) );
         		}

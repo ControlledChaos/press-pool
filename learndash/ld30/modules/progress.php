@@ -39,7 +39,7 @@ if($progress):
         <?php endif; ?>
             <div class="ld-progress-heading">
                 <?php if( $context === 'topic' ): ?>
-                    <div class="ld-progress-label"><?php echo sprintf( esc_html_x( '%s Progress', 'Placeholder: Lesson Progress', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label('lesson') ); ?></div>
+                    <div class="ld-progress-label"><?php echo sprintf( esc_html_x( '%s Progress', 'Placeholder: Lesson Progress', 'press-pool' ), LearnDash_Custom_Label::get_label('lesson') ); ?></div>
                 <?php endif; ?>
             </div>
 
@@ -47,7 +47,7 @@ if($progress):
                 <div class="ld-progress-bar-percentage ld-secondary-background" style="<?php echo esc_attr( 'width:' . $progress['percentage'] . '%' ); ?>"></div>
             </div>
             <div class="ld-progress-stats">
-                <div class="ld-progress-percentage ld-secondary-color course-completion-rate"><?php echo sprintf( esc_html_x('%s%% Complete', 'placeholder: Progress percentage', 'buddyboss-theme'), $progress['percentage'] ); ?></div>
+                <div class="ld-progress-percentage ld-secondary-color course-completion-rate"><?php echo sprintf( esc_html_x('%s%% Complete', 'placeholder: Progress percentage', 'press-pool'), $progress['percentage'] ); ?></div>
                 <div class="ld-progress-steps">
                     <?php
                     if ( $context === 'course' || $context === 'focus' ):
@@ -60,9 +60,9 @@ if($progress):
                         $course_activity = learndash_get_user_activity( $course_args );
                         if( $course_activity && $context === 'course' ) {
 	                        $date_time_display = get_date_from_gmt( date('Y-m-d H:i:s', $course_activity->activity_updated ), 'Y-m-d H:i:s' );
-	                        echo sprintf( esc_html_x( 'Last activity on %s', 'Last activity date in infobar', 'buddyboss-theme' ), date_i18n( get_option( 'date_format' ), strtotime( $date_time_display ) ) );
+	                        echo sprintf( esc_html_x( 'Last activity on %s', 'Last activity date in infobar', 'press-pool' ), date_i18n( get_option( 'date_format' ), strtotime( $date_time_display ) ) );
                         } else {
-	                        echo sprintf( __( '%s/%s Steps', 'buddyboss-theme' ), $progress['completed'], $progress['total'] );
+	                        echo sprintf( __( '%s/%s Steps', 'press-pool' ), $progress['completed'], $progress['total'] );
                         }
                     endif;
                     ?>

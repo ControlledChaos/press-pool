@@ -25,33 +25,33 @@
 					<?php if ( ! bbp_show_lead_topic() && is_user_logged_in() ) : ?>
                         <div class="bb-topic-states push-right">
 							<?php if ( bbp_is_topic_open() ) { ?>
-                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Close', 'buddyboss-theme' ); ?>"><i
+                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Close', 'press-pool' ); ?>"><i
                                             class="bb-topic-status open"><?php echo bbp_get_topic_close_link(); ?></i></span>
 							<?php } else { ?>
-                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Open', 'buddyboss-theme' ); ?>"><i
+                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Open', 'press-pool' ); ?>"><i
                                             class="bb-topic-status closed"><?php echo bbp_get_topic_close_link(); ?></i></span>
 							<?php } ?>
 
 							<?php
 							if ( ! bbp_is_topic_super_sticky( bbp_get_topic_id() ) ) {
 								if ( bbp_is_topic_sticky() ) { ?>
-                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Unstick', 'buddyboss-theme' ); ?>">
+                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Unstick', 'press-pool' ); ?>">
                                     <i class="bb-topic-status bb-sticky sticky"><?php echo bbp_get_topic_stick_link(); ?></i>
                                     </span><?php
 								} else { ?>
-                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Sticky', 'buddyboss-theme' ); ?>">
+                                <span data-balloon-pos="up" data-balloon="<?php _e( 'Sticky', 'press-pool' ); ?>">
                                     <i class="bb-topic-status bb-sticky unsticky"><?php echo bbp_get_topic_stick_link(); ?></i>
                                     </span><?php
 								}
 							}
 
 							if ( bbp_is_topic_super_sticky( bbp_get_topic_id() ) ) { ?>
-                            <span data-balloon-pos="up" data-balloon="<?php _e( 'Unstick', 'buddyboss-theme' ); ?>"><i
+                            <span data-balloon-pos="up" data-balloon="<?php _e( 'Unstick', 'press-pool' ); ?>"><i
                                         class="bb-topic-status bb-super-sticky super-sticky"><?php echo bbp_get_topic_stick_link(); ?></i>
                                 </span><?php
 							} elseif ( ! bbp_is_topic_sticky() ) { ?>
                             <span data-balloon-pos="up"
-                                  data-balloon="<?php _e( 'Super Sticky', 'buddyboss-theme' ); ?>"><i
+                                  data-balloon="<?php _e( 'Super Sticky', 'press-pool' ); ?>"><i
                                         class="bb-topic-status bb-super-sticky super-sticky unsticky"><?php echo bbp_get_topic_stick_link(); ?></i>
                                 </span><?php
 							}
@@ -61,16 +61,16 @@
 							$is_fav = bbp_is_user_favorite( get_current_user_id(), bbp_get_topic_id() );
 							if ( $is_fav ) { ?>
                             <span class="bb-favorite-wrap" data-balloon-pos="up"
-                                  data-balloon="<?php _e( 'Unfavorite', 'buddyboss-theme' ); ?>"
-                                  data-unfav="<?php _e( 'Unfavorite', 'buddyboss-theme' ); ?>"
-                                  data-fav="<?php _e( 'Favorite', 'buddyboss-theme' ); ?>"><i
+                                  data-balloon="<?php _e( 'Unfavorite', 'press-pool' ); ?>"
+                                  data-unfav="<?php _e( 'Unfavorite', 'press-pool' ); ?>"
+                                  data-fav="<?php _e( 'Favorite', 'press-pool' ); ?>"><i
                                         class="bb-topic-status bb-favorite-status favorited"><?php bbp_user_favorites_link(); ?></i>
                                 </span><?php
 							} else { ?>
                             <span class="bb-favorite-wrap" data-balloon-pos="up"
-                                  data-balloon="<?php _e( 'Favorite', 'buddyboss-theme' ); ?>"
-                                  data-unfav="<?php _e( 'Unfavorite', 'buddyboss-theme' ); ?>"
-                                  data-fav="<?php _e( 'Favorite', 'buddyboss-theme' ); ?>"><i
+                                  data-balloon="<?php _e( 'Favorite', 'press-pool' ); ?>"
+                                  data-unfav="<?php _e( 'Unfavorite', 'press-pool' ); ?>"
+                                  data-fav="<?php _e( 'Favorite', 'press-pool' ); ?>"><i
                                         class="bb-topic-status bb-favorite-status unfavorited"><?php bbp_user_favorites_link(); ?></i>
                                 </span><?php
 							} ?>
@@ -80,13 +80,13 @@
 
                 <div class="item-meta">
 				<span class="bs-replied">
-					<span class="bbp-topic-freshness-author"><?php bbp_author_link( array( 'post_id' => bbp_get_topic_last_active_id(), 'size' => 1 ) ); ?></span> <?php _e( 'updated', 'buddyboss-theme' ); ?> <?php bbp_topic_freshness_link(); ?>
+					<span class="bbp-topic-freshness-author"><?php bbp_author_link( array( 'post_id' => bbp_get_topic_last_active_id(), 'size' => 1 ) ); ?></span> <?php _e( 'updated', 'press-pool' ); ?> <?php bbp_topic_freshness_link(); ?>
 				</span>
                     <span class="bs-voices-wrap">
 					<?php
 					$topic_id    = bbp_get_topic_id();
 					$voice_count = bbp_get_topic_voice_count( $topic_id );
-					$voice_text  = $voice_count > 1 ? __( 'Members', 'buddyboss-theme' ) : __( 'Member', 'buddyboss-theme' );
+					$voice_text  = $voice_count > 1 ? __( 'Members', 'press-pool' ) : __( 'Member', 'press-pool' );
 
 					$topic_reply_count = bbp_get_topic_reply_count( $topic_id );
 					$topic_post_count  = bbp_get_topic_post_count( $topic_id );
@@ -98,10 +98,10 @@
 					<span class="bs-replies"><?php
 						if ( bbp_show_lead_topic() ) {
 							bbp_topic_reply_count( $topic_id );
-							$topic_reply_text = $topic_reply_count > 1 ? __( 'Replies', 'buddyboss-theme' ) : __( 'Reply', 'buddyboss-theme' );
+							$topic_reply_text = $topic_reply_count > 1 ? __( 'Replies', 'press-pool' ) : __( 'Reply', 'press-pool' );
 						} else {
 							bbp_topic_post_count( $topic_id );
-							$topic_reply_text = $topic_post_count > 1 ? __( 'Posts', 'buddyboss-theme' ) : __( 'Post', 'buddyboss-theme' );
+							$topic_reply_text = $topic_post_count > 1 ? __( 'Posts', 'press-pool' ) : __( 'Post', 'press-pool' );
 						}
 						?>
 

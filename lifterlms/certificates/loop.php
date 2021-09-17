@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 	<aside class="bp-feedback bp-messages info llms-general-notification">
 		<span class="bp-icon" aria-hidden="true"></span>
-		<p><?php echo apply_filters( 'lifterlms_no_certificates_text', __( 'You do not have any certificates yet.', 'buddyboss-theme' ) ); ?></p>
+		<p><?php echo apply_filters( 'lifterlms_no_certificates_text', __( 'You do not have any certificates yet.', 'press-pool' ) ); ?></p>
 	</aside>
 
 	<?php endif; ?>

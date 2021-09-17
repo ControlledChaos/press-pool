@@ -30,15 +30,15 @@ $account_page_id = $mepr_options['account_page_id'];
 	  <?php if ( isset( $mepr_options->show_fname_lname ) && $mepr_options->show_fname_lname ): ?>
       <div class="mp-form-row mepr_first_name">
         <div class="mp-form-label">
-          <label for="user_first_name"><?php _ex('First Name:', 'ui', 'buddyboss-theme'); echo ($mepr_options->require_fname_lname)?'*':''; ?></label>
-          <span class="cc-error"><?php _ex('First Name Required', 'ui', 'buddyboss-theme'); ?></span>
+          <label for="user_first_name"><?php _ex('First Name:', 'ui', 'press-pool'); echo ($mepr_options->require_fname_lname)?'*':''; ?></label>
+          <span class="cc-error"><?php _ex('First Name Required', 'ui', 'press-pool'); ?></span>
         </div>
         <input type="text" name="user_first_name" id="user_first_name" class="mepr-form-input" value="<?php echo $mepr_current_user->first_name; ?>" <?php echo ($mepr_options->require_fname_lname)?'required':''; ?> />
       </div>
       <div class="mp-form-row mepr_last_name">
         <div class="mp-form-label">
-          <label for="user_last_name"><?php _ex('Last Name:', 'ui', 'buddyboss-theme'); echo ($mepr_options->require_fname_lname)?'*':''; ?></label>
-          <span class="cc-error"><?php _ex('Last Name Required', 'ui', 'buddyboss-theme'); ?></span>
+          <label for="user_last_name"><?php _ex('Last Name:', 'ui', 'press-pool'); echo ($mepr_options->require_fname_lname)?'*':''; ?></label>
+          <span class="cc-error"><?php _ex('Last Name Required', 'ui', 'press-pool'); ?></span>
         </div>
         <input type="text" id="user_last_name" name="user_last_name" class="mepr-form-input" value="<?php echo $mepr_current_user->last_name; ?>" <?php echo ($mepr_options->require_fname_lname)?'required':''; ?> />
       </div>
@@ -48,8 +48,8 @@ $account_page_id = $mepr_options['account_page_id'];
     <?php endif; ?>
     <div class="mp-form-row mepr_email">
       <div class="mp-form-label">
-        <label for="user_email"><?php _ex('Email:*', 'ui', 'buddyboss-theme');  ?></label>
-        <span class="cc-error"><?php _ex('Invalid Email', 'ui', 'buddyboss-theme'); ?></span>
+        <label for="user_email"><?php _ex('Email:*', 'ui', 'press-pool');  ?></label>
+        <span class="cc-error"><?php _ex('Invalid Email', 'ui', 'press-pool'); ?></span>
       </div>
       <input type="email" id="user_email" name="user_email" class="mepr-form-input" value="<?php echo $mepr_current_user->user_email; ?>" required />
     </div>
@@ -60,7 +60,7 @@ $account_page_id = $mepr_options['account_page_id'];
 
     <div class="mepr_spacer">&nbsp;</div>
 
-    <input type="submit" name="mepr-account-form" value="<?php _ex('Save Profile', 'ui', 'buddyboss-theme'); ?>" class="mepr-submit mepr-share-button" />
+    <input type="submit" name="mepr-account-form" value="<?php _ex('Save Profile', 'ui', 'press-pool'); ?>" class="mepr-submit mepr-share-button" />
     <img src="<?php echo admin_url('images/loading.gif'); ?>" style="display: none;" class="mepr-loading-gif" />
     <?php MeprView::render('/shared/has_errors', get_defined_vars()); ?>
   </form>
@@ -68,7 +68,7 @@ $account_page_id = $mepr_options['account_page_id'];
   <div class="mepr_spacer">&nbsp;</div>
 
   <span class="mepr-account-change-password">
-    <a href="<?php echo $account_url.$delim.'action=newpassword'; ?>"><?php _ex('Change Password', 'ui', 'buddyboss-theme'); ?></a>
+    <a href="<?php echo $account_url.$delim.'action=newpassword'; ?>"><?php _ex('Change Password', 'ui', 'press-pool'); ?></a>
   </span>
 
   <?php MeprHooks::do_action('mepr_account_home', $mepr_current_user); ?>

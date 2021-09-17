@@ -53,7 +53,7 @@ if ( !class_exists( '\BuddyBossTheme\BBPressHelper' ) ) {
             if ( ( !is_active_sidebar( 'forums' ) || bp_is_groups_component() ) && bbp_is_single_forum() && !bbp_is_forum_category() && ( bbp_current_user_can_access_create_topic_form() || bbp_current_user_can_access_anonymous_user_form() ) ) { ?>
 
                 <div class="bbp_before_forum_new_post">
-                    <a href="#new-post" data-modal-id="bbp-topic-form" class="button full btn-new-topic"><i class="bb-icon-edit-square"></i> <?php _e( 'New discussion', 'buddyboss-theme' ); ?></a>
+                    <a href="#new-post" data-modal-id="bbp-topic-form" class="button full btn-new-topic"><i class="bb-icon-edit-square"></i> <?php _e( 'New discussion', 'press-pool' ); ?></a>
                 </div>
 
             <?php
@@ -75,7 +75,7 @@ if ( !class_exists( '\BuddyBossTheme\BBPressHelper' ) ) {
 			    $reply_form_html = ob_get_clean();
 			    wp_localize_script( 'buddyboss-bbpress-reply-ajax', 'bbpReplyAjaxJS', array(
 				    'bbp_ajaxurl'          => bbp_get_ajax_url(),
-				    'generic_ajax_error'   => __( 'Something went wrong. Refresh your browser and try again.', 'buddyboss-theme' ),
+				    'generic_ajax_error'   => __( 'Something went wrong. Refresh your browser and try again.', 'press-pool' ),
 				    'is_user_logged_in'    => is_user_logged_in(),
 				    'reply_nonce'          => wp_create_nonce( 'reply-ajax_' . get_the_ID() ),
 				    'topic_id'             => bbp_get_topic_id(),

@@ -26,7 +26,7 @@ $has_downloads = (bool) $downloads;
 ?>
 
 <div class="wc-MyAccount-sub-heading">
-    <h2><?php _e( 'Downloads', 'buddyboss-theme' ); ?></h2>
+    <h2><?php _e( 'Downloads', 'press-pool' ); ?></h2>
 </div>
 
 <div class="wc-MyAccount-inner-content">
@@ -43,9 +43,9 @@ $has_downloads = (bool) $downloads;
 	<?php else : ?>
 		<div class="woocommerce-Message woocommerce-Message--info woocommerce-info wc-MyAccount-fix-center">
 			<div class="wc-MyAccount-sub-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/cart.svg" alt="Shop cart" /></div>
-			<div class="wc-MyAccount-sub-tagline"><?php esc_html_e( 'No downloads available yet.', 'buddyboss-theme' ); ?></div>
+			<div class="wc-MyAccount-sub-tagline"><?php esc_html_e( 'No downloads available yet.', 'press-pool' ); ?></div>
 			<a class="woocommerce-Button button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-				<?php esc_html_e( 'Go shop', 'buddyboss-theme' ) ?>
+				<?php esc_html_e( 'Go shop', 'press-pool' ) ?>
 			</a>
 		</div>
 	<?php endif; ?>

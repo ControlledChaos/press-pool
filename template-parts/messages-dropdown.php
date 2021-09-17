@@ -7,7 +7,7 @@ $unread_message_count = messages_get_unread_count();
     <a href="<?php echo $menu_link ?>"
        ref="notification_bell"
        class="notification-link">
-       <span data-balloon-pos="down" data-balloon="<?php _e( 'Messages', 'buddyboss-theme' ); ?>">
+       <span data-balloon-pos="down" data-balloon="<?php _e( 'Messages', 'press-pool' ); ?>">
             <i class="bb-icon-inbox-small"></i>
 			<?php if ( $unread_message_count > 0 ): ?>
                 <span class="count"><?php echo $unread_message_count; ?></span>
@@ -16,7 +16,7 @@ $unread_message_count = messages_get_unread_count();
     </a>
     <section class="notification-dropdown">
         <header class="notification-header">
-            <h2 class="title"><?php _e( 'Messages', 'buddyboss-theme' ); ?></h2>
+            <h2 class="title"><?php _e( 'Messages', 'press-pool' ); ?></h2>
         </header>
 
         <ul class="notification-list">
@@ -25,7 +25,7 @@ $unread_message_count = messages_get_unread_count();
 
 		<footer class="notification-footer">
 			<a href="<?php echo $menu_link ?>" class="delete-all">
-				<?php _e( 'View Inbox', 'buddyboss-theme' ); ?>
+				<?php _e( 'View Inbox', 'press-pool' ); ?>
 				<i class="bb-icon-angle-right"></i>
 			</a>
 		</footer>

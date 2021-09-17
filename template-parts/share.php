@@ -12,8 +12,8 @@
 					'icon_class'    => 'bb-icon-like',
 					'text_template' => '{{bookmarks_count}}',
 
-					'title_add'     => __( 'Like this entry', 'buddyboss-theme' ),
-					'title_remove'  => __( 'Remove like', 'buddyboss-theme' ),
+					'title_add'     => __( 'Like this entry', 'press-pool' ),
+					'title_remove'  => __( 'Remove like', 'press-pool' ),
 					'tooltip_pos'   => 'right',
 				)
 
@@ -36,8 +36,8 @@
 					'icon_class'    => 'bb-bookmark bb-icon-bookmark-small',
 					'text_template' => '',
 
-					'title_add'     => __( 'Bookmark this story to read later', 'buddyboss-theme' ),
-					'title_remove'  => __( 'Remove bookmark', 'buddyboss-theme' ),
+					'title_add'     => __( 'Bookmark this story to read later', 'press-pool' ),
+					'title_remove'  => __( 'Remove bookmark', 'press-pool' ),
 					'tooltip_pos'   => 'right',
 				)
 		);

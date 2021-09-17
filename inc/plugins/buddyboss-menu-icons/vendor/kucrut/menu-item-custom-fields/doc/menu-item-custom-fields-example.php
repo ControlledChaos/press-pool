@@ -48,8 +48,8 @@ class Menu_Item_Custom_Fields_Example {
 		add_filter( 'manage_nav-menus_columns', array( __CLASS__, '_columns' ), 99 );
 
 		self::$fields = array(
-			'field-01' => __( 'Custom Field #1', 'buddyboss-theme' ),
-			'field-02' => __( 'Custom Field #2', 'buddyboss-theme' ),
+			'field-01' => __( 'Custom Field #1', 'press-pool' ),
+			'field-02' => __( 'Custom Field #2', 'press-pool' ),
 		);
 	}
 

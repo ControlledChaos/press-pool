@@ -3,13 +3,13 @@
 <div id="theme-hello-container" class="theme-hello-appboss" role="dialog" aria-labelledby="theme-hello-title" style="display: none;">
 	<div class="theme-hello-header" role="document">
 		<div class="theme-hello-close">
-			<button type="button" class="close-modal button theme-tooltip" data-theme-tooltip-pos="down" data-theme-tooltip="<?php esc_attr_e( 'Close pop-up', 'buddyboss-theme' ); ?>">
-				<?php esc_html_e( 'Close', 'buddyboss-theme' ); ?>
+			<button type="button" class="close-modal button theme-tooltip" data-theme-tooltip-pos="down" data-theme-tooltip="<?php esc_attr_e( 'Close pop-up', 'press-pool' ); ?>">
+				<?php esc_html_e( 'Close', 'press-pool' ); ?>
 			</button>
 		</div>
 
 		<div class="theme-hello-title">
-			<h1 id="theme-hello-title" tabindex="-1"><?php esc_html_e( 'Welcome to BuddyBoss', 'buddyboss-theme' ); ?></h1>
+			<h1 id="theme-hello-title" tabindex="-1"><?php esc_html_e( 'Welcome to BuddyBoss', 'press-pool' ); ?></h1>
 		</div>
 	</div>
 
@@ -28,7 +28,7 @@
 			<p>
 				<?php
 				printf(
-					__( '<span>Built by </span><a href="%s">BuddyBoss</a><span>.</span>', 'buddyboss-theme' ),
+					__( '<span>Built by </span><a href="%s">BuddyBoss</a><span>.</span>', 'press-pool' ),
 					esc_url( 'https://www.buddyboss.com/' )
 				);
 				?>
@@ -41,9 +41,9 @@
 					<?php
 					printf(
 						'<a class="youtube theme-tooltip" data-theme-tooltip-pos="up" data-theme-tooltip="%1$s" href="%2$s"><span class="screen-reader-text">%3$s</span></a>',
-						esc_attr( 'Follow BuddyBoss on YouTube', 'buddyboss-theme' ),
+						esc_attr( 'Follow BuddyBoss on YouTube', 'press-pool' ),
 						esc_url( 'https://www.youtube.com/c/BuddybossWP' ),
-						esc_html( 'Follow BuddyBoss on YouTube', 'buddyboss-theme' )
+						esc_html( 'Follow BuddyBoss on YouTube', 'press-pool' )
 					);
 					?>
 				</li>
@@ -52,9 +52,9 @@
 					<?php
 					printf(
 						'<a class="twitter theme-tooltip" data-theme-tooltip-pos="up" data-theme-tooltip="%1$s" href="%2$s"><span class="screen-reader-text">%3$s</span></a>',
-						esc_attr( 'Follow BuddyBoss on Twitter', 'buddyboss-theme' ),
+						esc_attr( 'Follow BuddyBoss on Twitter', 'press-pool' ),
 						esc_url( 'https://twitter.com/BuddyBossWP' ),
-						esc_html( 'Follow BuddyBoss on Twitter', 'buddyboss-theme' )
+						esc_html( 'Follow BuddyBoss on Twitter', 'press-pool' )
 					);
 					?>
 				</li>
@@ -63,9 +63,9 @@
 					<?php
 					printf(
 						'<a class="facebook theme-tooltip" data-theme-tooltip-pos="up" data-theme-tooltip="%1$s" href="%2$s"><span class="screen-reader-text">%3$s</span></a>',
-						esc_attr( 'Follow BuddyBoss on Facebook', 'buddyboss-theme' ),
+						esc_attr( 'Follow BuddyBoss on Facebook', 'press-pool' ),
 						esc_url( 'https://facebook.com/BuddyBossWP/' ),
-						esc_html( 'Follow BuddyBoss on Facebook', 'buddyboss-theme' )
+						esc_html( 'Follow BuddyBoss on Facebook', 'press-pool' )
 					);
 					?>
 				</li>

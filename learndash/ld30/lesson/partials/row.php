@@ -104,12 +104,12 @@ endif; ?>
 
                             <span class="ld-item-component">
                                 <?php
-                                    echo sprintf( esc_html__( '%s', 'buddyboss-theme' ), $content_count['topics'] ) . ' ' .
+                                    echo sprintf( esc_html__( '%s', 'press-pool' ), $content_count['topics'] ) . ' ' .
                                     _n(
-                                        sprintf( esc_html__( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label('topic') ),
-                                        sprintf( esc_html__( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label('topics') ),
+                                        sprintf( esc_html__( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label('topic') ),
+                                        sprintf( esc_html__( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label('topics') ),
                                         $content_count['topics'],
-                                        'buddyboss-theme'
+                                        'press-pool'
                                     );
                                 ?>
                             </span>
@@ -124,12 +124,12 @@ endif; ?>
                         if( $content_count['quizzes'] > 0 ): ?>
                             <span class="ld-item-component">
                                 <?php
-                                    echo sprintf( esc_html__( '%s', 'buddyboss-theme' ), $content_count['quizzes'] ) . ' ' .
+                                    echo sprintf( esc_html__( '%s', 'press-pool' ), $content_count['quizzes'] ) . ' ' .
                                     _n(
-                                        sprintf( esc_html__( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label('quiz') ),
-                                        sprintf( esc_html__( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label('quizzes') ),
+                                        sprintf( esc_html__( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label('quiz') ),
+                                        sprintf( esc_html__( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label('quizzes') ),
                                         $content_count['quizzes'],
-                                        'buddyboss-theme'
+                                        'press-pool'
                                     );
                                 ?>
                             </span>
@@ -196,7 +196,7 @@ endif; ?>
 
                 <div class="ld-expand-button ld-button-alternate" data-ld-expands="<?php echo esc_attr( 'ld-expand-' . $lesson['post']->ID ); ?>">
                     <span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
-                    <span class="ld-text ld-primary-color"><?php esc_html_e( 'Expand', 'buddyboss-theme' ); ?></span>
+                    <span class="ld-text ld-primary-color"><?php esc_html_e( 'Expand', 'press-pool' ); ?></span>
                 </div> <!--/.ld-expand-button-->
 
                 <?php

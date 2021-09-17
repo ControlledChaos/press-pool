@@ -142,7 +142,7 @@ if ( ! empty( $quiz_attempts_meta ) ) {
 									//echo "<span id='page_links' style='font-weight: bold;'>« Previous</span>";
 								} else {
 									$j = $page - 1;
-									echo "<a class='prev page-numbers' id='page_a_link' href='?ld-profile-page=$j'>" . __( '« Previous', 'buddyboss-theme' ) . "</a>";
+									echo "<a class='prev page-numbers' id='page_a_link' href='?ld-profile-page=$j'>" . __( '« Previous', 'press-pool' ) . "</a>";
 								}
 
 								for ( $i = 1; $i <= $totalPages; $i ++ ) {
@@ -157,7 +157,7 @@ if ( ! empty( $quiz_attempts_meta ) ) {
 									//echo "<span id='page_links' style='font-weight: bold;'>Next »</span>";
 								} else {
 									$j = $page + 1;
-									echo "<a class='next page-numbers'  id='page_a_link' href='?ld-profile-page=$j'>" . __( 'Next »', 'buddyboss-theme' ) . "</a>";
+									echo "<a class='next page-numbers'  id='page_a_link' href='?ld-profile-page=$j'>" . __( 'Next »', 'press-pool' ) . "</a>";
 								}
 
 								?>
@@ -173,7 +173,7 @@ if ( ! empty( $quiz_attempts_meta ) ) {
 			?>
             <aside class="bp-feedback bp-messages info">
                 <span class="bp-icon" aria-hidden="true"></span>
-                <p><?php printf( __( 'Sorry, no %s were found.', 'buddyboss-theme' ),
+                <p><?php printf( __( 'Sorry, no %s were found.', 'press-pool' ),
 						LearnDash_Custom_Label::label_to_lower( 'courses' ) ); ?></p>
             </aside>
 			<?php

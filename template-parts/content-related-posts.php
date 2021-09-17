@@ -45,7 +45,7 @@
 				else :
 					$prefix = "";
 					if( has_post_format( 'link' ) ){
-						$prefix = __( '[Link]', 'buddyboss-theme' );
+						$prefix = __( '[Link]', 'press-pool' );
 						$prefix .= " ";//whitespace
 					}
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $prefix, '</a></h2>' );
@@ -89,7 +89,7 @@
 				<?php
 				$prefix = "";
 				if( has_post_format( 'link' ) ){
-					$prefix = __( '[Link]', 'buddyboss-theme' );
+					$prefix = __( '[Link]', 'press-pool' );
 					$prefix .= " ";//whitespace
 				}
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $prefix, '</a></h2>' );

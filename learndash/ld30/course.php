@@ -101,11 +101,11 @@ $has_lesson_quizzes = learndash_30_has_lesson_quizzes( $course_id, $lessons ); ?
                 learndash_get_template_part( 'modules/alert.php', array(
                     'type'      =>  'success ld-alert-certificate',
                     'icon'      =>  'certificate',
-                    'message'   =>  __( 'You\'ve earned a certificate!', 'buddyboss-theme' ),
+                    'message'   =>  __( 'You\'ve earned a certificate!', 'press-pool' ),
                     'button'    =>  array(
                         'url'   =>  $course_certficate_link,
                         'icon'  =>  'download',
-                        'label' =>  __( 'Download Certificate', 'buddyboss-theme' )
+                        'label' =>  __( 'Download Certificate', 'press-pool' )
                     )
                 ), true );
         
@@ -176,7 +176,7 @@ $has_lesson_quizzes = learndash_30_has_lesson_quizzes( $course_id, $lessons ); ?
                          */
                         do_action( 'learndash-course-heading-before', $course_id, $user_id ); ?>
         
-                        <h2><?php printf( esc_html_x( '%s Content', 'Course Content Label', 'buddyboss-theme' ), esc_attr( LearnDash_Custom_Label::get_label( 'course' ) ) ); ?></h2>
+                        <h2><?php printf( esc_html_x( '%s Content', 'Course Content Label', 'press-pool' ), esc_attr( LearnDash_Custom_Label::get_label( 'course' ) ) ); ?></h2>
         
                         <?php
                         /**
@@ -199,9 +199,9 @@ $has_lesson_quizzes = learndash_30_has_lesson_quizzes( $course_id, $lessons ); ?
                             <?php
                             // Only display if there is something to expand
                             if( $has_topics || $has_lesson_quizzes ): ?>
-                                <div class="ld-expand-button ld-primary-background" id="<?php echo esc_attr( 'ld-expand-button-' . $course_id ); ?>" data-ld-expands="<?php echo esc_attr( 'ld-item-list-' . $course_id ); ?>" data-ld-expand-text="<?php echo esc_attr_e( 'Expand All', 'buddyboss-theme' ); ?>" data-ld-collapse-text="<?php echo esc_attr_e( 'Collapse All', 'buddyboss-theme' ); ?>">
+                                <div class="ld-expand-button ld-primary-background" id="<?php echo esc_attr( 'ld-expand-button-' . $course_id ); ?>" data-ld-expands="<?php echo esc_attr( 'ld-item-list-' . $course_id ); ?>" data-ld-expand-text="<?php echo esc_attr_e( 'Expand All', 'press-pool' ); ?>" data-ld-collapse-text="<?php echo esc_attr_e( 'Collapse All', 'press-pool' ); ?>">
                                     <span class="ld-icon-arrow-down ld-icon"></span>
-                                    <span class="ld-text"><?php echo esc_html_e( 'Expand All', 'buddyboss-theme' ); ?></span>
+                                    <span class="ld-text"><?php echo esc_html_e( 'Expand All', 'press-pool' ); ?></span>
                                 </div> <!--/.ld-expand-button-->
                                 <?php
                                 // TODO @37designs Need to test this

@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- List Title -->
 <?php do_action( 'tribe_events_before_the_title' ); ?>
-<h2 class="tribe-events-page-title"><?php _e( 'Events', 'buddyboss-theme' ); ?></h2>
+<h2 class="tribe-events-page-title"><?php _e( 'Events', 'press-pool' ); ?></h2>
 <?php do_action( 'tribe_events_after_the_title' ); ?>
 
 <!-- Tribe Bar -->

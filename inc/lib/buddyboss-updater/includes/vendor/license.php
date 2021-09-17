@@ -123,7 +123,7 @@ class BBoss_License_Helper {
 	public function activate( $key, $email ) {
 		if ( empty( $key ) || empty( $email ) ) {
 			return array( 'status'  => false,
-			              'message' => __( 'We\'ve checked the license key, but it <strong>doesn\'t appear to be a valid BuddyBoss license.</strong> Please double check the license key and try again.', 'buddyboss-theme' )
+			              'message' => __( 'We\'ve checked the license key, but it <strong>doesn\'t appear to be a valid BuddyBoss license.</strong> Please double check the license key and try again.', 'press-pool' )
 			);
 		}
 
@@ -139,7 +139,7 @@ class BBoss_License_Helper {
 
 		if ( is_wp_error( $q_response ) || ( $q_response['response']['code'] != 200 ) ) {
 			return array( 'status'  => false,
-			              'message' => __( 'We are unable to validate the license key. Service unavailable.', 'buddyboss-theme' )
+			              'message' => __( 'We are unable to validate the license key. Service unavailable.', 'press-pool' )
 			);
 		}
 
@@ -158,7 +158,7 @@ class BBoss_License_Helper {
 		}
 
 		return array( 'status'  => false,
-		              'message' => __( 'We\'ve checked the license key, but it <strong>doesn\'t appear to be a valid BuddyBoss license.</strong> Please double check the license key and try again.', 'buddyboss-theme' )
+		              'message' => __( 'We\'ve checked the license key, but it <strong>doesn\'t appear to be a valid BuddyBoss license.</strong> Please double check the license key and try again.', 'press-pool' )
 		);
 	}
 

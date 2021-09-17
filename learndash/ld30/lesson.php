@@ -96,7 +96,7 @@ if ( empty( $course ) ) {
                         </div>
                         <div class="flex bb-position">
                             <div class="sfwd-course-position">
-                                <span class="bb-pages"><?php echo LearnDash_Custom_Label::get_label( 'lesson' ); ?> <?php echo $lesson_no; ?> <span class="bb-total"><?php _e( 'of', 'buddyboss-theme' ); ?> <?php echo sizeof( $lession_list ); ?></span></span>
+                                <span class="bb-pages"><?php echo LearnDash_Custom_Label::get_label( 'lesson' ); ?> <?php echo $lesson_no; ?> <span class="bb-total"><?php _e( 'of', 'press-pool' ); ?> <?php echo sizeof( $lession_list ); ?></span></span>
                             </div>
                             <div class="sfwd-course-nav">
                                 <div class="bb-ld-status">
@@ -112,7 +112,7 @@ if ( empty( $course ) ) {
                                 $date_format         = get_option( 'date_format' );
                                 $expire_date         = date_i18n( $date_format, $expire_date_calc );
                                 $current             = time();
-                                $expire_string       = ( $expire_date_calc > $current ) ? __( 'Expires at', 'buddyboss-theme' ) : __( 'Expired at', 'buddyboss-theme' );
+                                $expire_string       = ( $expire_date_calc > $current ) ? __( 'Expires at', 'press-pool' ) : __( 'Expired at', 'press-pool' );
                                 if ( $expire_date_calc > 0 && abs( intval( $expire_access_days ) )  > 0 && ( !empty( $user_id ) ) ) { ?>
                                     <div class="sfwd-course-expire">
                                         <span data-balloon-pos="up" data-balloon="<?php echo $expire_string; ?>"><i class="bb-icons bb-icon-watch-alarm"></i><?php echo $expire_date; ?></span>

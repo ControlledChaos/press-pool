@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css<?php echo $rtl_css; ?>/maintenance<?php echo $mincss; ?>.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/icons/bb-icons.css" />
 
-		<title><?php _e('Down for Maintenance | ', 'buddyboss-theme'); ?><?php echo esc_html( get_bloginfo( 'name' ) ); ?></title>
+		<title><?php _e('Down for Maintenance | ', 'press-pool'); ?><?php echo esc_html( get_bloginfo( 'name' ) ); ?></title>
 
 		<?php do_action( 'bb_maintenance_head' ); ?>
 	</head>

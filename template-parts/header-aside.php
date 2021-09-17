@@ -48,11 +48,11 @@ $show_shopping_cart = buddyboss_theme_get_option( 'shopping_cart' );
 
                 <span class="bb-separator"></span>
                 <a href="#" id="bb-toggle-theme">
-                    <span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Dark Mode', 'buddyboss-theme' ); ?>"><i class="bb-icon-moon-circle"></i></span>
-                    <span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Light Mode', 'buddyboss-theme' ); ?>"><i class="bb-icon-sun"></i></span>
+                    <span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Dark Mode', 'press-pool' ); ?>"><i class="bb-icon-moon-circle"></i></span>
+                    <span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Light Mode', 'press-pool' ); ?>"><i class="bb-icon-sun"></i></span>
                 </a>
-                <a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Maximize', 'buddyboss-theme' ); ?>"><i class="bb-icon-maximize"></i></a>
-                <a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Minimize', 'buddyboss-theme' ); ?>"><i class="bb-icon-minimize"></i></a>
+                <a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Maximize', 'press-pool' ); ?>"><i class="bb-icon-maximize"></i></a>
+                <a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="down" data-balloon="<?php _e( 'Minimize', 'press-pool' ); ?>"><i class="bb-icon-minimize"></i></a>
 
             <?php else : ?>
 
@@ -61,7 +61,7 @@ $show_shopping_cart = buddyboss_theme_get_option( 'shopping_cart' );
     			<?php endif; ?>
 
     			<?php if( $show_search ) : ?>
-    				<a href="#" class="header-search-link" data-balloon-pos="down" data-balloon="<?php _e( 'Search', 'buddyboss-theme' ); ?>"><i class="bb-icon-search"></i></a>
+    				<a href="#" class="header-search-link" data-balloon-pos="down" data-balloon="<?php _e( 'Search', 'press-pool' ); ?>"><i class="bb-icon-search"></i></a>
     			<?php endif; ?>
 
     			<?php if( $show_messages && function_exists( 'bp_is_active' ) && bp_is_active( 'messages' )  ) : ?>
@@ -81,7 +81,7 @@ $show_shopping_cart = buddyboss_theme_get_option( 'shopping_cart' );
 		<?php else : ?>
 
 			<?php if( $show_search ) : ?>
-				<a href="#" class="header-search-link" data-balloon-pos="down" data-balloon="<?php _e( 'Search', 'buddyboss-theme' ); ?>"><i class="bb-icon-search"></i></a>
+				<a href="#" class="header-search-link" data-balloon-pos="down" data-balloon="<?php _e( 'Search', 'press-pool' ); ?>"><i class="bb-icon-search"></i></a>
 			<?php endif; ?>
 
 			<?php if( $show_shopping_cart && class_exists( 'WooCommerce' ) ) : ?>
@@ -89,10 +89,10 @@ $show_shopping_cart = buddyboss_theme_get_option( 'shopping_cart' );
 			<?php endif; ?>
 			<span class="search-separator bb-separator"></span>
 			<div class="bb-header-buttons">
-				<a href="<?php echo wp_login_url(); ?>" class="button small outline signin-button link"><?php _e( 'Sign in', 'buddyboss-theme' ); ?></a>
+				<a href="<?php echo wp_login_url(); ?>" class="button small outline signin-button link"><?php _e( 'Sign in', 'press-pool' ); ?></a>
 
 				<?php if ( get_option( 'users_can_register' ) ) : ?>
-					<a href="<?php echo wp_registration_url(); ?>" class="button small singup"><?php _e( 'Sign up', 'buddyboss-theme' ); ?></a>
+					<a href="<?php echo wp_registration_url(); ?>" class="button small singup"><?php _e( 'Sign up', 'press-pool' ); ?></a>
 				<?php endif; ?>
 			</div>
 

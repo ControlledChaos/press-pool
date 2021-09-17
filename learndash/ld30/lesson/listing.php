@@ -49,7 +49,7 @@ do_action( 'learndash-topic-list-before', $lesson['post']->ID, $course_id, $user
             </span>
             <span class="ld-text">
                 <?php // translators: Course Status Label.
-    			echo sprintf( esc_html_x( '%s Content', 'Lesson Content Label', 'buddyboss-theme' ), esc_attr(LearnDash_Custom_Label::get_label('lesson')) ); ?>
+    			echo sprintf( esc_html_x( '%s Content', 'Lesson Content Label', 'press-pool' ), esc_attr(LearnDash_Custom_Label::get_label('lesson')) ); ?>
             </span>
         </div> <!--/.ld-tablet-list-title-->
         <div class="ld-table-list-lesson-details">
@@ -62,8 +62,8 @@ do_action( 'learndash-topic-list-before', $lesson['post']->ID, $course_id, $user
             do_action( 'learndash-topic-list-progress-before', $lesson['post']->ID, $course_id, $user_id ); ?>
 
             <?php if($lesson_progress): ?>
-                <span class="ld-lesson-list-progress"><?php echo sprintf( esc_html_x( '%s%% Complete', 'Lesson Complete Percentage', 'buddyboss-theme' ), $lesson_progress['percentage'] ); ?></span>
-                <span class="ld-lesson-list-steps"><?php echo sprintf( esc_html_x( '%1$d/%2$d Steps', 'Lesson Steps Complete', 'buddyboss-theme' ), $lesson_progress['completed'], $lesson_progress['total'] ); ?></span>
+                <span class="ld-lesson-list-progress"><?php echo sprintf( esc_html_x( '%s%% Complete', 'Lesson Complete Percentage', 'press-pool' ), $lesson_progress['percentage'] ); ?></span>
+                <span class="ld-lesson-list-steps"><?php echo sprintf( esc_html_x( '%1$d/%2$d Steps', 'Lesson Steps Complete', 'press-pool' ), $lesson_progress['completed'], $lesson_progress['total'] ); ?></span>
             <?php endif; ?>
 
             <?php
@@ -77,7 +77,7 @@ do_action( 'learndash-topic-list-before', $lesson['post']->ID, $course_id, $user
             <?php if( 'sfwd-lesson' === get_post_type() ): ?>
                 <span class="ld-expand-button" data-ld-expands="<?php echo esc_attr( 'ld-topic-list-' . $lesson['post']->ID ); ?>">
                     <span class="icon-simple-arrow-down ld-icon">
-                    <span class="ld-text"><?php esc_html_e( 'Expand', 'buddyboss-theme' ); ?></span>
+                    <span class="ld-text"><?php esc_html_e( 'Expand', 'press-pool' ); ?></span>
                 </span> <!--/.ld-expand-button-->
             <?php endif; ?>
 

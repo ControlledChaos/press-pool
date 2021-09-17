@@ -167,12 +167,12 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 							<div id="bb-course-list-grid-filters" class="bb-secondary-list-tabs flex align-items-center">
 								<div class="grid-filters push-right" data-object="">
 								    <a href="#" class="layout-view layout-grid-view active bp-tooltip"  data-view="grid" data-bp-tooltip-pos="up"
-								       data-bp-tooltip="'. esc_html__( 'Grid View', 'buddyboss-theme' ).'">
+								       data-bp-tooltip="'. esc_html__( 'Grid View', 'press-pool' ).'">
 								        <i class="bb-icon-grid-view-small" aria-hidden="true"></i>
 								    </a>
 
 								    <a href="#" class="layout-view layout-list-view bp-tooltip" data-view="list" data-bp-tooltip-pos="up"
-								       data-bp-tooltip=" ' . esc_html__( 'List View', 'buddyboss-theme' ) .'">
+								       data-bp-tooltip=" ' . esc_html__( 'List View', 'press-pool' ) .'">
 								        <i class="bb-icon-list-view-small" aria-hidden="true"></i>
 								    </a>
 								</div>
@@ -305,16 +305,16 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 
 		public function add_meta_boxes() {
 
-			add_meta_box( 'postexcerpt', __( 'Course Short Description', 'buddyboss-theme' ), array( $this, 'course_short_description_output' ), 'sfwd-courses', 'normal', 'high' );
+			add_meta_box( 'postexcerpt', __( 'Course Short Description', 'press-pool' ), array( $this, 'course_short_description_output' ), 'sfwd-courses', 'normal', 'high' );
 
-			add_meta_box( 'post_price_box', __( 'Course Video Preview', 'buddyboss-theme' ), array( $this, 'course_price_box_output' ), 'sfwd-courses', 'normal', 'low' );
+			add_meta_box( 'post_price_box', __( 'Course Video Preview', 'press-pool' ), array( $this, 'course_price_box_output' ), 'sfwd-courses', 'normal', 'low' );
 		}
 
 		public function course_cover_photo() {
 			if (class_exists('\BuddyBossTheme\BuddyBossMultiPostThumbnails')) {
 				new \BuddyBossTheme\BuddyBossMultiPostThumbnails(
 					array(
-						'label' => __( 'Cover Photo', 'buddyboss-theme'),
+						'label' => __( 'Cover Photo', 'press-pool'),
 						'id' => 'course-cover-image',
 						'post_type' => 'sfwd-courses'
 					)
@@ -335,8 +335,8 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 				} ?>
             </div>
             <input type="hidden" name="course-cover-image" id="course-cover-image" value="<?php if ( isset ( $course_cover_photo_meta['course-cover-image'] ) ) {echo $course_cover_photo_meta['course-cover-image'][0];} ?>" />
-            <p><a id="remove-cover-photo" href="#" class="components-button is-link is-destructive"><?php _e( 'Remove cover photo', 'buddyboss-theme' )?></a></p>
-            <div><input type="button" id="meta-image-button" class="components-button editor-post-featured-image__toggle" value="<?php _e( 'Set cover photo', 'buddyboss-theme' )?>" /></div>
+            <p><a id="remove-cover-photo" href="#" class="components-button is-link is-destructive"><?php _e( 'Remove cover photo', 'press-pool' )?></a></p>
+            <div><input type="button" id="meta-image-button" class="components-button editor-post-featured-image__toggle" value="<?php _e( 'Set cover photo', 'press-pool' )?>" /></div>
 			<?php
 		}
 
@@ -380,9 +380,9 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
             <div class="sfwd sfwd_options sfwd-courses_settings">
                 <div class="sfwd_input">
                     <span class="sfwd_option_label">
-                        <a class="sfwd_help_text_link" style="cursor:pointer;" title="<?php _e( 'Click for Help!', 'buddyboss-theme' ) ?>" onclick="toggleVisibility('sfwd-courses_course_video_url_tip');">
+                        <a class="sfwd_help_text_link" style="cursor:pointer;" title="<?php _e( 'Click for Help!', 'press-pool' ) ?>" onclick="toggleVisibility('sfwd-courses_course_video_url_tip');">
                             <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/question.png" />
-        				    <label for="buddyboss_lms_course_video" class="sfwd_label buddyboss_lms_course_video_label"><?php echo __( 'Preview Video URL', 'buddyboss-theme' ); ?></label>
+        				    <label for="buddyboss_lms_course_video" class="sfwd_label buddyboss_lms_course_video_label"><?php echo __( 'Preview Video URL', 'press-pool' ); ?></label>
                         </a>
         			</span>
                     <span class="sfwd_option_input">
@@ -399,7 +399,7 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
                             echo '<textarea id="buddyboss_lms_course_video" name="buddyboss_lms_course_video" rows="2" style="width:100%;">' . esc_attr( $value ) . '</textarea>';
                             ?>
                         </div>
-                        <div class="sfwd_help_text_div" style="display:none" id="sfwd-courses_course_video_url_tip"><label class="sfwd_help_text"><?php echo __( 'Enter preview video URL for the course. The video will be added on single course price box.', 'buddyboss-theme' ); ?></label></div>
+                        <div class="sfwd_help_text_div" style="display:none" id="sfwd-courses_course_video_url_tip"><label class="sfwd_help_text"><?php echo __( 'Enter preview video URL for the course. The video will be added on single course price box.', 'press-pool' ); ?></label></div>
                     </span>
                     <p style="clear:left"></p>
                 </div>
@@ -539,7 +539,7 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 
 				$html .= '<div class="bb-lms-pagination">';
 
-				$translated = __( 'Page', 'buddyboss-theme' ); // Supply translatable string
+				$translated = __( 'Page', 'press-pool' ); // Supply translatable string
 
 				$html .= paginate_links( array(
 					'base'               => trailingslashit( get_post_type_archive_link( 'sfwd-courses' ) )  . 'page/%#%/',
@@ -552,7 +552,7 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 				$html .= "</div><!-- .bb-lms-pagination -->";
 			} else {
 				$html = '<aside class="bp-feedback bp-template-notice ld-feedback info"><span class="bp-icon" aria-hidden="true"></span><p>';
-				$html .= __( 'Sorry, no courses were found.', 'buddyboss-theme' );
+				$html .= __( 'Sorry, no courses were found.', 'press-pool' );
 				$html .= '</p></aside>';
 			}
 
@@ -762,7 +762,7 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 				'selected'      => false,
 				'orderby'       => 'name',
 				'order'         => 'ASC',
-				'option_all'    => __( 'All Categories', 'buddyboss-theme' ),
+				'option_all'    => __( 'All Categories', 'press-pool' ),
 			);
 
 			$args = wp_parse_args( $args, $defaults );
@@ -835,7 +835,7 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 		public function print_instructors_options ( $args = '' ) {
 			$defaults = array(
 				'selected'      => false,
-				'option_all'    => __( 'All Instructors', 'buddyboss-theme' ),
+				'option_all'    => __( 'All Instructors', 'press-pool' ),
 			);
 
 			$args = wp_parse_args( $args, $defaults );
@@ -910,12 +910,12 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 
 		protected function _get_orderby_options () {
 			$order_by_options = array(
-				'alphabetical'  => __( 'Alphabetical', 'buddyboss-theme' ),
-				'recent'        => __( 'Newly Created', 'buddyboss-theme' ),
+				'alphabetical'  => __( 'Alphabetical', 'press-pool' ),
+				'recent'        => __( 'Newly Created', 'press-pool' ),
 			);
 
 			if ( is_user_logged_in() ) {
-				$order_by_options[ 'my-progress' ] = __( 'My Progress', 'buddyboss-theme' );
+				$order_by_options[ 'my-progress' ] = __( 'My Progress', 'press-pool' );
 			}
 
 			return apply_filters ( 'BuddyBossTheme/Learndash/Archive/OrderByOptions', $order_by_options );
@@ -1202,7 +1202,7 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 							$post_type        = $last_know_post_object->post_type; // getting post_type of last page.
 							$label            = get_post_type_object( $post_type ); // getting Labels of the post type.
 							$title            = $last_know_post_object->post_title;
-							$resume_link_text = __( 'RESUME', 'buddyboss-theme' );
+							$resume_link_text = __( 'RESUME', 'press-pool' );
 
 							if ( function_exists( 'learndash_get_step_permalink' ) ) {
 								$permalink = learndash_get_step_permalink( $step_id, $step_course_id );
@@ -1471,8 +1471,8 @@ if ( !class_exists( '\BuddyBossTheme\LearndashHelper' ) ) {
 
 			$last_element = array_values(array_slice( $url_arr, -1))[0];
 
-			$url['next'] = ( isset( $next ) && $last_element != $current_url ) ? '<a href="'.$next.'" class="next-link" rel="next">Next  <span class="meta-nav" data-balloon-pos="up" data-balloon="' . __( 'Next', 'buddyboss-theme' ) . '">&rarr;</span></a>' : '';
-			$url['prev'] = ( isset( $prev ) && $last_element != $prev ) ? '<a href="'.$prev.'" class="prev-link" rel="prev"><span class="meta-nav" data-balloon-pos="up" data-balloon="' . __( 'Previous', 'buddyboss-theme' ) . '">&larr;</span> Previous</a>' : '';
+			$url['next'] = ( isset( $next ) && $last_element != $current_url ) ? '<a href="'.$next.'" class="next-link" rel="next">Next  <span class="meta-nav" data-balloon-pos="up" data-balloon="' . __( 'Next', 'press-pool' ) . '">&rarr;</span></a>' : '';
+			$url['prev'] = ( isset( $prev ) && $last_element != $prev ) ? '<a href="'.$prev.'" class="prev-link" rel="prev"><span class="meta-nav" data-balloon-pos="up" data-balloon="' . __( 'Previous', 'press-pool' ) . '">&larr;</span> Previous</a>' : '';
 
 
 			return $url;

@@ -46,7 +46,7 @@ if ( !class_exists( '\BuddyBossTheme\BaseTheme' ) ) {
 		 *
 		 * @var string
 		 */
-		public $lang_domain    = 'buddyboss-theme';
+		public $lang_domain    = 'press-pool';
 
 		# ---------- Properties ------------------
 
@@ -124,7 +124,7 @@ if ( !class_exists( '\BuddyBossTheme\BaseTheme' ) ) {
 		 * @return string version number of theme
 		 */
 		public function version() {
-			$theme = wp_get_theme( 'buddyboss-theme' );
+			$theme = wp_get_theme( 'press-pool' );
 			return $theme[ 'Version' ];
 		}
 

@@ -207,7 +207,7 @@ abstract class Icon_Picker_Type_Font extends Icon_Picker_Type {
 					</div>
 				</div>
 				<a class="check" href="#" title="%s"><div class="media-modal-icon"></div></a>',
-				esc_attr__( 'Deselect', 'buddyboss-theme' )
+				esc_attr__( 'Deselect', 'press-pool' )
 			),
 		);
 

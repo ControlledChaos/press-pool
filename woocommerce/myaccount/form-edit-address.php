@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$page_title = ( 'billing' === $load_address ) ? esc_html__( 'Billing address', 'buddyboss-theme' ) : esc_html__( 'Shipping address', 'buddyboss-theme' );
+$page_title = ( 'billing' === $load_address ) ? esc_html__( 'Billing address', 'press-pool' ) : esc_html__( 'Shipping address', 'press-pool' );
 
 do_action( 'woocommerce_before_edit_account_address_form' ); ?>
 
@@ -49,7 +49,7 @@ do_action( 'woocommerce_before_edit_account_address_form' ); ?>
     			<?php do_action( "woocommerce_after_edit_address_form_{$load_address}" ); ?>
     
     			<p class="woocommerce-address-fields__ctrls-wrapper">
-    				<button type="submit" class="button" name="save_address" value="<?php esc_attr_e( 'Save address', 'buddyboss-theme' ); ?>"><?php esc_html_e( 'Save address', 'buddyboss-theme' ); ?></button>
+    				<button type="submit" class="button" name="save_address" value="<?php esc_attr_e( 'Save address', 'press-pool' ); ?>"><?php esc_html_e( 'Save address', 'press-pool' ); ?></button>
     				<?php wp_nonce_field( 'woocommerce-edit_address', 'woocommerce-edit-address-nonce' ); ?>
     				<input type="hidden" name="action" value="edit_address" />
     			</p>

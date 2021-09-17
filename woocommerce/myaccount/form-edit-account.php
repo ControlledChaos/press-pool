@@ -22,51 +22,51 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 <form class="woocommerce-EditAccountForm edit-account" action="" method="post" <?php do_action( 'woocommerce_edit_account_form_tag' ); ?> >
     
     <div class="wc-MyAccount-sub-heading">
-        <h2><?php _e( 'Account details', 'buddyboss-theme' ); ?></h2>
+        <h2><?php _e( 'Account details', 'press-pool' ); ?></h2>
     </div>
     <div class="wc-MyAccount-inner-content">
         <div class="woocommerce-account-fields">
         	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
         
         	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
-        		<label for="account_first_name"><?php esc_html_e( 'First name', 'buddyboss-theme' ); ?> <span class="required">*</span></label>
-        		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" value="<?php echo esc_attr( $user->first_name ); ?>" placeholder="<?php esc_html_e( 'First name', 'buddyboss-theme' ); ?>" />
+        		<label for="account_first_name"><?php esc_html_e( 'First name', 'press-pool' ); ?> <span class="required">*</span></label>
+        		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" value="<?php echo esc_attr( $user->first_name ); ?>" placeholder="<?php esc_html_e( 'First name', 'press-pool' ); ?>" />
         	</p>
 
         	<p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
-        		<label for="account_last_name"><?php esc_html_e( 'Last name', 'buddyboss-theme' ); ?> <span class="required">*</span></label>
-        		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" value="<?php echo esc_attr( $user->last_name ); ?>" placeholder="<?php esc_html_e( 'Last name', 'buddyboss-theme' ); ?>" />
+        		<label for="account_last_name"><?php esc_html_e( 'Last name', 'press-pool' ); ?> <span class="required">*</span></label>
+        		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" value="<?php echo esc_attr( $user->last_name ); ?>" placeholder="<?php esc_html_e( 'Last name', 'press-pool' ); ?>" />
         	</p>
 
         	<div class="clear"></div>
 
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-				<label for="account_display_name"><?php esc_html_e( 'Display name', 'buddyboss-theme' ); ?>&nbsp;<span class="required">*</span></label>
+				<label for="account_display_name"><?php esc_html_e( 'Display name', 'press-pool' ); ?>&nbsp;<span class="required">*</span></label>
 				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="<?php echo esc_attr( $user->display_name ); ?>" /> 
-                <span><em><?php esc_html_e( 'This will be how your name will be displayed in the account section and in reviews', 'buddyboss-theme' ); ?></em></span>
+                <span><em><?php esc_html_e( 'This will be how your name will be displayed in the account section and in reviews', 'press-pool' ); ?></em></span>
 			</p>
 
 			<div class="clear"></div>
 
         	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-        		<label for="account_email"><?php esc_html_e( 'Email address', 'buddyboss-theme' ); ?> <span class="required">*</span></label>
-        		<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" value="<?php echo esc_attr( $user->user_email ); ?>" placeholder="<?php esc_html_e( 'Email address', 'buddyboss-theme' ); ?>" />
+        		<label for="account_email"><?php esc_html_e( 'Email address', 'press-pool' ); ?> <span class="required">*</span></label>
+        		<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" value="<?php echo esc_attr( $user->user_email ); ?>" placeholder="<?php esc_html_e( 'Email address', 'press-pool' ); ?>" />
         	</p>
         
         	<fieldset>
-        		<legend><?php esc_html_e( 'Password change', 'buddyboss-theme' ); ?></legend>
+        		<legend><?php esc_html_e( 'Password change', 'press-pool' ); ?></legend>
         
         		<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-        			<label for="password_current"><?php esc_html_e( 'Current password (leave blank to leave unchanged)', 'buddyboss-theme' ); ?></label>
-        			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" placeholder="<?php esc_html_e( 'Current password', 'buddyboss-theme' ); ?>" />
+        			<label for="password_current"><?php esc_html_e( 'Current password (leave blank to leave unchanged)', 'press-pool' ); ?></label>
+        			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" placeholder="<?php esc_html_e( 'Current password', 'press-pool' ); ?>" />
         		</p>
         		<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-        			<label for="password_1"><?php esc_html_e( 'New password (leave blank to leave unchanged)', 'buddyboss-theme' ); ?></label>
-        			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" placeholder="<?php esc_html_e( 'New password', 'buddyboss-theme' ); ?>" />
+        			<label for="password_1"><?php esc_html_e( 'New password (leave blank to leave unchanged)', 'press-pool' ); ?></label>
+        			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" placeholder="<?php esc_html_e( 'New password', 'press-pool' ); ?>" />
         		</p>
         		<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-        			<label for="password_2"><?php esc_html_e( 'Confirm new password', 'buddyboss-theme' ); ?></label>
-        			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" placeholder="<?php esc_html_e( 'Confirm new password', 'buddyboss-theme' ); ?>" />
+        			<label for="password_2"><?php esc_html_e( 'Confirm new password', 'press-pool' ); ?></label>
+        			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" placeholder="<?php esc_html_e( 'Confirm new password', 'press-pool' ); ?>" />
         		</p>
         	</fieldset>
         	<div class="clear"></div>
@@ -75,7 +75,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
         
         	<p class="woocommerce-account-fields__ctrls-wrapper">
 				<?php wp_nonce_field( 'save_account_details', 'save-account-details-nonce' ); ?>
-        		<button type="submit" class="woocommerce-Button button" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'buddyboss-theme' ); ?>"><?php esc_html_e( 'Save changes', 'buddyboss-theme' ); ?></button>
+        		<button type="submit" class="woocommerce-Button button" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'press-pool' ); ?>"><?php esc_html_e( 'Save changes', 'press-pool' ); ?></button>
         		<input type="hidden" name="action" value="save_account_details" />
         	</p>
         

@@ -32,13 +32,13 @@
 		<?php if(in_array('membership', $sections) || in_array('memberships', $sections)) { ?>
 			<div id="pmpro_account-membership" class="pmpro_box">
 				
-				<h3><?php _e("My Memberships", 'buddyboss-theme' );?></h3>
+				<h3><?php _e("My Memberships", 'press-pool' );?></h3>
 				<table width="100%" cellpadding="0" cellspacing="0" border="0">
 					<thead>
 						<tr>
-							<th><?php _e("Level", 'buddyboss-theme' );?></th>
-							<th><?php _e("Billing", 'buddyboss-theme' ); ?></th>
-							<th><?php _e("Expiration", 'buddyboss-theme' ); ?></th>
+							<th><?php _e("Level", 'press-pool' );?></th>
+							<th><?php _e("Billing", 'press-pool' ); ?></th>
+							<th><?php _e("Expiration", 'press-pool' ); ?></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -52,19 +52,19 @@
 									<?php do_action("pmpro_member_action_links_before"); ?>
 									
 									<?php if( array_key_exists($level->id, $pmpro_levels) && pmpro_isLevelExpiringSoon( $level ) ) { ?>
-										<a id="pmpro_actionlink-renew" href="<?php echo pmpro_url("checkout", "?level=" . $level->id, "https")?>"><?php _e("Renew", 'buddyboss-theme' );?></a>
+										<a id="pmpro_actionlink-renew" href="<?php echo pmpro_url("checkout", "?level=" . $level->id, "https")?>"><?php _e("Renew", 'press-pool' );?></a>
 									<?php } ?>
 
 									<?php if((isset($ssorder->status) && $ssorder->status == "success") && (isset($ssorder->gateway) && in_array($ssorder->gateway, array("authorizenet", "paypal", "stripe", "braintree", "payflow", "cybersource"))) && pmpro_isLevelRecurring($level)) { ?>
-										<a id="pmpro_actionlink-update-billing" href="<?php echo pmpro_url("billing", "", "https")?>"><?php _e("Update Billing Info", 'buddyboss-theme' ); ?></a>
+										<a id="pmpro_actionlink-update-billing" href="<?php echo pmpro_url("billing", "", "https")?>"><?php _e("Update Billing Info", 'press-pool' ); ?></a>
 									<?php } ?>
 									
 									<?php 
 										//To do: Only show CHANGE link if this level is in a group that has upgrade/downgrade rules
 										if(count($pmpro_levels) > 1 && !defined("PMPRO_DEFAULT_LEVEL")) { ?>
-										<a id="pmpro_actionlink-change" href="<?php echo pmpro_url("levels")?>" id="pmpro_account-change"><?php _e("Change", 'buddyboss-theme' );?></a>
+										<a id="pmpro_actionlink-change" href="<?php echo pmpro_url("levels")?>" id="pmpro_account-change"><?php _e("Change", 'press-pool' );?></a>
 									<?php } ?>
-									<a id="pmpro_actionlink-cancel" href="<?php echo pmpro_url("cancel", "?levelstocancel=" . $level->id)?>"><?php _e("Cancel", 'buddyboss-theme' );?></a>
+									<a id="pmpro_actionlink-cancel" href="<?php echo pmpro_url("cancel", "?levelstocancel=" . $level->id)?>"><?php _e("Cancel", 'press-pool' );?></a>
 									<?php do_action("pmpro_member_action_links_after"); ?>
 								</div> <!-- end pmpro_actionlinks -->
 							</td>
@@ -87,7 +87,7 @@
 				</table>
 				<?php //Todo: If there are multiple levels defined that aren't all in the same group defined as upgrades/downgrades ?>
 				<div class="pmpro_actionlinks">
-					<a id="pmpro_actionlink-levels" href="<?php echo pmpro_url("levels")?>"><?php _e("View all Membership Options", 'buddyboss-theme' );?></a>
+					<a id="pmpro_actionlink-levels" href="<?php echo pmpro_url("levels")?>"><?php _e("View all Membership Options", 'press-pool' );?></a>
 				</div>
 
 			</div> <!-- end pmpro_account-membership -->
@@ -96,20 +96,20 @@
 		<?php if(in_array('profile', $sections)) { ?>
 			<div id="pmpro_account-profile" class="pmpro_box">	
 				<?php wp_get_current_user(); ?>
-				<h3><?php _e("My Account", 'buddyboss-theme' );?></h3>
+				<h3><?php _e("My Account", 'press-pool' );?></h3>
                 <div class="bb-pmpro_account-profile">
     				<?php if($current_user->user_firstname) { ?>
     					<p><?php echo $current_user->user_firstname?> <?php echo $current_user->user_lastname?></p>
     				<?php } ?>
     				<ul>
     					<?php do_action('pmpro_account_bullets_top');?>
-    					<li><strong><?php _e("Username", 'buddyboss-theme' );?>:</strong> <?php echo $current_user->user_login?></li>
-    					<li><strong><?php _e("Email", 'buddyboss-theme' );?>:</strong> <?php echo $current_user->user_email?></li>
+    					<li><strong><?php _e("Username", 'press-pool' );?>:</strong> <?php echo $current_user->user_login?></li>
+    					<li><strong><?php _e("Email", 'press-pool' );?>:</strong> <?php echo $current_user->user_email?></li>
     					<?php do_action('pmpro_account_bullets_bottom');?>
     				</ul>
     				<div class="pmpro_actionlinks">
-    					<a id="pmpro_actionlink-profile" href="<?php echo admin_url('profile.php')?>" id="pmpro_account-edit-profile"><?php _e("Edit Profile", 'buddyboss-theme' );?></a>
-    					<a id="pmpro_actionlink-password" href="<?php echo admin_url('profile.php')?>" id="pmpro_account-change-password"><?php _e('Change Password', 'buddyboss-theme' );?></a>
+    					<a id="pmpro_actionlink-profile" href="<?php echo admin_url('profile.php')?>" id="pmpro_account-edit-profile"><?php _e("Edit Profile", 'press-pool' );?></a>
+    					<a id="pmpro_actionlink-password" href="<?php echo admin_url('profile.php')?>" id="pmpro_account-change-password"><?php _e('Change Password', 'press-pool' );?></a>
     				</div>
                 </div>
 			</div> <!-- end pmpro_account-profile -->
@@ -117,14 +117,14 @@
 	
 		<?php if(in_array('invoices', $sections) && !empty($invoices)) { ?>		
 		<div id="pmpro_account-invoices" class="pmpro_box">
-			<h3><?php _e("Past Invoices", 'buddyboss-theme' );?></h3>
+			<h3><?php _e("Past Invoices", 'press-pool' );?></h3>
 			<table width="100%" cellpadding="0" cellspacing="0" border="0">
 				<thead>
 					<tr>
-						<th><?php _e("Date", 'buddyboss-theme' ); ?></th>
-						<th><?php _e("Level", 'buddyboss-theme' ); ?></th>
-						<th><?php _e("Amount", 'buddyboss-theme' ); ?></th>
-						<th><?php _e("Status", 'buddyboss-theme'); ?></th>
+						<th><?php _e("Date", 'press-pool' ); ?></th>
+						<th><?php _e("Level", 'press-pool' ); ?></th>
+						<th><?php _e("Amount", 'press-pool' ); ?></th>
+						<th><?php _e("Status", 'press-pool'); ?></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -142,17 +142,17 @@
 						$invoice->getMembershipLevel();		
 
 						if ( in_array( $invoice->status, array( '', 'success', 'cancelled' ) ) ) {
-						    $display_status = __( 'Paid', 'buddyboss-theme' );
+						    $display_status = __( 'Paid', 'press-pool' );
 						} elseif ( $invoice->status == 'pending' ) {
 						    // Some Add Ons set status to pending.
-						    $display_status = __( 'Pending', 'buddyboss-theme' );
+						    $display_status = __( 'Pending', 'press-pool' );
 						} elseif ( $invoice->status == 'refunded' ) {
-						    $display_status = __( 'Refunded', 'buddyboss-theme' );
+						    $display_status = __( 'Refunded', 'press-pool' );
 						}				
 						?>
 						<tr id="pmpro_account-invoice-<?php echo $invoice->code; ?>">
 							<td><a href="<?php echo pmpro_url("invoice", "?invoice=" . $invoice->code)?>"><?php echo date_i18n(get_option("date_format"), $invoice->timestamp)?></td>
-							<td><?php if(!empty($invoice->membership_level)) echo $invoice->membership_level->name; else echo __("N/A", 'buddyboss-theme' );?></td>
+							<td><?php if(!empty($invoice->membership_level)) echo $invoice->membership_level->name; else echo __("N/A", 'press-pool' );?></td>
 							<td><?php echo pmpro_formatPrice($invoice->total)?></td>
 							<td><?php echo $display_status; ?></td>
 						</tr>
@@ -162,14 +162,14 @@
 				</tbody>
 			</table>						
 			<?php if($count == 6) { ?>
-				<div class="pmpro_actionlinks"><a id="pmpro_actionlink-invoices" href="<?php echo pmpro_url("invoice"); ?>"><?php _e("View All Invoices", 'buddyboss-theme' );?></a></div>
+				<div class="pmpro_actionlinks"><a id="pmpro_actionlink-invoices" href="<?php echo pmpro_url("invoice"); ?>"><?php _e("View All Invoices", 'press-pool' );?></a></div>
 			<?php } ?>
 		</div> <!-- end pmpro_account-invoices -->
 		<?php } ?>
 		
 		<?php if(in_array('links', $sections) && (has_filter('pmpro_member_links_top') || has_filter('pmpro_member_links_bottom'))) { ?>
 		<div id="pmpro_account-links" class="pmpro_box">
-			<h3><?php _e("Member Links", 'buddyboss-theme' );?></h3>
+			<h3><?php _e("Member Links", 'press-pool' );?></h3>
 			<ul>
 				<?php 
 					do_action("pmpro_member_links_top");

@@ -86,11 +86,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'bbmedia',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'BuddyBoss Media', 'buddyboss-theme' ),
+				'name'     => __( 'BuddyBoss Media', 'press-pool' ),
 				'products' => array(
 					'BBMEDIA' => array(
 						'software_ids' => array( 'BBMEDIA_1S', 'BBMEDIA_5S', 'BBMEDIA_20S' ),
-						'name'         => __( 'BuddyBoss Media', 'buddyboss-theme' ),
+						'name'         => __( 'BuddyBoss Media', 'press-pool' ),
 					),
 				),
 			);
@@ -103,11 +103,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'bbwall',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'BuddyBoss Wall', 'buddyboss-theme' ),
+				'name'     => __( 'BuddyBoss Wall', 'press-pool' ),
 				'products' => array(
 					'BBWALL' => array(
 						'software_ids' => array( 'BBWALL_1S', 'BBWALL_5S', 'BBWALL_20S' ),
-						'name'         => __( 'BuddyBoss Wall', 'buddyboss-theme' ),
+						'name'         => __( 'BuddyBoss Wall', 'press-pool' ),
 					),
 				),
 			);
@@ -118,11 +118,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'bbinbox',
 //				'path' => $plugin_file,
 //				'package' => 'plugin',
-//				'name'     => __( 'BuddyBoss Inbox', 'buddyboss-theme' ),
+//				'name'     => __( 'BuddyBoss Inbox', 'press-pool' ),
 //				'products' => array(
 //					'BBINBOX' => array(
 //						'software_ids' => array( 'BBINBOX_1S', 'BBINBOX_5S', 'BBINBOX_20S' ),
-//						'name'         => __( 'BuddyBoss Inbox', 'buddyboss-theme' ),
+//						'name'         => __( 'BuddyBoss Inbox', 'press-pool' ),
 //					),
 //				),
 //			);
@@ -135,11 +135,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'bbrbemail',
 //				'path' => $plugin_file,
 //				'package' => 'plugin',
-//				'name'     => __( 'Reply By Email', 'buddyboss-theme' ),
+//				'name'     => __( 'Reply By Email', 'press-pool' ),
 //				'products' => array(
 //					'BBRBEMAIL' => array(
 //						'software_ids' => array( 'BBRBEMAIL_1S', 'BBRBEMAIL_5S', 'BBRBEMAIL_20S' ),
-//						'name'         => __( 'Reply By Email', 'buddyboss-theme' ),
+//						'name'         => __( 'Reply By Email', 'press-pool' ),
 //					),
 //				),
 //			);
@@ -152,11 +152,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'bblacbp',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'Location Autocomplete', 'buddyboss-theme' ),
+				'name'     => __( 'Location Autocomplete', 'press-pool' ),
 				'products' => array(
 					'BBLACBP' => array(
 						'software_ids' => array( 'LACBP_1S', 'LACBP_5S', 'LACBP_20S' ),
-						'name'         => __( 'Location Autocomplete', 'buddyboss-theme' ),
+						'name'         => __( 'Location Autocomplete', 'press-pool' ),
 					),
 				),
 			);
@@ -169,7 +169,7 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'slearner_sensei',
 //				'path' => $plugin_file,
 //				'package' => 'plugin',
-//				'name'     => __( 'Social Learner - Sensei', 'buddyboss-theme' ),
+//				'name'     => __( 'Social Learner - Sensei', 'press-pool' ),
 //				'products' => array(
 //					'SLEARNER_SENSEI' => array(
 //						'software_ids' => array(
@@ -178,11 +178,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //							'SLEARNER_SENSEI_5S',
 //							'SLEARNER_SENSEI_20S'
 //						),
-//						'name'         => __( 'Boss for Sensei', 'buddyboss-theme' ),
+//						'name'         => __( 'Boss for Sensei', 'press-pool' ),
 //					),
 //					'BOSS'            => array(
 //						'software_ids' => array( 'BOSS_1S', 'BOSS_1S', 'BOSS_20S' ),
-//						'name'         => __( 'Boss', 'buddyboss-theme' ),
+//						'name'         => __( 'Boss', 'press-pool' ),
 //					),
 //				),
 //			);
@@ -195,7 +195,7 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'slearner_ld',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'Social Learner - Learndash', 'buddyboss-theme' ),
+				'name'     => __( 'Social Learner - Learndash', 'press-pool' ),
 				'products' => array(
 					'SLEARNER_BFLD' => array(
 						'software_ids' => array(
@@ -204,11 +204,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 							'SLEARNER_LD_5S',
 							'SLEARNER_LD_20S'
 						),
-						'name'         => __( 'Boss for Learndash', 'buddyboss-theme' ),
+						'name'         => __( 'Boss for Learndash', 'press-pool' ),
 					),
 					'BOSS'          => array(
 						'software_ids' => array( 'BOSS_1S', 'BOSS_5S', 'BOSS_20S' ),
-						'name'         => __( 'Boss', 'buddyboss-theme' ),
+						'name'         => __( 'Boss', 'press-pool' ),
 					),
 				),
 			);
@@ -221,15 +221,15 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'socmp',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'Social MarketPlace', 'buddyboss-theme' ),
+				'name'     => __( 'Social MarketPlace', 'press-pool' ),
 				'products' => array(
 					'SOCMP'     => array(
 						'software_ids' => array( 'SOCMP_UPGRADE', 'SOCMP_1S', 'SOCMP_5S', 'SOCMP_20S' ),
-						'name'         => __( 'Social MarketPlace', 'buddyboss-theme' ),
+						'name'         => __( 'Social MarketPlace', 'press-pool' ),
 					),
 					'ONESOCIAL' => array(
 						'software_ids' => array( 'ONESOCIAL_1S', 'ONESOCIAL_5S', 'ONESOCIAL_20S' ),
-						'name'         => __( 'OneSocial Theme', 'buddyboss-theme' ),
+						'name'         => __( 'OneSocial Theme', 'press-pool' ),
 					)
 				),
 			);
@@ -242,11 +242,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'bpublog',
 //				'path' => $plugin_file,
 //				'package' => 'plugin',
-//				'name'     => __( 'BuddyPress User Blog', 'buddyboss-theme' ),
+//				'name'     => __( 'BuddyPress User Blog', 'press-pool' ),
 //				'products' => array(
 //					'BPUBLOG' => array(
 //						'software_ids' => array( 'BPUBLOG_1S', 'BPUBLOG_5S', 'BPUBLOG_20S' ),
-//						'name'         => __( 'BuddyPress User Blog', 'buddyboss-theme' ),
+//						'name'         => __( 'BuddyPress User Blog', 'press-pool' ),
 //					),
 //				),
 //			);
@@ -259,15 +259,15 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'socblogger',
 //				'path' => $plugin_file,
 //				'package' => 'plugin',
-//				'name'     => __( 'Social Blogger', 'buddyboss-theme' ),
+//				'name'     => __( 'Social Blogger', 'press-pool' ),
 //				'products' => array(
 //					'BPUBLOG'   => array(
 //						'software_ids' => array( 'SOCBLOGGER_1S', 'SOCBLOGGER_5S', 'SOCBLOGGER_20S' ),
-//						'name'         => __( 'BuddyPress User Blog', 'buddyboss-theme' ),
+//						'name'         => __( 'BuddyPress User Blog', 'press-pool' ),
 //					),
 //					'ONESOCIAL' => array(
 //						'software_ids' => array( 'ONESOCIAL_1S', 'ONESOCIAL_5S', 'ONESOCIAL_20S' ),
-//						'name'         => __( 'OneSocial Theme', 'buddyboss-theme' ),
+//						'name'         => __( 'OneSocial Theme', 'press-pool' ),
 //					)
 //				),
 //			);
@@ -280,15 +280,15 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'portfoliopro',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'BP Portfolio PRO', 'buddyboss-theme' ),
+				'name'     => __( 'BP Portfolio PRO', 'press-pool' ),
 				'products' => array(
 					'PORTFOLIOPRO' => array(
 						'software_ids' => array( 'PORTFOLIOPRO_1S', 'PORTFOLIOPRO_5S', 'PORTFOLIOPRO_20S' ),
-						'name'         => __( 'BP Portfolio PRO', 'buddyboss-theme' ),
+						'name'         => __( 'BP Portfolio PRO', 'press-pool' ),
 					),
 					'SOCPORTFOLIO' => array(
 						'software_ids' => array( 'SOCPORTFOLIO_1S', 'SOCPORTFOLIO_5S', 'SOCPORTFOLIO_20S' ),
-						'name'         => __( 'Social Portfolio', 'buddyboss-theme' ),
+						'name'         => __( 'Social Portfolio', 'press-pool' ),
 					)
 				),
 			);
@@ -301,11 +301,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'bpmemtypes',
 				'path'     => $plugin_file,
 				'package'  => 'plugin',
-				'name'     => __( 'BuddyPress Member Types', 'buddyboss-theme' ),
+				'name'     => __( 'BuddyPress Member Types', 'press-pool' ),
 				'products' => array(
 					'BPMEMTYPES' => array(
 						'software_ids' => array( 'BPMEMTYPES_1S', 'BPMEMTYPES_5S', 'BPMEMTYPES_20S' ),
-						'name'         => __( 'BuddyPress Member Types', 'buddyboss-theme' ),
+						'name'         => __( 'BuddyPress Member Types', 'press-pool' ),
 					),
 				),
 			);
@@ -325,11 +325,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'boss',
 				'path'     => $theme_directory,
 				'package'  => 'theme',
-				'name'     => __( 'Boss Theme', 'buddyboss-theme' ),
+				'name'     => __( 'Boss Theme', 'press-pool' ),
 				'products' => array(
 					'BOSS' => array(
 						'software_ids' => array( 'BOSS_1S', 'BOSS_5S', 'BOSS_20S' ),
-						'name'         => __( 'Boss Theme', 'buddyboss-theme' ),
+						'name'         => __( 'Boss Theme', 'press-pool' ),
 					),
 				),
 			);
@@ -342,11 +342,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 				'id'       => 'onesocial',
 				'path'     => $theme_directory,
 				'package'  => 'theme',
-				'name'     => __( 'OneSocial Theme', 'buddyboss-theme' ),
+				'name'     => __( 'OneSocial Theme', 'press-pool' ),
 				'products' => array(
 					'ONESOCIAL' => array(
 						'software_ids' => array( 'ONESOCIAL_1S', 'ONESOCIAL_5S', 'ONESOCIAL_20S' ),
-						'name'         => __( 'OneSocial Theme', 'buddyboss-theme' ),
+						'name'         => __( 'OneSocial Theme', 'press-pool' ),
 					),
 				),
 			);
@@ -359,11 +359,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'bbtheme',
 //				'path' => $theme_directory,
 //				'package' => 'theme',
-//				'name'     => __( 'BuddyBoss Theme', 'buddyboss-theme' ),
+//				'name'     => __( 'BuddyBoss Theme', 'press-pool' ),
 //				'products' => array(
 //					'BUDDYBOSS_THEME' => array(
 //						'software_ids' => array( 'BUDDYBOSS_THEME_1S', 'BUDDYBOSS_THEME_5S', 'BUDDYBOSS_THEME_20S' ),
-//						'name'         => __( 'BuddyBoss Theme', 'buddyboss-theme' ),
+//						'name'         => __( 'BuddyBoss Theme', 'press-pool' ),
 //					),
 //				),
 //			);
@@ -376,11 +376,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'bbmobileonly',
 //				'path' => $theme_directory,
 //				'package' => 'theme',
-//				'name'     => __( 'BuddyBoss Mobile Only', 'buddyboss-theme' ),
+//				'name'     => __( 'BuddyBoss Mobile Only', 'press-pool' ),
 //				'products' => array(
 //					'BBMOBILEONLY' => array(
 //						'software_ids' => array( 'BBMOBILEONLY_1S', 'BBMOBILEONLY_5S', 'BBMOBILEONLY_20S' ),
-//						'name'         => __( 'BuddyBoss Mobile Only', 'buddyboss-theme' ),
+//						'name'         => __( 'BuddyBoss Mobile Only', 'press-pool' ),
 //					),
 //				),
 //			);
@@ -393,11 +393,11 @@ function bbupdater_discover_licensed_packages( $packages = array() ) {
 //				'id'       => 'socialportfolio',
 //				'path' => $theme_directory,
 //				'package' => 'theme',
-//				'name'     => __( 'Social Portfolio', 'buddyboss-theme' ),
+//				'name'     => __( 'Social Portfolio', 'press-pool' ),
 //				'products' => array(
 //					'SOCPORTFOLIO' => array(
 //						'software_ids' => array( 'SOCPORTFOLIO_1S', 'SOCPORTFOLIO_5S', 'SOCPORTFOLIO_20S' ),
-//						'name'         => __( 'Social Portfolio', 'buddyboss-theme' ),
+//						'name'         => __( 'Social Portfolio', 'press-pool' ),
 //					)
 //				),
 //			);

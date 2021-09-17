@@ -22,7 +22,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 					</div>
 				<?php endif; ?>
 			<div class="ld-modal-heading">
-				<?php echo esc_html_e( 'Login', 'buddyboss-theme' ); ?>
+				<?php echo esc_html_e( 'Login', 'press-pool' ); ?>
 			</div>
 			<?php
 			/**
@@ -32,7 +32,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 			 */
 			do_action( 'learndash-login-modal-heading-after' ); ?>
 			<div class="ld-modal-text">
-				<?php esc_html_e( 'Accessing this course requires a login, please enter your credentials below!', 'buddyboss-theme' ); ?>
+				<?php esc_html_e( 'Accessing this course requires a login, please enter your credentials below!', 'press-pool' ); ?>
 			</div>
 			<?php
             /**
@@ -48,7 +48,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 					array(
 						'type'      =>  'warning',
 			            'icon'      =>  'alert',
-						'message'	=>	__( 'Incorrect username or password. Please try again', 'buddyboss-theme' )
+						'message'	=>	__( 'Incorrect username or password. Please try again', 'press-pool' )
 					), true );
 
 					/**
@@ -65,7 +65,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 					array(
 						'type'      =>  'warning',
 						'icon'      =>  'alert',
-						'message'	=>	__( 'Please check your email for the password reset link.', 'buddyboss-theme' )
+						'message'	=>	__( 'Please check your email for the password reset link.', 'press-pool' )
 					), true );
 
 					/**
@@ -111,7 +111,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 				 */
 				do_action( 'learndash-login-modal-form-after' ); ?>
 
-				<a href="<?php echo esc_url(wp_lostpassword_url( add_query_arg( 'ld-resetpw', 'true', get_the_permalink() . '#login' ) ) ); ?>"><?php esc_html_e( 'Lost Your Password?', 'buddyboss-theme' ); ?></a>
+				<a href="<?php echo esc_url(wp_lostpassword_url( add_query_arg( 'ld-resetpw', 'true', get_the_permalink() . '#login' ) ) ); ?>"><?php esc_html_e( 'Lost Your Password?', 'press-pool' ); ?></a>
 
 				<?php
 
@@ -140,7 +140,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 					 */
 					do_action( 'learndash-register-modal-heading-before' ); ?>
 					<div class="ld-modal-heading">
-						<?php esc_html_e( 'Register', 'buddyboss-theme' ); ?>
+						<?php esc_html_e( 'Register', 'press-pool' ); ?>
 					</div>
 					<?php
 					/**
@@ -150,7 +150,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 					 */
 					do_action( 'learndash-register-modal-heading-after' ); ?>
 					<div class="ld-modal-text">
-						<?php esc_html_e( 'Don\'t have an account? Register one!', 'buddyboss-theme' ); ?>
+						<?php esc_html_e( 'Don\'t have an account? Register one!', 'press-pool' ); ?>
 					</div>
 					<?php
 					/**
@@ -166,10 +166,10 @@ $can_register = get_option( 'users_can_register' );  ?>
 					);
 
 					$errors_conditions = apply_filters( 'learndash-registration-errors', array(
-						'empty_username' => __( 'Registration requires a username.', 'buddyboss-theme' ),
-						'empty_email'	 => __( 'Registration requires a valid email.', 'buddyboss-theme' ),
-						'invalid_username' => __( 'Invalid username.', 'buddyboss-theme' ),
-						'invalid_email'		=> __( 'Invalid email.', 'buddyboss-theme' )
+						'empty_username' => __( 'Registration requires a username.', 'press-pool' ),
+						'empty_email'	 => __( 'Registration requires a valid email.', 'press-pool' ),
+						'invalid_username' => __( 'Invalid username.', 'press-pool' ),
+						'invalid_email'		=> __( 'Invalid email.', 'press-pool' )
 					) );
 
 					foreach( $errors_conditions as $param => $message ) {
@@ -206,7 +206,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 							array(
 								'type'      =>  'warning',
 					            'icon'      =>  'alert',
-								'message'	=>	__( 'Registration successful, please check your email to set your password.', 'buddyboss-theme' )
+								'message'	=>	__( 'Registration successful, please check your email to set your password.', 'press-pool' )
 							), true );
 
 							/**
@@ -218,7 +218,7 @@ $can_register = get_option( 'users_can_register' );  ?>
 
 					endif; ?>
 
-					<a href="#ld-user-register" class="ld-button ld-button-reverse ld-js-register-account"><?php echo esc_html_e( 'Register an Account', 'buddyboss-theme' ); ?></a>
+					<a href="#ld-user-register" class="ld-button ld-button-reverse ld-js-register-account"><?php echo esc_html_e( 'Register an Account', 'press-pool' ); ?></a>
 
 					<?php
 					/**
@@ -239,11 +239,11 @@ $can_register = get_option( 'users_can_register' );  ?>
 					do_action( 'learndash-register-modal-register-form-before' ); ?>
 					<form name="registerform" id="registerform" action="<?php echo esc_url( site_url( 'wp-login.php?action=register', 'login_post' ) ); ?>" method="post" novalidate="novalidate">
 						<p>
-							<label for="user_reg_login"><?php esc_html_e( 'Username', 'buddyboss-theme' ); ?><br />
+							<label for="user_reg_login"><?php esc_html_e( 'Username', 'press-pool' ); ?><br />
 							<input type="text" name="user_login" id="user_reg_login" class="input" value="" size="20" /></label>
 						</p>
 						<p>
-							<label for="user_reg_email"><?php esc_html_e( 'Email', 'buddyboss-theme' ) ?><br />
+							<label for="user_reg_email"><?php esc_html_e( 'Email', 'press-pool' ) ?><br />
 							<input type="email" name="user_email" id="user_reg_email" class="input" value="" size="25" /></label>
 						</p>
 						<?php
@@ -256,10 +256,10 @@ $can_register = get_option( 'users_can_register' );  ?>
 						do_action( 'learndash_register_form' ); ?>
 						<input name="learndash-registration-form" value="true" type="hidden">
 						<input name="learndash-registration-form-redirect" type="hidden" value="<?php echo esc_url( apply_filters( 'learndash-registration-form-redirect', get_permalink() ) ); ?>">
-						<p id="reg_passmail"><?php esc_html_e( 'Registration confirmation will be emailed to you.', 'buddyboss-theme' ); ?></p>
+						<p id="reg_passmail"><?php esc_html_e( 'Registration confirmation will be emailed to you.', 'press-pool' ); ?></p>
 						<br class="clear" />
 						<input type="hidden" name="redirect_to" value="<?php echo esc_attr( add_query_arg( 'ld-registered', 'true', get_the_permalink() . '#login' ) ); ?>" />
-						<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e( 'Register', 'buddyboss-theme' ); ?>" /></p>
+						<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e( 'Register', 'press-pool' ); ?>" /></p>
 					</form>
 					<?php
 					/**

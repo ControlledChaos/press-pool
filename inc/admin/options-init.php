@@ -63,18 +63,18 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Logo Settings
 			$this->sections[] = array(
-				'title'		 => __( 'Logo', 'buddyboss-theme' ),
+				'title'		 => __( 'Logo', 'press-pool' ),
 				'icon'		 => 'el-icon-adjust',
 				'priority'	 => 20,
 				'fields'	 => array(
 					array(
 						'id'		 => 'logo_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Desktop Logo', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Upload your custom site logo for desktop layout (280px by 80px).', 'buddyboss-theme' ),
+						'title'		 => __( 'Desktop Logo', 'press-pool' ),
+						'subtitle'	 => __( 'Upload your custom site logo for desktop layout (280px by 80px).', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'logo',
@@ -86,9 +86,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id' => 'logo_size',
                         'type' => 'slider',
-                        'title' => __('Logo Size', 'buddyboss-theme'),
-                        'subtitle' => __('Adjust the size of your logo', 'buddyboss-theme'),
-                        'desc' => __('Maximum logo width 350px.<br ?>If the logo size is taller than the header height, it will be made smaller to fit within the header.<br />If "Header style 3" is set and the logo size is wider than the BuddyPanel, it will be made smaller to fit within the BuddyPanel.', 'buddyboss-theme'),
+                        'title' => __('Logo Size', 'press-pool'),
+                        'subtitle' => __('Adjust the size of your logo', 'press-pool'),
+                        'desc' => __('Maximum logo width 350px.<br ?>If the logo size is taller than the header height, it will be made smaller to fit within the header.<br />If "Header style 3" is set and the logo size is wider than the BuddyPanel, it will be made smaller to fit within the BuddyPanel.', 'press-pool'),
                         'default' => '0',
                         'min' => 0,
                         'step' => 1,
@@ -99,11 +99,11 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'mobile_logo_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Mobile Logo', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Upload your custom site logo for mobile layout (280px by 80px).', 'buddyboss-theme' ),
+						'title'		 => __( 'Mobile Logo', 'press-pool' ),
+						'subtitle'	 => __( 'Upload your custom site logo for mobile layout (280px by 80px).', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'mobile_logo',
@@ -115,9 +115,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id' => 'mobile_logo_size',
                         'type' => 'slider',
-                        'title' => __('Mobile Logo Size', 'buddyboss-theme'),
-                        'subtitle' => __('Adjust the size of mobile logo', 'buddyboss-theme'),
-                        'desc' => __('Maximum logo width 350px.<br ?>If the logo size is taller than the header height, it will be made smaller to fit within the header.', 'buddyboss-theme'),
+                        'title' => __('Mobile Logo Size', 'press-pool'),
+                        'subtitle' => __('Adjust the size of mobile logo', 'press-pool'),
+                        'desc' => __('Maximum logo width 350px.<br ?>If the logo size is taller than the header height, it will be made smaller to fit within the header.', 'press-pool'),
                         'default' => '0',
                         'min' => 0,
                         'step' => 1,
@@ -129,8 +129,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 						'id'		 => 'favicon',
 						'type'		 => 'none',
 						'url'		 => false,
-						'title'		 => __( 'Site Icon', 'buddyboss-theme' ),
-						'subtitle'	 => sprintf( __( 'Upload your custom site icon(favicon) at <a href="%s">Appearance &gt; Customize</a> in the Site Identity section.', 'buddyboss-theme' ), $admin_url ),
+						'title'		 => __( 'Site Icon', 'press-pool' ),
+						'subtitle'	 => sprintf( __( 'Upload your custom site icon(favicon) at <a href="%s">Appearance &gt; Customize</a> in the Site Identity section.', 'press-pool' ), $admin_url ),
 					),
 				)
 			);
@@ -166,15 +166,15 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Header Settings
 			$this->sections[] = array(
-				'title'		 => __( 'Header', 'buddyboss-theme' ),
+				'title'		 => __( 'Header', 'press-pool' ),
 				'id'		 => 'header_layout',
 				'customizer' => false,
 				'icon'		 => 'el-icon-credit-card',
 				'fields'	 => array(
 					array(
 						'id'		 => 'buddyboss_header',
-						'title'		 => __( 'Header Style', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Select the header layout.', 'buddyboss-theme' ),
+						'title'		 => __( 'Header Style', 'press-pool' ),
+						'subtitle'	 => __( 'Select the header layout.', 'press-pool' ),
 						'type'		 => 'image_select',
 						'customizer' => false,
 						'default'	 => '1',
@@ -183,23 +183,23 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'	 => 'header_layout_options',
 						'type'	 => 'info',
-						'desc'	 => __( 'Layout Options', 'buddyboss-theme' )
+						'desc'	 => __( 'Layout Options', 'press-pool' )
 					),
                     array(
 						'id'		 => 'header_sticky',
 						'type'		 => 'switch',
-						'title'		 => __( 'Sticky Header', 'buddyboss-theme' ),
-                        'subtitle'	 => __( 'Position header to the top of the scrollview during scrolling. Header is always sticky in <a href="https://learndash.idevaffiliate.com/111.html">LearnDash</a> lessons and topics.', 'buddyboss-theme' ),
+						'title'		 => __( 'Sticky Header', 'press-pool' ),
+                        'subtitle'	 => __( 'Position header to the top of the scrollview during scrolling. Header is always sticky in <a href="https://learndash.idevaffiliate.com/111.html">LearnDash</a> lessons and topics.', 'press-pool' ),
 						'default'	 => '1',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
                         'id' => 'header_height',
                         'type' => 'slider',
-                        'title' => __('Header Height', 'buddyboss-theme'),
-                        'subtitle' => __('Set custom header height', 'buddyboss-theme'),
-                        'desc' => __('Value between 60px and 200px', 'buddyboss-theme'),
+                        'title' => __('Header Height', 'press-pool'),
+                        'subtitle' => __('Set custom header height', 'press-pool'),
+                        'desc' => __('Value between 60px and 200px', 'press-pool'),
                         "default" => 76,
                         "min" => 60,
                         "step" => 1,
@@ -209,92 +209,92 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'header_shadow',
 						'type'		 => 'switch',
-						'title'		 => __( 'Header shadow', 'buddyboss-theme' ),
-                        'subtitle'	 => __( 'If enabled header will appear with slight shadow.', 'buddyboss-theme' ),
+						'title'		 => __( 'Header shadow', 'press-pool' ),
+                        'subtitle'	 => __( 'If enabled header will appear with slight shadow.', 'press-pool' ),
 						'default'	 => '1',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'	 => 'header_buttons_info',
 						'type'	 => 'info',
-						'desc'	 => __( 'Header Buttons (Desktop)', 'buddyboss-theme' )
+						'desc'	 => __( 'Header Buttons (Desktop)', 'press-pool' )
 					),
 					array(
 						'id'		 => 'header_search',
 						'type'		 => 'switch',
-						'title'		 => __( 'Search', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide Search in titlebar.', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Search', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide Search in titlebar.', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '1',
 					),
 					array(
 						'id'		 => 'messages',
 						'type'		 => 'switch',
-						'title'		 => __( 'Messages', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide Messages in titlebar.', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Messages', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide Messages in titlebar.', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '1',
 					),
 					array(
 						'id'		 => 'notifications',
 						'type'		 => 'switch',
-						'title'		 => __( 'Notifications', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide Notifications in titlebar.', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Notifications', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide Notifications in titlebar.', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '1',
 					),
 					array(
 						'id'		 => 'shopping_cart',
 						'type'		 => 'switch',
-						'title'		 => __( 'Shopping Cart', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide shopping cart in titlebar. (requires WooCommerce)', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Shopping Cart', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide shopping cart in titlebar. (requires WooCommerce)', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '1',
 					),
 					array(
 						'id'	 => 'mobile_header_buttons_info',
 						'type'	 => 'info',
-						'desc'	 => __( 'Header Buttons (Mobile)', 'buddyboss-theme' )
+						'desc'	 => __( 'Header Buttons (Mobile)', 'press-pool' )
 					),
 					array(
 						'id'		 => 'mobile_header_search',
 						'type'		 => 'switch',
-						'title'		 => __( 'Search', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide Search in titlebar.', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Search', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide Search in titlebar.', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '1',
 					),
 					array(
 						'id'		 => 'mobile_messages',
 						'type'		 => 'switch',
-						'title'		 => __( 'Messages', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide Messages in titlebar.', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Messages', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide Messages in titlebar.', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '0',
 					),
 					array(
 						'id'		 => 'mobile_notifications',
 						'type'		 => 'switch',
-						'title'		 => __( 'Notifications', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide Notifications in titlebar.', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Notifications', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide Notifications in titlebar.', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '0',
 					),
 					array(
 						'id'		 => 'mobile_shopping_cart',
 						'type'		 => 'switch',
-						'title'		 => __( 'Shopping Cart', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Show/hide shopping cart in titlebar. (requires WooCommerce)', 'buddyboss-theme' ),
-						'on'		 => __( 'Show', 'buddyboss-theme' ),
-						'off'		 => __( 'Hide', 'buddyboss-theme' ),
+						'title'		 => __( 'Shopping Cart', 'press-pool' ),
+						'subtitle'	 => __( 'Show/hide shopping cart in titlebar. (requires WooCommerce)', 'press-pool' ),
+						'on'		 => __( 'Show', 'press-pool' ),
+						'off'		 => __( 'Hide', 'press-pool' ),
 						'default'	 => '0',
 					),
 				)
@@ -302,7 +302,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Layout Settings
 			$this->sections[] = array(
-				'title'		 => __( 'BuddyPanel', 'buddyboss-theme' ),
+				'title'		 => __( 'BuddyPanel', 'press-pool' ),
 				'id'		 => 'theme_layout',
 				'customizer' => false,
 				'icon'		 => 'el-icon-th-list',
@@ -310,19 +310,19 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'buddypanel',
 						'type'		 => 'switch',
-						'title'		 => __( 'BuddyPanel', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Display the BuddyPanel menu. BuddyPanel is the side navigation panel.', 'buddyboss-theme' ),
-                        'desc'       => __( 'BuddyPanel is visible if menu is created at Appearance > Menus.', 'buddyboss-theme' ),
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'title'		 => __( 'BuddyPanel', 'press-pool' ),
+						'subtitle'	 => __( 'Display the BuddyPanel menu. BuddyPanel is the side navigation panel.', 'press-pool' ),
+                        'desc'       => __( 'BuddyPanel is visible if menu is created at Appearance > Menus.', 'press-pool' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'default'	 => '1',
                         'required'   => array( 'buddyboss_header', 'equals', array( '1','2' ) ),
 					),
                     array(
         				'id'		 => 'buddypanel_position',
         				'type'		 => 'button_set',
-        				'title'		 => __( 'BuddyPanel Position', 'buddyboss-theme' ),
-        				'subtitle'	 => __( 'Select the BuddyPanel alignment.', 'buddyboss-theme' ),
+        				'title'		 => __( 'BuddyPanel Position', 'press-pool' ),
+        				'subtitle'	 => __( 'Select the BuddyPanel alignment.', 'press-pool' ),
         				'default'	 => 'left',
                         'required' => array(
                             array( 'buddypanel', 'equals', '1' ),
@@ -336,8 +336,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
         				'id'		 => 'buddypanel_position_h3',
         				'type'		 => 'button_set',
-        				'title'		 => __( 'BuddyPanel Position', 'buddyboss-theme' ),
-        				'subtitle'	 => __( 'Select the BuddyPanel alignment.', 'buddyboss-theme' ),
+        				'title'		 => __( 'BuddyPanel Position', 'press-pool' ),
+        				'subtitle'	 => __( 'Select the BuddyPanel alignment.', 'press-pool' ),
         				'default'	 => 'left',
                         'required'   => array( 'buddyboss_header', 'equals', '3' ),
         				'options'	 => array(
@@ -348,8 +348,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
         				'id'		 => 'buddypanel_state',
         				'type'		 => 'button_set',
-        				'title'		 => __( 'BuddyPanel Default State', 'buddyboss-theme' ),
-        				'subtitle'	 => __( 'Select the BuddyPanel default state for new sessions.', 'buddyboss-theme' ),
+        				'title'		 => __( 'BuddyPanel Default State', 'press-pool' ),
+        				'subtitle'	 => __( 'Select the BuddyPanel default state for new sessions.', 'press-pool' ),
         				'default'	 => 'close',
                         'required' => array(
                             array( 'buddyboss_header','equals', array( '1','2' ) )
@@ -365,8 +365,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			$sidebar_array = array(
 				'id'		 => 'sidebar',
 				'type'		 => 'button_set',
-				'title'		 => __( 'Blog Sidebar', 'buddyboss-theme' ),
-				'subtitle'	 => __( 'Select the blog post sidebar alignment.', 'buddyboss-theme' ),
+				'title'		 => __( 'Blog Sidebar', 'press-pool' ),
+				'subtitle'	 => __( 'Select the blog post sidebar alignment.', 'press-pool' ),
 				'default'	 => 'right',
 				'options'	 => array(
 					'left'	 => 'Left',
@@ -377,8 +377,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			$page_sidebar_array = array(
 				'id'		 => 'page',
 				'type'		 => 'button_set',
-				'title'		 => __( 'Page Sidebar', 'buddyboss-theme' ),
-				'subtitle'	 => __( 'Select the pages sidebar alignment.', 'buddyboss-theme' ),
+				'title'		 => __( 'Page Sidebar', 'press-pool' ),
+				'subtitle'	 => __( 'Select the pages sidebar alignment.', 'press-pool' ),
 				'default'	 => 'right',
 				'options'	 => array(
 					'left'	 => 'Left',
@@ -389,8 +389,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			$members_sidebar_array = array(
 				'id'		 => 'members',
 				'type'		 => 'button_set',
-				'title'		 => __( 'Members Directory Sidebar', 'buddyboss-theme' ),
-				'subtitle'	 => __( 'Select the members directory sidebar alignment.', 'buddyboss-theme' ),
+				'title'		 => __( 'Members Directory Sidebar', 'press-pool' ),
+				'subtitle'	 => __( 'Select the members directory sidebar alignment.', 'press-pool' ),
 				'default'	 => 'right',
 				'options'	 => array(
 					'left'	 => 'Left',
@@ -412,8 +412,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				$profile_sidebar_array = array(
 					'id'		 => 'profile',
 					'type'		 => 'button_set',
-					'title'		 => __( 'Member Profile Sidebar', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Select the member profile sidebar alignment.', 'buddyboss-theme' ),
+					'title'		 => __( 'Member Profile Sidebar', 'press-pool' ),
+					'subtitle'	 => __( 'Select the member profile sidebar alignment.', 'press-pool' ),
 					'default'	 => 'left',
 					'options'	 => array(
 						'left'	 => 'Left',
@@ -425,8 +425,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					$group_directory_sidebar_array = array(
 						'id'		 => 'groups',
 						'type'		 => 'button_set',
-						'title'		 => __( 'Groups Directory Sidebar', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Select the groups directory sidebar alignment.', 'buddyboss-theme' ),
+						'title'		 => __( 'Groups Directory Sidebar', 'press-pool' ),
+						'subtitle'	 => __( 'Select the groups directory sidebar alignment.', 'press-pool' ),
 						'default'	 => 'right',
 						'options'	 => array(
 							'left'	 => 'Left',
@@ -437,8 +437,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					$single_group_sidebar_array = array(
 						'id'		 => 'group',
 						'type'		 => 'button_set',
-						'title'		 => __( 'Group Single Sidebar', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Select the group single sidebar alignment.', 'buddyboss-theme' ),
+						'title'		 => __( 'Group Single Sidebar', 'press-pool' ),
+						'subtitle'	 => __( 'Select the group single sidebar alignment.', 'press-pool' ),
 						'default'	 => 'right',
 						'options'	 => array(
 							'left'	 => 'Left',
@@ -453,8 +453,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				$forums_sidebar_array = array(
 					'id'		 => 'forums',
 					'type'		 => 'button_set',
-					'title'		 => __( 'Forums Sidebar', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Select the forums sidebar alignment.', 'buddyboss-theme' ),
+					'title'		 => __( 'Forums Sidebar', 'press-pool' ),
+					'subtitle'	 => __( 'Select the forums sidebar alignment.', 'press-pool' ),
 					'default'	 => 'right',
 					'options'	 => array(
 						'left'	 => 'Left',
@@ -467,8 +467,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				$woocommerce_sidebar_array = array(
 					'id'		 => 'woocommerce',
 					'type'		 => 'button_set',
-					'title'		 => __( 'WooCommerce &rarr; Shop Sidebar', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Select the woocommerce sidebar alignment.', 'buddyboss-theme' ),
+					'title'		 => __( 'WooCommerce &rarr; Shop Sidebar', 'press-pool' ),
+					'subtitle'	 => __( 'Select the woocommerce sidebar alignment.', 'press-pool' ),
 					'default'	 => 'right',
 					'options'	 => array(
 						'left'	 => 'Left',
@@ -481,8 +481,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				$learndash_sidebar_array = array(
 					'id'		 => 'learndash',
 					'type'		 => 'button_set',
-					'title'		 => __( 'LearnDash Sidebar', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Select the learndash sidebar alignment.', 'buddyboss-theme' ),
+					'title'		 => __( 'LearnDash Sidebar', 'press-pool' ),
+					'subtitle'	 => __( 'Select the learndash sidebar alignment.', 'press-pool' ),
 					'default'	 => 'right',
 					'options'	 => array(
 						'left'	 => 'Left',
@@ -493,8 +493,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				$learndash_single_sidebar_array = array(
 					'id'		 => 'learndash_single_sidebar',
 					'type'		 => 'button_set',
-					'title'		 => __( 'LearnDash Single Pages Sidebar', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Select the learndash single pages sidebar alignment.', 'buddyboss-theme' ),
+					'title'		 => __( 'LearnDash Single Pages Sidebar', 'press-pool' ),
+					'subtitle'	 => __( 'Select the learndash single pages sidebar alignment.', 'press-pool' ),
 					'default'	 => 'left',
 					'options'	 => array(
 						'left'	 => 'Left',
@@ -507,8 +507,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				$lifterlms_sidebar_array = array(
 					'id'		 => 'lifterlms',
 					'type'		 => 'button_set',
-					'title'		 => __( 'LifterLMS Sidebar', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Select the LifterLMS sidebar alignment.', 'buddyboss-theme' ),
+					'title'		 => __( 'LifterLMS Sidebar', 'press-pool' ),
+					'subtitle'	 => __( 'Select the LifterLMS sidebar alignment.', 'press-pool' ),
 					'default'	 => 'right',
 					'options'	 => array(
 						'left'	 => 'Left',
@@ -520,8 +520,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			$search_sidebar_array = array(
 				'id'		 => 'search',
 				'type'		 => 'button_set',
-				'title'		 => __( 'Search Results Sidebar', 'buddyboss-theme' ),
-				'subtitle'	 => __( 'Select the search results page sidebar alignment.', 'buddyboss-theme' ),
+				'title'		 => __( 'Search Results Sidebar', 'press-pool' ),
+				'subtitle'	 => __( 'Select the search results page sidebar alignment.', 'press-pool' ),
 				'default'	 => 'right',
 				'options'	 => array(
 					'left'	 => 'Left',
@@ -531,14 +531,14 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Sidebar Settings
 			$this->sections[] = array(
-				'title'		 => __( 'Sidebars', 'buddyboss-theme' ),
+				'title'		 => __( 'Sidebars', 'press-pool' ),
 				'icon'		 => 'el el-lines',
 				'customizer' => false,
 				'fields'	 => array(
 					array(
 						'id'	 => 'buddypress_sidebar_info',
 						'type'	 => 'info',
-						'desc'	 => __( 'Add widgets into your sidebars at Appearance &gt; Widgets', 'buddyboss-theme' )
+						'desc'	 => __( 'Add widgets into your sidebars at Appearance &gt; Widgets', 'press-pool' )
 					),
 					$sidebar_array,
 					$page_sidebar_array,
@@ -560,17 +560,17 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'		 => 'custom_typography',
 					'type'		 => 'switch',
-					'title'		 => __( 'Custom Typography', 'buddyboss-theme' ),
-					'subtitle'	 => __( 'Enable custom typography', 'buddyboss-theme' ),
-					'on'		 => __( 'On', 'buddyboss-theme' ),
-					'off'		 => __( 'Off', 'buddyboss-theme' ),
+					'title'		 => __( 'Custom Typography', 'press-pool' ),
+					'subtitle'	 => __( 'Enable custom typography', 'press-pool' ),
+					'on'		 => __( 'On', 'press-pool' ),
+					'off'		 => __( 'Off', 'press-pool' ),
 					'default'	 => '0',
 				),
 				array(
 					'id'			 => 'boss_site_title_font_family',
 					'type'			 => 'typography',
-					'title'			 => __( 'Site Title', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the site title properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'Site Title', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the site title properties.', 'press-pool' ),
 					'google'		 => true,
 					'line-height'	 => false,
 					'text-align'	 => false,
@@ -588,8 +588,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_body_font_family',
 					'type'			 => 'typography',
-					'title'			 => __( 'Body Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the body font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'Body Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the body font properties.', 'press-pool' ),
 					'google'		 => true,
 					'line-height'	 => false,
 					'text-align'	 => false,
@@ -606,8 +606,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_h1_font_options',
 					'type'			 => 'typography',
-					'title'			 => __( 'H1 Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the H1 tag font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'H1 Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the H1 tag font properties.', 'press-pool' ),
 					'google'		 => true,
 					'font-size'		 => true,
 					'line-height'	 => false,
@@ -625,8 +625,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_h2_font_options',
 					'type'			 => 'typography',
-					'title'			 => __( 'H2 Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the H2 tag font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'H2 Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the H2 tag font properties.', 'press-pool' ),
 					'google'		 => true,
 					'font-size'		 => true,
 					'line-height'	 => false,
@@ -644,8 +644,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_h3_font_options',
 					'type'			 => 'typography',
-					'title'			 => __( 'H3 Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the H3 tag font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'H3 Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the H3 tag font properties.', 'press-pool' ),
 					'google'		 => true,
 					'font-size'		 => true,
 					'line-height'	 => false,
@@ -663,8 +663,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_h4_font_options',
 					'type'			 => 'typography',
-					'title'			 => __( 'H4 Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the H4 tag font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'H4 Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the H4 tag font properties.', 'press-pool' ),
 					'google'		 => true,
 					'font-size'		 => true,
 					'line-height'	 => false,
@@ -682,8 +682,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_h5_font_options',
 					'type'			 => 'typography',
-					'title'			 => __( 'H5 Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the H5 tag font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'H5 Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the H5 tag font properties.', 'press-pool' ),
 					'google'		 => true,
 					'font-size'		 => true,
 					'line-height'	 => false,
@@ -701,8 +701,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				array(
 					'id'			 => 'boss_h6_font_options',
 					'type'			 => 'typography',
-					'title'			 => __( 'H6 Font', 'buddyboss-theme' ),
-					'subtitle'		 => __( 'Specify the H6 tag font properties.', 'buddyboss-theme' ),
+					'title'			 => __( 'H6 Font', 'press-pool' ),
+					'subtitle'		 => __( 'Specify the H6 tag font properties.', 'press-pool' ),
 					'google'		 => true,
 					'font-size'		 => true,
 					'line-height'	 => false,
@@ -721,7 +721,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Typography Settings
 			$this->sections[] = array(
-				'title'	 => __( 'Typography', 'buddyboss-theme' ),
+				'title'	 => __( 'Typography', 'press-pool' ),
 				'icon'	 => 'el-icon-font',
 				'customizer' => false,
 				'fields' => apply_filters( 'buddyboss_theme_font_options', $font_options )
@@ -860,7 +860,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			$this->sections[] = array(
 				'icon'		 => 'el-icon-tint',
 				'icon_class' => 'icon-large',
-				'title'		 => __( 'Styling', 'buddyboss-theme' ),
+				'title'		 => __( 'Styling', 'press-pool' ),
 				'priority'	 => 20,
 				'desc'		 => '',
 				'fields'	 => $style_fields,
@@ -913,24 +913,24 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Footer Settings
 			$this->sections[] = array(
-				'title'		 => __( 'Footer', 'buddyboss-theme' ),
+				'title'		 => __( 'Footer', 'press-pool' ),
 				'icon'		 => 'el-icon-bookmark',
 				'customizer' => false,
 				'fields'	 => array(
 					array(
 						'id'		 => 'footer_widgets',
 						'type'		 => 'switch',
-						'title'		 => __( 'Footer Widget Area', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Enable footer widget area. You will then need to add widgets at <em>Appearance &gt; Widgets</em>.', 'buddyboss-theme' ),
+						'title'		 => __( 'Footer Widget Area', 'press-pool' ),
+						'subtitle'	 => __( 'Enable footer widget area. You will then need to add widgets at <em>Appearance &gt; Widgets</em>.', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'       => 'footer_widget_columns',
 						'type'     => 'select',
-						'title'    => __('Footer Widget Columns', 'buddyboss-theme' ),
-						'subtitle' => __('Select number of columns in footer.', 'buddyboss-theme' ),
+						'title'    => __('Footer Widget Columns', 'press-pool' ),
+						'subtitle' => __('Select number of columns in footer.', 'press-pool' ),
 						'options'  => array(
 							'1' => '1 Column',
 							'2' => '2 Columns',
@@ -945,16 +945,16 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'footer_copyright',
 						'type'		 => 'switch',
-						'title'		 => __( 'Footer Bottom Area', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Enable footer bottom area', 'buddyboss-theme' ),
+						'title'		 => __( 'Footer Bottom Area', 'press-pool' ),
+						'subtitle'	 => __( 'Enable footer bottom area', 'press-pool' ),
 						'default'	 => '1',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'footer_style',
-						'title'		 => __( 'Footer Style', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Select the footer layout.', 'buddyboss-theme' ),
+						'title'		 => __( 'Footer Style', 'press-pool' ),
+						'subtitle'	 => __( 'Select the footer layout.', 'press-pool' ),
 						'type'		 => 'image_select',
 						'customizer' => false,
 						'default'	 => '1',
@@ -963,8 +963,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					),
 					array(
 						'id'		 => 'footer_logo',
-						'title'		 => __( 'Footer Logo', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Upload your custom site logo for footer layout.', 'buddyboss-theme' ),
+						'title'		 => __( 'Footer Logo', 'press-pool' ),
+						'subtitle'	 => __( 'Upload your custom site logo for footer layout.', 'press-pool' ),
 						'type'		 => 'media',
 						'url'		 => false,
 						'required'	 => array( 'footer_style', 'equals', '2' ),
@@ -973,9 +973,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
                         'id' => 'footer_logo_size',
                         'type' => 'slider',
-                        'title' => __('Footer Logo Size', 'buddyboss-theme'),
-                        'subtitle' => __('Adjust the size of footer logo', 'buddyboss-theme'),
-                        'desc' => __('Maximum logo width 350px.<br ?>If the logo size is taller than the footer height, it will be made smaller to fit within the footer.', 'buddyboss-theme'),
+                        'title' => __('Footer Logo Size', 'press-pool'),
+                        'subtitle' => __('Adjust the size of footer logo', 'press-pool'),
+                        'desc' => __('Maximum logo width 350px.<br ?>If the logo size is taller than the footer height, it will be made smaller to fit within the footer.', 'press-pool'),
                         'default' => '0',
                         'min' => 0,
                         'step' => 1,
@@ -985,16 +985,16 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     ),
 					array(
 						'id'		 => 'footer_tagline',
-						'title'		 => __( 'Footer Tagline', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Set footer tagline', 'buddyboss-theme' ),
+						'title'		 => __( 'Footer Tagline', 'press-pool' ),
+						'subtitle'	 => __( 'Set footer tagline', 'press-pool' ),
 						'type'		 => 'text',
 						'required'	 => array( 'footer_style', 'equals', '2' ),
 					),
 					array(
 						'id'		 => 'copyright_text',
 						'type'		 => 'editor',
-						'title'		 => __( 'Copyright Text', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Enter your custom copyright text.', 'buddyboss-theme' ),
+						'title'		 => __( 'Copyright Text', 'press-pool' ),
+						'subtitle'	 => __( 'Enter your custom copyright text.', 'press-pool' ),
 						'default'	 => '&copy; [boss_current_year]' . ' - ' . get_bloginfo('name'),
 						'args'		 => array(
 							'teeny'			 => true,
@@ -1006,8 +1006,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'       => 'footer_menu',
 						'type'     => 'select',
-						'title'    => __('Footer Menu', 'buddyboss-theme' ),
-						'subtitle' => __('Select menu from the dropdown.', 'buddyboss-theme' ),
+						'title'    => __('Footer Menu', 'press-pool' ),
+						'subtitle' => __('Select menu from the dropdown.', 'press-pool' ),
 						'options'  => $menu_items,
 						'default'  => '',
 						'required'	 => array( 'footer_style', 'equals', '1' ),
@@ -1015,8 +1015,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'       => 'footer_secondary_menu',
 						'type'     => 'select',
-						'title'    => __('Footer Secondary Menu', 'buddyboss-theme' ),
-						'subtitle' => __('Select menu from the dropdown.', 'buddyboss-theme' ),
+						'title'    => __('Footer Secondary Menu', 'press-pool' ),
+						'subtitle' => __('Select menu from the dropdown.', 'press-pool' ),
 						'options'  => $menu_items,
 						'default'  => '',
 						'required'	 => array( 'footer_copyright', 'equals', '1' ),
@@ -1024,8 +1024,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'footer_description',
 						'type'		 => 'editor',
-						'title'		 => __( 'Footer Description', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Enter content or shortcode to show on footer right side.', 'buddyboss-theme' ),
+						'title'		 => __( 'Footer Description', 'press-pool' ),
+						'subtitle'	 => __( 'Enter content or shortcode to show on footer right side.', 'press-pool' ),
 						'default'	 => '',
 						'args'		 => array(
 							'teeny'			 => true,
@@ -1037,7 +1037,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'boss_footer_social_links',
 						'type'		 => 'sortable',
-						'title'		 => __( 'Social Links', 'buddyboss-theme' ),
+						'title'		 => __( 'Social Links', 'press-pool' ),
 						'label'		 => true,
 						'required'	 => array( 'footer_copyright', 'equals', '1' ),
 						'options'	 => $social_options,
@@ -1047,7 +1047,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
             // Blog
 			$this->sections[] = array(
-				'title'		 => __( 'Blog', 'buddyboss-theme' ),
+				'title'		 => __( 'Blog', 'press-pool' ),
 				'id'		 => 'blog',
 				'customizer' => false,
 				'icon'		 => 'el-icon-edit',
@@ -1055,12 +1055,12 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'blog_layout',
 						'type'		 => 'info',
-						'desc'		 => __( 'Blog Layout', 'buddyboss-theme' ),
+						'desc'		 => __( 'Blog Layout', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'blog_archive_layout',
-						'title'		 => __( 'Blog Archive Layout', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Set layout (List, Masonry or Grid) for blog page.', 'buddyboss-theme' ),
+						'title'		 => __( 'Blog Archive Layout', 'press-pool' ),
+						'subtitle'	 => __( 'Set layout (List, Masonry or Grid) for blog page.', 'press-pool' ),
 						'type'		 => 'image_select',
 						'customizer' => false,
 						'default'	 => 'standard',
@@ -1082,13 +1082,13 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'blog_single_blog',
 						'type'		 => 'info',
-						'desc'		 => __( 'Single blog post', 'buddyboss-theme' ),
+						'desc'		 => __( 'Single blog post', 'press-pool' ),
 					),
                     array(
 						'id'		 => 'blog_featured_img',
-						'title'		 => __( 'Featured Image Style', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Select layout for single blog post featured image (Above Content, Fullwidth Below Title, Fullwidth Above Content', 'buddyboss-theme' ),
-                        'desc'	 => __( 'In fullwidth the sidebar will not be visible.', 'buddyboss-theme' ),
+						'title'		 => __( 'Featured Image Style', 'press-pool' ),
+						'subtitle'	 => __( 'Select layout for single blog post featured image (Above Content, Fullwidth Below Title, Fullwidth Above Content', 'press-pool' ),
+                        'desc'	 => __( 'In fullwidth the sidebar will not be visible.', 'press-pool' ),
 						'type'		 => 'image_select',
 						'customizer' => false,
 						'default'	 => 'default-fi',
@@ -1110,16 +1110,16 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'blog_related_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Related Posts', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Related Posts', 'press-pool' ),
 						'default'	 => true,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
                         'id'       => 'blog_related_posts_limit',
                         'type'     => 'text',
-                        'title'    => __('Related posts limit', 'buddyboss-theme'),
-                        'subtitle' => __('Limit the number of related posts on single blog page', 'buddyboss-theme'),
+                        'title'    => __('Related posts limit', 'press-pool'),
+                        'subtitle' => __('Limit the number of related posts on single blog page', 'press-pool'),
                         'validate' => 'numeric',
                         'msg'      => 'Set number of related posts',
                         'default'  => '5'
@@ -1127,45 +1127,45 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'blog_author_box',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Post Author Box', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Post Author Box', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
 						'id'		 => 'blog_share_box',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Floating Social Share', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Floating Social Share', 'press-pool' ),
 						'default'	 => true,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'blog_platform_author_link',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable BuddyPress Profile Link', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable BuddyPress Profile Link', 'press-pool' ),
 						'default'	 => true,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
 						'id'		 => 'blog_newsletter_sign_up',
 						'type'		 => 'info',
-						'desc'		 => __( 'Newsletter Sign Up', 'buddyboss-theme' ),
+						'desc'		 => __( 'Newsletter Sign Up', 'press-pool' ),
 					),
                     array(
 						'id'		 => 'blog_newsletter_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Toggle Newsletter Sign Up Form', 'buddyboss-theme' ),
+						'title'		 => __( 'Toggle Newsletter Sign Up Form', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
                         'id'=>'blog_shortcode',
                         'type' => 'textarea',
-                        'title' => __('Add Shortcode', 'buddyboss-theme'),
-                        'subtitle' => __('Add shortcode to show Newsletter Sign Up Form', 'buddyboss-theme'),
+                        'title' => __('Add Shortcode', 'press-pool'),
+                        'subtitle' => __('Add shortcode to show Newsletter Sign Up Form', 'press-pool'),
                         'validate' => 'html_custom',
                         'default' => '',
                         'allowed_html' => array(
@@ -1184,7 +1184,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// WordPress Login
 			$this->sections[] = array(
-				'title'		 => __( 'Login / Register', 'buddyboss-theme' ),
+				'title'		 => __( 'Login / Register', 'press-pool' ),
 				'id'		 => 'admin_login',
 				'customizer' => false,
 				'icon'		 => 'el-icon-lock',
@@ -1192,17 +1192,17 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'boss_custom_login',
 						'type'		 => 'switch',
-						'title'		 => __( 'Custom Login/Register Screen', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Toggle the custom login/register screen design options on or off.', 'buddyboss-theme' ),
+						'title'		 => __( 'Custom Login/Register Screen', 'press-pool' ),
+						'subtitle'	 => __( 'Toggle the custom login/register screen design options on or off.', 'press-pool' ),
 						'default'	 => true,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
 						'id'		 => 'admin_logo_media',
 						'type'		 => 'media',
-						'title'		 => __( 'Custom Logo', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'We display a custom logo in place of the default WordPress logo.', 'buddyboss-theme' ),
+						'title'		 => __( 'Custom Logo', 'press-pool' ),
+						'subtitle'	 => __( 'We display a custom logo in place of the default WordPress logo.', 'press-pool' ),
 						'url'		 => false,
 						'required'	 => array( 'boss_custom_login', 'equals', '1' ),
                         'class'      => 'bbThumbScale bbThumbScaleLr',
@@ -1210,9 +1210,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id' => 'admin_logo_width',
                         'type' => 'slider',
-                        'title' => __('Logo Width', 'buddyboss-theme'),
-                        'subtitle' => __('Set logo width size', 'buddyboss-theme'),
-                        'desc' => __('Value between 50 and 320px', 'buddyboss-theme'),
+                        'title' => __('Logo Width', 'press-pool'),
+                        'subtitle' => __('Set logo width size', 'press-pool'),
+                        'desc' => __('Value between 50 and 320px', 'press-pool'),
                         "default" => 145,
                         "min" => 50,
                         "step" => 1,
@@ -1224,26 +1224,26 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'admin_login_background_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Toggle custom background', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Set custom background design on or off.', 'buddyboss-theme' ),
+						'title'		 => __( 'Toggle custom background', 'press-pool' ),
+						'subtitle'	 => __( 'Set custom background design on or off.', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'boss_custom_login', 'equals', '1' ),
 					),
                     array(
 						'id'		 => 'admin_login_background_media',
 						'type'		 => 'media',
-						'title'		 => __( 'Background Image', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'We display a custom background image in half width of the screen.', 'buddyboss-theme' ),
+						'title'		 => __( 'Background Image', 'press-pool' ),
+						'subtitle'	 => __( 'We display a custom background image in half width of the screen.', 'press-pool' ),
 						'url'		 => false,
 						'required'	 => array( 'admin_login_background_switch', 'equals', '1' ),
 					),
                     array(
                         'id'       => 'admin_login_background_text',
                         'type'     => 'text',
-                        'title'    => __('Custom Heading', 'buddyboss-theme'),
-                        'subtitle' => __('We display a custom title above the background image.', 'buddyboss-theme'),
+                        'title'    => __('Custom Heading', 'press-pool'),
+                        'subtitle' => __('We display a custom title above the background image.', 'press-pool'),
                         'msg'      => 'Custom login heading',
                         'default'  => '',
                         'required'	 => array( 'admin_login_background_switch', 'equals', '1' ),
@@ -1251,8 +1251,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       =>'admin_login_background_textarea',
                         'type'     => 'textarea',
-                        'title'    => __('Custom Text', 'buddyboss-theme'),
-                        'subtitle' => __('We display custom text above the background image.', 'buddyboss-theme'),
+                        'title'    => __('Custom Text', 'press-pool'),
+                        'subtitle' => __('We display custom text above the background image.', 'press-pool'),
                         'validate' => 'html_custom',
                         'default'  => '',
                         'required'	 => array( 'admin_login_background_switch', 'equals', '1' ),
@@ -1269,9 +1269,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id' => 'admin_login_heading_position',
                         'type' => 'slider',
-                        'title' => __('Custom Heading Position', 'buddyboss-theme'),
-                        'subtitle' => __('Set vertical heading position', 'buddyboss-theme'),
-                        'desc' => __('Value between 5 and 90%', 'buddyboss-theme'),
+                        'title' => __('Custom Heading Position', 'press-pool'),
+                        'subtitle' => __('Set vertical heading position', 'press-pool'),
+                        'desc' => __('Value between 5 and 90%', 'press-pool'),
                         "default" => 8,
                         "min" => 5,
                         "step" => 1,
@@ -1282,9 +1282,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id' => 'admin_login_overlay_opacity',
                         'type' => 'slider',
-                        'title' => __('Overlay Opacity', 'buddyboss-theme'),
-                        'subtitle' => __('Set overlay opacity', 'buddyboss-theme'),
-                        'desc' => __('Value between 0 and 100%', 'buddyboss-theme'),
+                        'title' => __('Overlay Opacity', 'press-pool'),
+                        'subtitle' => __('Set overlay opacity', 'press-pool'),
+                        'desc' => __('Value between 0 and 100%', 'press-pool'),
                         "default" => 30,
                         "min" => 0,
                         "step" => 10,
@@ -1295,8 +1295,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       => 'admin_login_heading_color',
                         'type'     => 'color',
-                        'title'    => __('Custom Heading Color', 'buddyboss-theme'),
-                        'subtitle' => __('Select your text color for custom heading section.', 'buddyboss-theme'),
+                        'title'    => __('Custom Heading Color', 'press-pool'),
+                        'subtitle' => __('Select your text color for custom heading section.', 'press-pool'),
                         'default'  => '#FFFFFF',
                         'validate' => 'color',
                         'required'	 => array( 'admin_login_background_switch', 'equals', '1' ),
@@ -1306,7 +1306,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
             // 404 Page
 			$this->sections[] = array(
-				'title'		 => __( '404 Page', 'buddyboss-theme' ),
+				'title'		 => __( '404 Page', 'press-pool' ),
 				'id'		 => '404_page',
 				'customizer' => false,
 				'icon'		 => 'el-icon-error',
@@ -1314,16 +1314,16 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       => '404_title',
                         'type'     => 'text',
-                        'title'    => __('Title', 'buddyboss-theme'),
-                        'subtitle' => __('Title that will be shown on 404 page.', 'buddyboss-theme'),
+                        'title'    => __('Title', 'press-pool'),
+                        'subtitle' => __('Title that will be shown on 404 page.', 'press-pool'),
                         'msg'      => 'Custom login heading',
                         'default'  => 'Looks like you got lost!',
                     ),
                     array(
                         'id'       =>'404_desc',
                         'type'     => 'textarea',
-                        'title'    => __('404 Description', 'buddyboss-theme'),
-                        'subtitle' => __('Add text to 404 Page', 'buddyboss-theme'),
+                        'title'    => __('404 Description', 'press-pool'),
+                        'subtitle' => __('Add text to 404 Page', 'press-pool'),
                         'validate' => 'html_custom',
                         'default'  => 'We couldn’t find the page you were looking for.',
                         'allowed_html' => array(
@@ -1339,19 +1339,19 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => '404_image',
 						'type'		 => 'media',
-						'title'		 => __( '404 Image', 'buddyboss-theme' ),
+						'title'		 => __( '404 Image', 'press-pool' ),
 						'url'		 => false,
 					),
                     array(
                         'id'       => '404_button_text',
                         'type'     => 'text',
-                        'title'    => __('Button Text', 'buddyboss-theme'),
+                        'title'    => __('Button Text', 'press-pool'),
                         'default'  => 'Go Home',
                     ),
                     array(
                         'id'       => '404_button_link',
                         'type'     => 'text',
-                        'title'    => __('Button Link', 'buddyboss-theme'),
+                        'title'    => __('Button Link', 'press-pool'),
                         'default'  => esc_url( home_url( '/' ) ),
                     ),
 				)
@@ -1359,7 +1359,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
             // Maintenance Mode
 			$this->sections[] = array(
-				'title'		 => __( 'Maintenance Mode', 'buddyboss-theme' ),
+				'title'		 => __( 'Maintenance Mode', 'press-pool' ),
 				'id'		 => 'maintenance_page',
 				'customizer' => false,
 				'icon'		 => 'el-icon-cog',
@@ -1367,17 +1367,17 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'maintenance_mode',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Maintenance Mode', 'buddyboss-theme' ),
-                        'desc'       => __('If enabled it will show maintenance message for logged out users.', 'buddyboss-theme'),
+						'title'		 => __( 'Enable Maintenance Mode', 'press-pool' ),
+                        'desc'       => __('If enabled it will show maintenance message for logged out users.', 'press-pool'),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
                     array(
                         'id'       => 'maintenance_title',
                         'type'     => 'text',
-                        'title'    => __('Title', 'buddyboss-theme'),
-                        'subtitle' => __('Title that will be shown on Maintenance page.', 'buddyboss-theme'),
+                        'title'    => __('Title', 'press-pool'),
+                        'subtitle' => __('Title that will be shown on Maintenance page.', 'press-pool'),
                         'msg'      => 'Custom Maintenance Title',
                         'default'  => 'Maintenance Mode',
                         'required'	 => array( 'maintenance_mode', 'equals', '1' ),
@@ -1385,8 +1385,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       =>'maintenance_desc',
                         'type'     => 'textarea',
-                        'title'    => __('Maintenance Description', 'buddyboss-theme'),
-                        'subtitle' => __('Add text to Maintenance Page. Basic HTML is allowed.', 'buddyboss-theme'),
+                        'title'    => __('Maintenance Description', 'press-pool'),
+                        'subtitle' => __('Add text to Maintenance Page. Basic HTML is allowed.', 'press-pool'),
                         'validate' => 'html_custom',
                         'default'  => 'Undergoing scheduled maintenance. <br/>Sorry for the inconvenience.',
                         'required'	 => array( 'maintenance_mode', 'equals', '1' ),
@@ -1403,50 +1403,50 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'maintenance_image_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Maintenance Image', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Maintenance Image', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'maintenance_mode', 'equals', '1' ),
 					),
                     array(
 						'id'		 => 'maintenance_image',
 						'type'		 => 'media',
-						'title'		 => __( 'Custom Image', 'buddyboss-theme' ),
+						'title'		 => __( 'Custom Image', 'press-pool' ),
 						'url'		 => false,
 						'required'	 => array( 'maintenance_image_switch', 'equals', '1' ),
 					),
                     array(
 						'id'		 => 'maintenance_countdown',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Countdown', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Countdown', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'maintenance_mode', 'equals', '1' ),
 					),
                     array(
                         'id'       => 'maintenance_time',
                         'type'     => 'text',
-                        'title'    => __('Back Online Date', 'buddyboss-theme'),
+                        'title'    => __('Back Online Date', 'press-pool'),
                         'msg'      => 'Back Online Date',
                         'default'  => '',
-                        'desc'       => __('Enter the date the site will come back online.', 'buddyboss-theme'),
+                        'desc'       => __('Enter the date the site will come back online.', 'press-pool'),
                         'required'	 => array( 'maintenance_countdown', 'equals', '1' ),
                     ),
                     array(
 						'id'		 => 'maintenance_subscribe',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Subscribe', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Subscribe', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'maintenance_mode', 'equals', '1' ),
 					),
                     array(
                         'id'       => 'maintenance_subscribe_title',
                         'type'     => 'text',
-                        'title'    => __('Subscribe Title', 'buddyboss-theme'),
+                        'title'    => __('Subscribe Title', 'press-pool'),
                         'msg'      => 'Subscribe Title',
                         'default'  => 'Notify me when it’s ready',
                         'required'	 => array( 'maintenance_subscribe', 'equals', '1' ),
@@ -1454,7 +1454,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       =>'maintenance_subscribe_shortcode',
                         'type'     => 'textarea',
-                        'title'    => __('Subscribe Form Shortcode', 'buddyboss-theme'),
+                        'title'    => __('Subscribe Form Shortcode', 'press-pool'),
                         'validate' => 'html_custom',
                         'default'  => '',
                         'allowed_html' => array(
@@ -1471,60 +1471,60 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
 						'id'		 => 'maintenance_social_networks',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Social Networks', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Social Networks', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'maintenance_mode', 'equals', '1' ),
 					),
                     array(
                         'id'       => 'social_network_twitter',
                         'type'     => 'text',
-                        'title'    => __('Twitter', 'buddyboss-theme'),
+                        'title'    => __('Twitter', 'press-pool'),
                         'default'  => '',
                         'required'	 => array( 'maintenance_social_networks', 'equals', '1' ),
                     ),
                     array(
                         'id'       => 'social_network_facebook',
                         'type'     => 'text',
-                        'title'    => __('Facebook', 'buddyboss-theme'),
+                        'title'    => __('Facebook', 'press-pool'),
                         'default'  => '',
                         'required'	 => array( 'maintenance_social_networks', 'equals', '1' ),
                     ),
                     array(
                         'id'       => 'social_network_google',
                         'type'     => 'text',
-                        'title'    => __('Google', 'buddyboss-theme'),
+                        'title'    => __('Google', 'press-pool'),
                         'default'  => '',
                         'required'	 => array( 'maintenance_social_networks', 'equals', '1' ),
                     ),
                     array(
                         'id'       => 'social_network_instagram',
                         'type'     => 'text',
-                        'title'    => __('Instagram', 'buddyboss-theme'),
+                        'title'    => __('Instagram', 'press-pool'),
                         'default'  => '',
                         'required'	 => array( 'maintenance_social_networks', 'equals', '1' ),
                     ),
                     array(
                         'id'       => 'social_network_youtube',
                         'type'     => 'text',
-                        'title'    => __('Youtube', 'buddyboss-theme'),
+                        'title'    => __('Youtube', 'press-pool'),
                         'default'  => '',
                         'required'	 => array( 'maintenance_social_networks', 'equals', '1' ),
                     ),
                     array(
 						'id'		 => 'contact_button',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Contact', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Contact', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'maintenance_mode', 'equals', '1' ),
 					),
                     array(
                         'id'       => 'contact_button_text',
                         'type'     => 'text',
-                        'title'    => __('Contact Text', 'buddyboss-theme'),
+                        'title'    => __('Contact Text', 'press-pool'),
                         'default'  => 'Contact us at '.get_option('admin_email'),
                         'required'	 => array( 'contact_button', 'equals', '1' ),
                     ),
@@ -1539,7 +1539,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			// Cover Images
 			if ( function_exists('is_buddypress') ) {
 			$this->sections[] = array(
-				'title'		 => __( 'Cover Images', 'buddyboss-theme' ),
+				'title'		 => __( 'Cover Images', 'press-pool' ),
 				'id'		 => 'cover_photos',
 				'customizer' => false,
 				'icon'		 => 'el-icon-photo-alt',
@@ -1547,57 +1547,57 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'	 => 'buddypress_user_info',
 						'type'	 => 'info',
-						'desc'	 => __( 'Member Profiles', 'buddyboss-theme' )
+						'desc'	 => __( 'Member Profiles', 'press-pool' )
 					),
 					array(
 						'id'		 => 'buddyboss_profile_cover_width',
 						'type'		 => 'select',
-						'title'		 => __( 'Cover Image Width', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Adjust the width of member profile cover image.', 'buddyboss-theme' ),
+						'title'		 => __( 'Cover Image Width', 'press-pool' ),
+						'subtitle'	 => __( 'Adjust the width of member profile cover image.', 'press-pool' ),
 						'options'	 => $user_cover_widths,
 						'default'	 => 'default',
 					),
 					array(
 						'id'		 => 'buddyboss_profile_cover_height',
 						'type'		 => 'select',
-						'title'		 => __( 'Cover Image Height', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Adjust the height of member profile cover image.', 'buddyboss-theme' ),
+						'title'		 => __( 'Cover Image Height', 'press-pool' ),
+						'subtitle'	 => __( 'Adjust the height of member profile cover image.', 'press-pool' ),
 						'options'	 => $user_cover_hights,
 						'default'	 => 'small',
 					),
 					array(
 						'id'		 => 'buddyboss_profile_cover_default',
 						'type'		 => 'media',
-						'title'		 => __( 'Default Cover Image', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'You can optionally upload your own image to always use a default cover photo. Ideal size is 1300px by 225px or larger.', 'buddyboss-theme' ),
+						'title'		 => __( 'Default Cover Image', 'press-pool' ),
+						'subtitle'	 => __( 'You can optionally upload your own image to always use a default cover photo. Ideal size is 1300px by 225px or larger.', 'press-pool' ),
 						'url'		 => false,
 					),
 					array(
 						'id'	 => 'buddypress_group_info',
 						'type'	 => 'info',
-						'desc'	 => __( 'Social Groups', 'buddyboss-theme' )
+						'desc'	 => __( 'Social Groups', 'press-pool' )
 					),
 					array(
 						'id'		 => 'buddyboss_group_cover_width',
 						'type'		 => 'select',
-						'title'		 => __( 'Cover Image Width', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Adjust the width of group cover image.', 'buddyboss-theme' ),
+						'title'		 => __( 'Cover Image Width', 'press-pool' ),
+						'subtitle'	 => __( 'Adjust the width of group cover image.', 'press-pool' ),
 						'options'	 => $group_cover_widths,
 						'default'	 => 'default',
 					),
 					array(
 						'id'		 => 'buddyboss_group_cover_height',
 						'type'		 => 'select',
-						'title'		 => __( 'Cover Image Height', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Adjust the height of group cover image.', 'buddyboss-theme' ),
+						'title'		 => __( 'Cover Image Height', 'press-pool' ),
+						'subtitle'	 => __( 'Adjust the height of group cover image.', 'press-pool' ),
 						'options'	 => $group_cover_hights,
 						'default'	 => 'small',
 					),
 					array(
 						'id'		 => 'buddyboss_group_cover_default',
 						'type'		 => 'media',
-						'title'		 => __( 'Default Cover Image', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'You can optionally upload your own image to always use a default cover photo. Ideal size is 1300px by 225px or larger.', 'buddyboss-theme' ),
+						'title'		 => __( 'Default Cover Image', 'press-pool' ),
+						'subtitle'	 => __( 'You can optionally upload your own image to always use a default cover photo. Ideal size is 1300px by 225px or larger.', 'press-pool' ),
 						'url'		 => false,
 					),
 				)
@@ -1607,7 +1607,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 			if ( function_exists('is_bbpress') ) {
             // bbPress Forums
 			$this->sections[] = array(
-				'title'		 => __( 'Forums', 'buddyboss-theme' ),
+				'title'		 => __( 'Forums', 'press-pool' ),
 				'id'		 => 'bbPress_forums',
 				'customizer' => false,
 				'icon'		 => 'el el-comment-alt',
@@ -1615,8 +1615,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'       => 'bbpress_forums_item_layout',
 						'type'     => 'select',
-						'title'    => __('Forum Grids', 'buddyboss-theme' ),
-						'subtitle' => __('Set forum grid layouts to Card or Cover style.', 'buddyboss-theme' ),
+						'title'    => __('Forum Grids', 'press-pool' ),
+						'subtitle' => __('Set forum grid layouts to Card or Cover style.', 'press-pool' ),
 						'options'  => array(
 							'card' => 'Card',
 							'cover' => 'Cover',
@@ -1626,25 +1626,25 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'bbpress_banner_switch',
 						'type'		 => 'switch',
-						'title'		 => __( 'Show Forum Banner', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'If enabled it will show a banner on the Forum index.', 'buddyboss-theme' ),
+						'title'		 => __( 'Show Forum Banner', 'press-pool' ),
+						'subtitle'	 => __( 'If enabled it will show a banner on the Forum index.', 'press-pool' ),
 						'default'	 => false,
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'bbpress_banner_image',
 						'type'		 => 'media',
-						'title'		 => __( 'Custom Banner Image', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'We display a custom banner on forum index page.', 'buddyboss-theme' ),
+						'title'		 => __( 'Custom Banner Image', 'press-pool' ),
+						'subtitle'	 => __( 'We display a custom banner on forum index page.', 'press-pool' ),
 						'url'		 => false,
 						'required'	 => array( 'bbpress_banner_switch', 'equals', '1' ),
 					),
                     array(
                         'id'       => 'bbpress_banner_overlay',
                         'type'     => 'color',
-                        'title'    => __('Background Overlay Color', 'buddyboss-theme'),
-                        'subtitle' => __('Select background overlay color for banner image.', 'buddyboss-theme'),
+                        'title'    => __('Background Overlay Color', 'press-pool'),
+                        'subtitle' => __('Select background overlay color for banner image.', 'press-pool'),
                         'default'  => '#007CFF',
                         'validate' => 'color',
 						'required'	 => array( 'bbpress_banner_switch', 'equals', '1' ),
@@ -1652,9 +1652,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id' => 'bbpress_banner_overlay_opacity',
                         'type' => 'slider',
-                        'title' => __('Background Overlay Opacity', 'buddyboss-theme'),
-                        'subtitle' => __('Set background overlay opacity', 'buddyboss-theme'),
-                        'desc' => __('Value between 0 and 100%', 'buddyboss-theme'),
+                        'title' => __('Background Overlay Opacity', 'press-pool'),
+                        'subtitle' => __('Set background overlay opacity', 'press-pool'),
+                        'desc' => __('Value between 0 and 100%', 'press-pool'),
                         "default" => 40,
                         "min" => 0,
                         "step" => 10,
@@ -1665,8 +1665,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       => 'bbpress_banner_text',
                         'type'     => 'color',
-                        'title'    => __('Banner Text Color', 'buddyboss-theme'),
-                        'subtitle' => __('Select text color for banner area.', 'buddyboss-theme'),
+                        'title'    => __('Banner Text Color', 'press-pool'),
+                        'subtitle' => __('Select text color for banner area.', 'press-pool'),
                         'default'  => '#ffffff',
                         'validate' => 'color',
 						'required'	 => array( 'bbpress_banner_switch', 'equals', '1' ),
@@ -1674,8 +1674,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       => 'bbpress_banner_title',
                         'type'     => 'text',
-                        'title'    => __('Forum Title', 'buddyboss-theme'),
-                        'subtitle' => __('Title that will be shown on forum index banner area.', 'buddyboss-theme'),
+                        'title'    => __('Forum Title', 'press-pool'),
+                        'subtitle' => __('Title that will be shown on forum index banner area.', 'press-pool'),
                         'msg'      => 'Forum Title',
                         'default'  => '',
 						'required'	 => array( 'bbpress_banner_switch', 'equals', '1' ),
@@ -1683,8 +1683,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                     array(
                         'id'       =>'bbpress_banner_description',
                         'type'     => 'textarea',
-                        'title'    => __('Forum Description', 'buddyboss-theme'),
-                        'subtitle' => __('Description that will be shown on forum index banner area.', 'buddyboss-theme'),
+                        'title'    => __('Forum Description', 'press-pool'),
+                        'subtitle' => __('Description that will be shown on forum index banner area.', 'press-pool'),
                         'validate' => 'html_custom',
                         'default'  => 'Find answers, ask questions, and connect with our <br/>community around the world.',
                         'allowed_html' => array(
@@ -1701,11 +1701,11 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'bbpress_banner_search',
 						'type'		 => 'switch',
-						'title'		 => __( 'Enable Search', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'If enabled search will show on banner.', 'buddyboss-theme' ),
+						'title'		 => __( 'Enable Search', 'press-pool' ),
+						'subtitle'	 => __( 'If enabled search will show on banner.', 'press-pool' ),
 						'default'	 => '1',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 						'required'	 => array( 'bbpress_banner_switch', 'equals', '1' ),
 					),
 				)
@@ -1715,7 +1715,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
             if ( class_exists( 'SFWD_LMS' ) ) {
                 // LearnDash pages
                 $this->sections[] = array(
-                    'title'		 => __( 'LearnDash', 'buddyboss-theme' ),
+                    'title'		 => __( 'LearnDash', 'press-pool' ),
                     'id'		 => 'learndash',
                     'customizer' => false,
                     'icon'		 => 'el el-icon-certificate',
@@ -1723,25 +1723,25 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                         array(
                             'id'	 => 'learndash_course_archive',
                             'type'	 => 'info',
-                            'desc'	 => __( 'Courses Index', 'buddyboss-theme' )
+                            'desc'	 => __( 'Courses Index', 'press-pool' )
                         ),
                         array(
                             'id'		 => 'learndash_course_index_show_categories_filter',
                             'type'		 => 'switch',
-                            'title'		 => __( 'Show Categories Filter', 'buddyboss-theme' ),
-                            'subtitle'	 => __( 'Enable filtering the courses index by categories.', 'buddyboss-theme' ),
+                            'title'		 => __( 'Show Categories Filter', 'press-pool' ),
+                            'subtitle'	 => __( 'Enable filtering the courses index by categories.', 'press-pool' ),
                             'default'	 => '1',
-                            'on'		 => __( 'On', 'buddyboss-theme' ),
-                            'off'		 => __( 'Off', 'buddyboss-theme' ),
+                            'on'		 => __( 'On', 'press-pool' ),
+                            'off'		 => __( 'Off', 'press-pool' ),
                         ),
                         array(
                             'id'       => 'learndash_course_index_categories_filter_taxonomy',
                             'type'     => 'select',
-                            'title'    => __('Taxonomy', 'buddyboss-theme' ),
-                            'subtitle' => __('Select the taxonomy to filter by.', 'buddyboss-theme' ),
+                            'title'    => __('Taxonomy', 'press-pool' ),
+                            'subtitle' => __('Select the taxonomy to filter by.', 'press-pool' ),
                             'options'  => array(
-                                'ld_course_category'=> __( 'Course Categories', 'buddyboss-theme' ),
-                                'ld_course_tag'     => __( 'Course Tags', 'buddyboss-theme' ),
+                                'ld_course_category'=> __( 'Course Categories', 'press-pool' ),
+                                'ld_course_tag'     => __( 'Course Tags', 'press-pool' ),
                             ),
                             'default'  => 'ld_couse_category',
                             'required'	 => array( 'learndash_course_index_show_categories_filter', 'equals', '1' ),
@@ -1749,43 +1749,43 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
                         array(
                             'id'		 => 'learndash_course_index_show_instructors_filter',
                             'type'		 => 'switch',
-                            'title'		 => __( 'Show Instructors Filter', 'buddyboss-theme' ),
-                            'subtitle'	 => __( 'Enable filtering the courses index by instructors.', 'buddyboss-theme' ),
+                            'title'		 => __( 'Show Instructors Filter', 'press-pool' ),
+                            'subtitle'	 => __( 'Enable filtering the courses index by instructors.', 'press-pool' ),
                             'default'	 => '1',
-                            'on'		 => __( 'On', 'buddyboss-theme' ),
-                            'off'		 => __( 'Off', 'buddyboss-theme' ),
+                            'on'		 => __( 'On', 'press-pool' ),
+                            'off'		 => __( 'Off', 'press-pool' ),
                         ),
                         array(
                             'id'	 => 'learndash_course_archive',
                             'type'	 => 'info',
-                            'desc'	 => __( 'Course Content', 'buddyboss-theme' )
+                            'desc'	 => __( 'Course Content', 'press-pool' )
                         ),
 						array(
                             'id'		 => 'learndash_course_author',
                             'type'		 => 'switch',
-                            'title'		 => __( 'Course Author', 'buddyboss-theme' ),
-                            'subtitle'	 => __( 'Display the course author on courses, lessons and topics.', 'buddyboss-theme' ),
+                            'title'		 => __( 'Course Author', 'press-pool' ),
+                            'subtitle'	 => __( 'Display the course author on courses, lessons and topics.', 'press-pool' ),
                             'default'	 => '1',
-                            'on'		 => __( 'On', 'buddyboss-theme' ),
-                            'off'		 => __( 'Off', 'buddyboss-theme' ),
+                            'on'		 => __( 'On', 'press-pool' ),
+                            'off'		 => __( 'Off', 'press-pool' ),
                         ),
                         array(
                             'id'		 => 'learndash_course_date',
                             'type'		 => 'switch',
-                            'title'		 => __( 'Course Date', 'buddyboss-theme' ),
-                            'subtitle'	 => __( 'Display the course date on courses, lessons and topics.', 'buddyboss-theme' ),
+                            'title'		 => __( 'Course Date', 'press-pool' ),
+                            'subtitle'	 => __( 'Display the course date on courses, lessons and topics.', 'press-pool' ),
                             'default'	 => '1',
-                            'on'		 => __( 'On', 'buddyboss-theme' ),
-                            'off'		 => __( 'Off', 'buddyboss-theme' ),
+                            'on'		 => __( 'On', 'press-pool' ),
+                            'off'		 => __( 'Off', 'press-pool' ),
                         ),
 	                    array(
 		                    'id'		 => 'learndash_course_participants',
 		                    'type'		 => 'switch',
-		                    'title'		 => __( 'Course Participants', 'buddyboss-theme' ),
-		                    'subtitle'	 	 => __( 'Display the list of enrolled course participants on courses, lessons and topics.', 'buddyboss-theme' ),
+		                    'title'		 => __( 'Course Participants', 'press-pool' ),
+		                    'subtitle'	 	 => __( 'Display the list of enrolled course participants on courses, lessons and topics.', 'press-pool' ),
 		                    'default'	 	 => '1',
-		                    'on'		 => __( 'On', 'buddyboss-theme' ),
-		                    'off'		 => __( 'Off', 'buddyboss-theme' ),
+		                    'on'		 => __( 'On', 'press-pool' ),
+		                    'off'		 => __( 'Off', 'press-pool' ),
 	                    ),
                     )
                 );
@@ -1793,18 +1793,18 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Codes Settings
 			$this->sections[] = array(
-				'title'		 => __( 'Custom Codes', 'buddyboss-theme' ),
+				'title'		 => __( 'Custom Codes', 'press-pool' ),
 				'icon'		 => 'el-icon-edit',
 				'customizer' => false,
 				'fields'	 => array(
 					array(
 						'id'		 => 'tracking',
 						'type'		 => 'switch',
-						'title'		 => __( 'Tracking Code', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Paste your Google Analytics (or other) tracking code here. This will be added before the closing of body tag.', 'buddyboss-theme' ),
+						'title'		 => __( 'Tracking Code', 'press-pool' ),
+						'subtitle'	 => __( 'Paste your Google Analytics (or other) tracking code here. This will be added before the closing of body tag.', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'boss_tracking_code',
@@ -1816,11 +1816,11 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'custom_css',
 						'type'		 => 'switch',
-						'title'		 => __( 'CSS', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Quickly add some CSS here to make design adjustments. It is a much better solution then manually editing the theme. You may also consider using a child theme.', 'buddyboss-theme' ),
+						'title'		 => __( 'CSS', 'press-pool' ),
+						'subtitle'	 => __( 'Quickly add some CSS here to make design adjustments. It is a much better solution then manually editing the theme. You may also consider using a child theme.', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'boss_custom_css',
@@ -1834,11 +1834,11 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'custom_js',
 						'type'		 => 'switch',
-						'title'		 => __( 'JavaScript', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'Quickly add some JavaScript code here. It is a much better solution then manually editing the theme. You may also consider using a child theme.', 'buddyboss-theme' ),
+						'title'		 => __( 'JavaScript', 'press-pool' ),
+						'subtitle'	 => __( 'Quickly add some JavaScript code here. It is a much better solution then manually editing the theme. You may also consider using a child theme.', 'press-pool' ),
 						'default'	 => '0',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'boss_custom_js',
@@ -1854,7 +1854,7 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 
 			// Minify Assets
 			$this->sections[] = array(
-				'title'		 => __( 'Minify Assets', 'buddyboss-theme' ),
+				'title'		 => __( 'Minify Assets', 'press-pool' ),
 				'id'		 => 'optimizations',
 				'customizer' => false,
 				'icon'		 => 'el-icon-tasks',
@@ -1862,28 +1862,28 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 					array(
 						'id'		 => 'boss_minified_css',
 						'type'		 => 'switch',
-						'title'		 => __( 'Minify CSS', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'By default the theme loads stylesheets that are not minified. You can enable this setting to instead load minified and combined stylesheets.', 'buddyboss-theme' ),
+						'title'		 => __( 'Minify CSS', 'press-pool' ),
+						'subtitle'	 => __( 'By default the theme loads stylesheets that are not minified. You can enable this setting to instead load minified and combined stylesheets.', 'press-pool' ),
 						'default'	 => '1',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 					array(
 						'id'		 => 'boss_minified_js',
 						'type'		 => 'switch',
-						'title'		 => __( 'Minify JavaScript', 'buddyboss-theme' ),
-						'subtitle'	 => __( 'By default the theme loads scripts that are not minified. You can enable this setting to instead load minified and combined JS files.', 'buddyboss-theme' ),
+						'title'		 => __( 'Minify JavaScript', 'press-pool' ),
+						'subtitle'	 => __( 'By default the theme loads scripts that are not minified. You can enable this setting to instead load minified and combined JS files.', 'press-pool' ),
 						'default'	 => '1',
-						'on'		 => __( 'On', 'buddyboss-theme' ),
-						'off'		 => __( 'Off', 'buddyboss-theme' ),
+						'on'		 => __( 'On', 'press-pool' ),
+						'off'		 => __( 'Off', 'press-pool' ),
 					),
 				)
 			);
 
 			// Import / Export
 			$this->sections[] = array(
-				'title'	 => __( 'Import / Export', 'buddyboss-theme' ),
-				//'desc'	 => __( 'Import and Export your Boss theme settings from file, text or URL.', 'buddyboss-theme' ),
+				'title'	 => __( 'Import / Export', 'press-pool' ),
+				//'desc'	 => __( 'Import and Export your Boss theme settings from file, text or URL.', 'press-pool' ),
 				'icon'	 => 'el-icon-refresh',
 				'fields' => array(
 					array(
@@ -1911,8 +1911,8 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				'display_version'	 => $theme->get( 'Version' ), // Version that appears at the top of your panel
 				'menu_type'			 => 'submenu', //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
 				'allow_sub_menu'	 => true, // Show the sections below the admin menu item or not
-				'menu_title'		 => __( 'Theme Options', 'buddyboss-theme' ),
-				'page_title'		 => __( 'BuddyBoss Theme', 'buddyboss-theme' ),
+				'menu_title'		 => __( 'Theme Options', 'press-pool' ),
+				'page_title'		 => __( 'BuddyBoss Theme', 'press-pool' ),
 				'google_api_key'	 => 'AIzaSyARjtGd3aZFBZ_8kJty6BwgRsCurPFvFeg', // https://console.developers.google.com/project/ Must be defined to add google fonts to the typography module
 				'async_typography'	 => false, // Use a asynchronous font on the front end or font string
 				//'disable_google_fonts_link' => true,                    // Disable this in case you want to create your own google fonts loader
@@ -1962,9 +1962,9 @@ if ( !class_exists( 'buddyboss_theme_Redux_Framework_config' ) ) {
 				} else {
 					$v = str_replace( '-', '_', $this->args[ 'opt_name' ] );
 				}
-				$this->args[ 'intro_text' ] = sprintf( __( '<p>To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'buddyboss-theme' ), $v );
+				$this->args[ 'intro_text' ] = sprintf( __( '<p>To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'press-pool' ), $v );
 			} else {
-				$this->args[ 'intro_text' ] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'buddyboss-theme' );
+				$this->args[ 'intro_text' ] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'press-pool' );
 			}
 		}
 

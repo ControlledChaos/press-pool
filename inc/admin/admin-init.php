@@ -303,7 +303,7 @@ if ( ! function_exists( 'buddyboss_theme_page_template' ) ) {
 		<script type="text/html" id="tmpl-classic-editor-page-padding">
 			<div id="page-padding-label-wrapper">
 				<p class="post-attributes-label-wrapper">
-					<label for="page_padding" class="post-attributes-label"><?php esc_html_e( 'Padding', 'buddyboss-theme' ) ?></label>
+					<label for="page_padding" class="post-attributes-label"><?php esc_html_e( 'Padding', 'press-pool' ) ?></label>
 				</p>
 				<input name="page_padding" type="number" size="4" id="page_padding" value="<?php echo $padding; ?>">&nbsp;px
 			</div>
@@ -314,7 +314,7 @@ if ( ! function_exists( 'buddyboss_theme_page_template' ) ) {
 				<label
 					for="page_padding"
 					class="components-base-control__label">
-					<?php esc_html_e( 'Padding:', 'buddyboss-theme' ) ?>
+					<?php esc_html_e( 'Padding:', 'press-pool' ) ?>
 				</label>
 				<input
 					name="_wp_page_padding"
@@ -379,7 +379,7 @@ if ( ! function_exists( 'buddyboss_page_padding_meta_box' ) ) {
 		?>
 		<p class="post-attributes-label-wrapper">
 			<label for="fullscreen_padding" class="post-attributes-label">
-				<?php esc_html_e( 'Padding', 'buddyboss-theme' ) ?>
+				<?php esc_html_e( 'Padding', 'press-pool' ) ?>
 			</label>
 		</p>
 		<input name="page_padding" type="number" size="4" id="page_padding" value="<?php echo $padding; ?>">&nbsp
@@ -452,14 +452,14 @@ if ( ! function_exists( 'buddyboss_theme_ld_30_admin_notice' ) ) {
 			if ( $plugin_version && version_compare( $plugin_version, '3.0', '<') ) {
 				?>
                 <div class="notice notice-success">
-                    <p><?php echo sprintf( __( 'BuddyBoss Theme requires LearnDash 3.0 or above.  <a href="%s">Update LearnDash</a>', 'buddyboss-theme' ), admin_url( 'plugins.php' ) ); ?></p>
+                    <p><?php echo sprintf( __( 'BuddyBoss Theme requires LearnDash 3.0 or above.  <a href="%s">Update LearnDash</a>', 'press-pool' ), admin_url( 'plugins.php' ) ); ?></p>
                 </div>
 				<?php
 			} else {
 			    if ( learndash_is_active_theme( 'legacy' ) ) {
 			        ?>
                     <div class="notice notice-success">
-                        <p><?php echo sprintf( __( 'BuddyBoss Theme requires the <strong>LearnDash 3.0</strong>  template, however you are using the <strong>Legacy</strong> template. <a href="%s">Repair</a>', 'buddyboss-theme' ), add_query_arg( [
+                        <p><?php echo sprintf( __( 'BuddyBoss Theme requires the <strong>LearnDash 3.0</strong>  template, however you are using the <strong>Legacy</strong> template. <a href="%s">Repair</a>', 'press-pool' ), add_query_arg( [
 		                        'page' => 'learndash_lms_settings',
 	                        ],
 		                        admin_url( 'admin.php' ) ) ); ?></p>

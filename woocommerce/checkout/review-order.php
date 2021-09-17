@@ -20,8 +20,8 @@ defined( 'ABSPATH' ) || exit;
 <table class="shop_table woocommerce-checkout-review-order-table">
 	<thead>
 		<tr>
-			<th class="product-name"><?php esc_html_e( 'Product', 'buddyboss-theme' ); ?></th>
-			<th class="product-total"><?php esc_html_e( 'Total', 'buddyboss-theme' ); ?></th>
+			<th class="product-name"><?php esc_html_e( 'Product', 'press-pool' ); ?></th>
+			<th class="product-total"><?php esc_html_e( 'Total', 'press-pool' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -44,7 +44,7 @@ defined( 'ABSPATH' ) || exit;
     								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
     									'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s" data-balloon-pos="up" data-balloon="Remove">&times;</a>',
     									esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-    									__( 'Remove this item', 'buddyboss-theme' ),
+    									__( 'Remove this item', 'press-pool' ),
     									esc_attr( $product_id ),
     									esc_attr( $_product->get_sku() )
     								), $cart_item_key );
@@ -63,7 +63,7 @@ defined( 'ABSPATH' ) || exit;
                                 </div>
                                 <div class="bs-product-name">
     							     <div class="check-name"><?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;'; ?></div>
-    							     <div class="qty"><?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . esc_html_e( 'Qty:', 'buddyboss-theme' ) . sprintf( '%s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?></div>
+    							     <div class="qty"><?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . esc_html_e( 'Qty:', 'press-pool' ) . sprintf( '%s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?></div>
                                 </div>
     							<?php echo wc_get_formatted_cart_item_data( $cart_item ); ?>
                             </div>
@@ -82,7 +82,7 @@ defined( 'ABSPATH' ) || exit;
 	<tfoot>
 
 		<tr class="cart-subtotal">
-			<th><?php esc_html_e( 'Subtotal', 'buddyboss-theme' ); ?></th>
+			<th><?php esc_html_e( 'Subtotal', 'press-pool' ); ?></th>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
@@ -129,7 +129,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th><?php esc_html_e( 'Total', 'buddyboss-theme' ); ?></th>
+			<th><?php esc_html_e( 'Total', 'press-pool' ); ?></th>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 

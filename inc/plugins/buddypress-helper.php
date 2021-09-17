@@ -194,7 +194,7 @@ if ( !class_exists( '\BuddyBossTheme\BuddyPressHelper' ) ) {
 					$member_count = $total - sizeof( $members );
 					?>
 					<span class="members">
-						<span class="members-count-g">+<?php echo $member_count; ?></span> <?php printf( _n( 'member', 'members', $member_count, 'buddyboss-theme' ) ); ?>
+						<span class="members-count-g">+<?php echo $member_count; ?></span> <?php printf( _n( 'member', 'members', $member_count, 'press-pool' ) ); ?>
 					</span>
 					<?php
 				}
@@ -203,7 +203,7 @@ if ( !class_exists( '\BuddyBossTheme\BuddyPressHelper' ) ) {
 		}
 
 		function get_group_description_excerpt( $excerpt, $group ) {
-			$group_link = ' <a href="'. esc_url( bp_get_group_permalink( $group ) ) .'" class="bb-more-link">' . __( 'more', 'buddyboss-theme' ) . '<i class="bb-icon-chevron-right"></i></a>';
+			$group_link = ' <a href="'. esc_url( bp_get_group_permalink( $group ) ) .'" class="bb-more-link">' . __( 'more', 'press-pool' ) . '<i class="bb-icon-chevron-right"></i></a>';
 			return bp_create_excerpt( $excerpt, 120, array( 'ending' => $group_link ) );
 		}
 
@@ -273,7 +273,7 @@ if ( !class_exists( '\BuddyBossTheme\BuddyPressHelper' ) ) {
 					<h3 class="results-group-title">
 						<span><?php echo $label ?></span>
 					</h3>
-					<span class="total-results"><?php printf( _n( '%d result', '%d results', $total_results, 'buddyboss-theme' ), $total_results ) ?></span>
+					<span class="total-results"><?php printf( _n( '%d result', '%d results', $total_results, 'press-pool' ), $total_results ) ?></span>
 				</header>
 				<?php
 				$start_html .= ob_get_clean();

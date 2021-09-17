@@ -50,7 +50,7 @@ class Icon_Picker_Type_Image extends Icon_Picker_Type {
 	 */
 	public function __construct( $args = array() ) {
 		if ( empty( $this->name ) ) {
-			$this->name = __( 'Image', 'buddyboss-theme' );
+			$this->name = __( 'Image', 'press-pool' );
 		}
 
 		parent::__construct( $args );

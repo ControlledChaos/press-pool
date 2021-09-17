@@ -10,8 +10,8 @@
 
 	<header class="bb-member-photos-header bb-photos-actions">
 		<div class="bb-photos-meta">
-			<a data-balloon="<?php _e( 'Delete', 'buddyboss-theme' ); ?>" data-balloon-pos="up" class="bb-delete" id="bb-delete-media" href="#"><i class="bb-icon-trash-small"></i></a>
-			<a data-balloon="<?php _e( 'Select All', 'buddyboss-theme' ); ?>" data-balloon-pos="up" class="bb-select" id="bb-select-deselect-all-media" href="#"><i class="bb-icon-check"></i></a>
+			<a data-balloon="<?php _e( 'Delete', 'press-pool' ); ?>" data-balloon-pos="up" class="bb-delete" id="bb-delete-media" href="#"><i class="bb-icon-trash-small"></i></a>
+			<a data-balloon="<?php _e( 'Select All', 'press-pool' ); ?>" data-balloon-pos="up" class="bb-select" id="bb-select-deselect-all-media" href="#"><i class="bb-icon-check"></i></a>
 		</div>
 	</header>
 

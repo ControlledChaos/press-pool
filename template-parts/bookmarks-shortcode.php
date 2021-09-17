@@ -59,8 +59,8 @@ if ( !empty( $bookmarks ) ) {
                                         'icon_class'    => 'bb-bookmark bb-icon-bookmark-small',
                                         'text_template' => '',
 
-                                        'title_add' => __( 'Bookmark this story to read later', 'buddyboss-theme' ),
-                                        'title_remove' => __( 'Remove bookmark', 'buddyboss-theme' ),
+                                        'title_add' => __( 'Bookmark this story to read later', 'press-pool' ),
+                                        'title_remove' => __( 'Remove bookmark', 'press-pool' ),
 										'tooltip_pos'   => 'left',
                                     ) );
                                 }

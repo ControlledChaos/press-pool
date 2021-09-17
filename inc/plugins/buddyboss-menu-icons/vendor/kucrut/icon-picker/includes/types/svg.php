@@ -49,7 +49,7 @@ class Icon_Picker_Type_Svg extends Icon_Picker_Type_Image {
 	 * @param array $args Misc. arguments.
 	 */
 	public function __construct( $args = array() ) {
-		$this->name = __( 'SVG', 'buddyboss-theme' );
+		$this->name = __( 'SVG', 'press-pool' );
 
 		parent::__construct( $args );
 		add_filter( 'upload_mimes', array( $this, '_add_mime_type' ) );
@@ -107,7 +107,7 @@ class Icon_Picker_Type_Svg extends Icon_Picker_Type_Image {
 					</div>
 				</div>
 				<a class="check" href="#" title="%s"><div class="media-modal-icon"></div></a>',
-				esc_attr__( 'Deselect', 'buddyboss-theme' )
+				esc_attr__( 'Deselect', 'press-pool' )
 			),
 		);
 

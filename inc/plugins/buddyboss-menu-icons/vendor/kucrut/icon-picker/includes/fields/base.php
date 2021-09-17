@@ -64,8 +64,8 @@ function icon_picker_field( $args, $echo = true ) {
 			'type' => '',
 			'icon' => '',
 		),
-		'select' => sprintf( '<a class="ipf-select">%s</a>', esc_html__( 'Select Icon', 'buddyboss-theme' ) ),
-		'remove' => sprintf( '<a class="ipf-remove button hidden">%s</a>', esc_html__( 'Remove', 'buddyboss-theme' ) ),
+		'select' => sprintf( '<a class="ipf-select">%s</a>', esc_html__( 'Select Icon', 'press-pool' ) ),
+		'remove' => sprintf( '<a class="ipf-remove button hidden">%s</a>', esc_html__( 'Remove', 'press-pool' ) ),
 	);
 
 	$args          = wp_parse_args( $args, $defaults );

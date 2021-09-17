@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="job_application application">
 		<?php do_action( 'job_application_start', $apply ); ?>
 		
-		<input type="button" class="application_button button" value="<?php _e( 'Apply for job', 'buddyboss-theme' ); ?>" />
+		<input type="button" class="application_button button" value="<?php _e( 'Apply for job', 'press-pool' ); ?>" />
 		
 		<div class="bb-modal bb_application_details mfp-hide">
 			<?php

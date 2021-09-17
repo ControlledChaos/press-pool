@@ -12,24 +12,24 @@ if( is_user_logged_in() ) {
 		?>
 		<li id="wp-admin-bar-my-account-xprofile" class="menupop parent">
 			<a class="ab-item" aria-haspopup="true" href="<?php echo $profile_link; ?>">
-				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Profile', 'buddyboss-theme' ); ?>
+				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Profile', 'press-pool' ); ?>
 			</a>
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-xprofile-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-xprofile-public">
-						<a class="ab-item" href="<?php echo $profile_link; ?>"><?php _e( 'View', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo $profile_link; ?>"><?php _e( 'View', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-xprofile-edit">
-						<a class="ab-item" href="<?php echo trailingslashit( $profile_link . 'edit' ); ?>"><?php _e( 'Edit', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo trailingslashit( $profile_link . 'edit' ); ?>"><?php _e( 'Edit', 'press-pool' ); ?></a>
 					</li>
 					<?php if ( buddypress()->avatar->show_avatars ) { ?>
 					<li id="wp-admin-bar-my-account-xprofile-change-avatar">
-						<a class="ab-item" href="<?php echo trailingslashit( $profile_link . 'change-avatar' ); ?>"><?php _e( 'Profile Photo', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo trailingslashit( $profile_link . 'change-avatar' ); ?>"><?php _e( 'Profile Photo', 'press-pool' ); ?></a>
 					</li>
 					<?php } ?>
 					<?php if ( bp_displayed_user_use_cover_image_header() ) { ?>
 					<li id="wp-admin-bar-my-account-xprofile-change-cover-image">
-						<a class="ab-item" href="<?php echo trailingslashit( $profile_link . 'change-cover-image' ); ?>"><?php _e( 'Cover Photo', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo trailingslashit( $profile_link . 'change-cover-image' ); ?>"><?php _e( 'Cover Photo', 'press-pool' ); ?></a>
 					</li>
 					<?php } ?>
 				</ul>
@@ -48,35 +48,35 @@ if( is_user_logged_in() ) {
 		?>
 		<li id="wp-admin-bar-my-account-settings" class="menupop parent">
 			<a class="ab-item" aria-haspopup="true" href="<?php echo $settings_link; ?>">
-				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Account', 'buddyboss-theme' ); ?></a>
+				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Account', 'press-pool' ); ?></a>
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-settings-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-settings-general">
 						<a class="ab-item" href="<?php echo $settings_link; ?>">
-							<?php _e( 'Login Information', 'buddyboss-theme' ); ?>
+							<?php _e( 'Login Information', 'press-pool' ); ?>
 						</a>
 					</li>
 					<?php if ( has_action( 'bp_notification_settings' ) ) { ?>
 					<li id="wp-admin-bar-my-account-settings-notifications">
 						<a class="ab-item" href="<?php echo trailingslashit( $settings_link . 'notifications' ); ?>">
-							<?php _e( 'Email Preferences', 'buddyboss-theme' ); ?>
+							<?php _e( 'Email Preferences', 'press-pool' ); ?>
 						</a>
 					</li>
 					<?php } ?>
 					<li id="wp-admin-bar-my-account-settings-profile">
 						<a class="ab-item" href="<?php echo trailingslashit( $settings_link . 'profile' ); ?>">
-							<?php _e( 'Privacy', 'buddyboss-theme' ); ?>
+							<?php _e( 'Privacy', 'press-pool' ); ?>
 						</a>
 					</li>
 					<li id="wp-admin-bar-my-account-settings-export">
 						<a class="ab-item" href="<?php echo trailingslashit( $settings_link . 'export/' ); ?>">
-							<?php _e( 'Export Data', 'buddyboss-theme' ); ?>
+							<?php _e( 'Export Data', 'press-pool' ); ?>
 						</a>
 					</li>
 					<?php if ( !bp_current_user_can( 'bp_moderate' ) && ! bp_core_get_root_option( 'bp-disable-account-deletion' ) ) { ?>
 					<li id="wp-admin-bar-my-account-settings-delete-account">
 						<a class="ab-item" href="<?php echo trailingslashit( $settings_link . 'delete-account' ); ?>">
-							<?php _e( 'Delete Account', 'buddyboss-theme' ); ?>
+							<?php _e( 'Delete Account', 'press-pool' ); ?>
 						</a>
 					</li>
 					<?php } ?>
@@ -96,37 +96,37 @@ if( is_user_logged_in() ) {
 		?>
 		<li id="wp-admin-bar-my-account-activity" class="menupop parent">
 			<a class="ab-item" aria-haspopup="true" href="<?php echo esc_url( $activity_link ); ?>">
-				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Timeline', 'buddyboss-theme' ); ?>
+				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Timeline', 'press-pool' ); ?>
 			</a>
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-activity-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-activity-personal">
-						<a class="ab-item" href="<?php echo esc_url( $activity_link ); ?>"><?php echo function_exists( 'bp_is_activity_tabs_active' ) && bp_is_activity_tabs_active() ? __( 'Personal', 'buddyboss-theme' ) : __( 'Posts', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( $activity_link ); ?>"><?php echo function_exists( 'bp_is_activity_tabs_active' ) && bp_is_activity_tabs_active() ? __( 'Personal', 'press-pool' ) : __( 'Posts', 'press-pool' ); ?></a>
 					</li>
                     <?php if ( function_exists( 'bp_is_activity_tabs_active' ) && bp_is_activity_tabs_active() ) : ?>
                         <?php if ( bp_is_activity_like_active() ) : ?>
                             <li id="wp-admin-bar-my-account-activity-favorites">
-                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'favorites' ) ); ?>"><?php _e( 'Likes', 'buddyboss-theme' ); ?></a>
+                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'favorites' ) ); ?>"><?php _e( 'Likes', 'press-pool' ); ?></a>
                             </li>
 	                    <?php endif; ?>
                         <?php if ( bp_is_active( 'friends' ) ) : ?>
                             <li id="wp-admin-bar-my-account-activity-friends">
-                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'friends' ) ); ?>"><?php _e( 'Connections', 'buddyboss-theme' ); ?></a>
+                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'friends' ) ); ?>"><?php _e( 'Connections', 'press-pool' ); ?></a>
                             </li>
 	                    <?php endif; ?>
                         <?php if ( bp_is_active( 'groups' ) ) : ?>
                             <li id="wp-admin-bar-my-account-activity-groups">
-                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'groups' ) ); ?>"><?php _e( 'Groups', 'buddyboss-theme' ); ?></a>
+                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'groups' ) ); ?>"><?php _e( 'Groups', 'press-pool' ); ?></a>
                             </li>
 	                    <?php endif; ?>
                         <?php if ( bp_activity_do_mentions() ) : ?>
                             <li id="wp-admin-bar-my-account-activity-mentions">
-                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'mentions' ) ); ?>"><?php _e( 'Mentions', 'buddyboss-theme' ); ?></a>
+                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'mentions' ) ); ?>"><?php _e( 'Mentions', 'press-pool' ); ?></a>
                             </li>
 	                    <?php endif; ?>
                         <?php if ( bp_is_activity_follow_active() ) : ?>
                             <li id="wp-admin-bar-my-account-activity-following">
-                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'following' ) ); ?>"><?php _e( 'Following', 'buddyboss-theme' ); ?></a>
+                                <a class="ab-item" href="<?php echo esc_url( trailingslashit( $activity_link . 'following' ) ); ?>"><?php _e( 'Following', 'press-pool' ); ?></a>
                             </li>
 	                    <?php endif; ?>
                     <?php endif; ?>
@@ -148,17 +148,17 @@ if( is_user_logged_in() ) {
 		if ( ! empty( $count ) ) {
 			$title = sprintf(
 			/* translators: %s: Unread notification count for the current user */
-				__( 'Notifications %s', 'buddyboss-theme' ),
+				__( 'Notifications %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 			$unread = sprintf(
 			/* translators: %s: Unread notification count for the current user */
-				__( 'Unread %s', 'buddyboss-theme' ),
+				__( 'Unread %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 		} else {
-			$title  = __( 'Notifications', 'buddyboss-theme' );
-			$unread = __( 'Unread', 'buddyboss-theme' );
+			$title  = __( 'Notifications', 'press-pool' );
+			$unread = __( 'Unread', 'press-pool' );
 		}
 
 		?>
@@ -172,7 +172,7 @@ if( is_user_logged_in() ) {
 						<a class="ab-item" href="<?php echo esc_url( $notifications_link ); ?>"><?php echo $unread; ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-notifications-read">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $notifications_link . 'read' ) ); ?>"><?php _e( 'Read', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $notifications_link . 'read' ) ); ?>"><?php _e( 'Read', 'press-pool' ); ?></a>
 					</li>
 				</ul>
 			</div>
@@ -192,17 +192,17 @@ if( is_user_logged_in() ) {
 		if ( !empty( $count ) ) {
 			$title = sprintf(
 			/* translators: %s: Unread message count for the current user */
-				__( 'Messages %s', 'buddyboss-theme' ),
+				__( 'Messages %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 			$inbox = sprintf(
 			/* translators: %s: Unread message count for the current user */
-				__( 'Messages %s', 'buddyboss-theme' ),
+				__( 'Messages %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 		} else {
-			$title = __( 'Messages', 'buddyboss-theme' );
-			$inbox = __( 'Messages',    'buddyboss-theme' );
+			$title = __( 'Messages', 'press-pool' );
+			$inbox = __( 'Messages',    'press-pool' );
 		}
 
 		?>
@@ -216,11 +216,11 @@ if( is_user_logged_in() ) {
 						<a class="ab-item" href="<?php echo esc_url( $messages_link ); ?>"><?php echo $inbox; ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-messages-compose">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $messages_link . 'compose' ) ); ?>"><?php _e( 'New Message', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $messages_link . 'compose' ) ); ?>"><?php _e( 'New Message', 'press-pool' ); ?></a>
 					</li>
 					<?php if ( bp_current_user_can( 'bp_moderate' ) ) { ?>
 						<li id="wp-admin-bar-my-account-messages-notices">
-							<a class="ab-item" href="<?php echo esc_url( admin_url( '/admin.php?page=bp-notices' ) ); ?>"><?php _e( 'Site Notices', 'buddyboss-theme' ); ?></a>
+							<a class="ab-item" href="<?php echo esc_url( admin_url( '/admin.php?page=bp-notices' ) ); ?>"><?php _e( 'Site Notices', 'press-pool' ); ?></a>
 						</li>
 					<?php } ?>
 				</ul>
@@ -241,17 +241,17 @@ if( is_user_logged_in() ) {
 		if ( !empty( $count ) ) {
 			$title = sprintf(
 			/* translators: %s: Pending friend request count for the current user */
-				__( 'Connections %s', 'buddyboss-theme' ),
+				__( 'Connections %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 			$pending = sprintf(
 			/* translators: %s: Pending friend request count for the current user */
-				__( 'Pending Requests %s', 'buddyboss-theme' ),
+				__( 'Pending Requests %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 		} else {
-			$title   = __( 'Connections', 'buddyboss-theme' );
-			$pending = __( 'No Pending Requests', 'buddyboss-theme' );
+			$title   = __( 'Connections', 'press-pool' );
+			$pending = __( 'No Pending Requests', 'press-pool' );
 		}
 
 		?>
@@ -262,7 +262,7 @@ if( is_user_logged_in() ) {
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-friends-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-friends-friendships">
-						<a class="ab-item" href="<?php echo esc_url( $friends_link ); ?>"><?php _e( 'My Connections', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( $friends_link ); ?>"><?php _e( 'My Connections', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-friends-requests">
 						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $friends_link . 'requests' ) ); ?>"><?php echo $pending; ?></a>
@@ -282,19 +282,19 @@ if( is_user_logged_in() ) {
 
 		// Pending group invites.
 		$count   = groups_get_invite_count_for_user();
-		$title   = __( 'Groups', 'buddyboss-theme' );
-		$pending = __( 'No Pending Invites', 'buddyboss-theme' );
+		$title   = __( 'Groups', 'press-pool' );
+		$pending = __( 'No Pending Invites', 'press-pool' );
 
 		if ( ! empty( $count ) ) {
 			$title = sprintf(
 			/* translators: %s: Group invitation count for the current user */
-				__( 'Groups %s', 'buddyboss-theme' ),
+				__( 'Groups %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 
 			$pending = sprintf(
 			/* translators: %s: Group invitation count for the current user */
-				__( 'Pending Invites %s', 'buddyboss-theme' ),
+				__( 'Pending Invites %s', 'press-pool' ),
 				'<span class="count">' . bp_core_number_format( $count ) . '</span>'
 			);
 		}
@@ -307,14 +307,14 @@ if( is_user_logged_in() ) {
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-groups-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-groups-memberships">
-						<a class="ab-item" href="<?php echo esc_url( $groups_link ); ?>"><?php _e( 'My Groups', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( $groups_link ); ?>"><?php _e( 'My Groups', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-groups-invites">
 						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $groups_link . 'invites' ) ); ?>"><?php echo $pending; ?></a>
 					</li>
 					<?php if ( bp_user_can_create_groups() ) { ?>
 						<li id="wp-admin-bar-my-account-groups-create">
-							<a class="ab-item" href="<?php echo esc_url( trailingslashit( bp_get_groups_directory_permalink() . 'create' ) ); ?>"><?php _e( 'Create Group', 'buddyboss-theme' ); ?></a>
+							<a class="ab-item" href="<?php echo esc_url( trailingslashit( bp_get_groups_directory_permalink() . 'create' ) ); ?>"><?php _e( 'Create Group', 'press-pool' ); ?></a>
 						</li>
 					<?php } ?>
 				</ul>
@@ -334,21 +334,21 @@ if( is_user_logged_in() ) {
 		?>
 		<li id="wp-admin-bar-my-account-forums" class="menupop parent">
 			<a class="ab-item" aria-haspopup="true" href="<?php echo esc_url( $forums_link ); ?>">
-				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Forums', 'buddyboss-theme' ); ?>
+				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Forums', 'press-pool' ); ?>
 			</a>
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-forums-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-forums-topics">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_topic_archive_slug() ) ); ?>"><?php _e( 'My Discussions', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_topic_archive_slug() ) ); ?>"><?php _e( 'My Discussions', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-forums-replies">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_reply_archive_slug() ) ); ?>"><?php _e( 'My Replies', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_reply_archive_slug() ) ); ?>"><?php _e( 'My Replies', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-forums-favorites">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_user_favorites_slug() ) ); ?>"><?php _e( 'My Favorites', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_user_favorites_slug() ) ); ?>"><?php _e( 'My Favorites', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-forums-subscriptions">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_user_subscriptions_slug() ) ); ?>"><?php _e( 'Subscriptions', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $forums_link . bbp_get_user_subscriptions_slug() ) ); ?>"><?php _e( 'Subscriptions', 'press-pool' ); ?></a>
 					</li>
 				</ul>
 			</div>
@@ -366,16 +366,16 @@ if( is_user_logged_in() ) {
 		?>
 		<li id="wp-admin-bar-my-account-media" class="menupop parent">
 			<a class="ab-item" aria-haspopup="true" href="<?php echo esc_url( $media_link ); ?>">
-				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Photos', 'buddyboss-theme' ); ?>
+				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Photos', 'press-pool' ); ?>
 			</a>
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-media-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-media-my-media">
-						<a class="ab-item" href="<?php echo esc_url( $media_link ); ?>"><?php _e( 'My Photos', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( $media_link ); ?>"><?php _e( 'My Photos', 'press-pool' ); ?></a>
 					</li>
 					<?php if ( bp_is_profile_albums_support_enabled() ) { ?>
 						<li id="wp-admin-bar-my-account-media-albums">
-							<a class="ab-item" href="<?php echo esc_url( trailingslashit( $media_link . 'albums' ) ); ?>"><?php _e( 'My Albums', 'buddyboss-theme' ); ?></a>
+							<a class="ab-item" href="<?php echo esc_url( trailingslashit( $media_link . 'albums' ) ); ?>"><?php _e( 'My Albums', 'press-pool' ); ?></a>
 						</li>
 					<?php } ?>
 				</ul>
@@ -394,15 +394,15 @@ if( is_user_logged_in() ) {
 		?>
 		<li id="wp-admin-bar-my-account-invites" class="menupop parent">
 			<a class="ab-item" aria-haspopup="true" href="<?php echo esc_url( $invites_link ); ?>">
-				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Email Invites', 'buddyboss-theme' ); ?>
+				<span class="wp-admin-bar-arrow" aria-hidden="true"></span><?php _e( 'Email Invites', 'press-pool' ); ?>
 			</a>
 			<div class="ab-sub-wrapper wrapper">
 				<ul id="wp-admin-bar-my-account-invites-default" class="ab-submenu">
 					<li id="wp-admin-bar-my-account-invites-invites">
-						<a class="ab-item" href="<?php echo esc_url( $invites_link ); ?>"><?php _e( 'Send Invites', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( $invites_link ); ?>"><?php _e( 'Send Invites', 'press-pool' ); ?></a>
 					</li>
 					<li id="wp-admin-bar-my-account-invites-sent">
-						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $invites_link . 'sent-invites' ) ); ?>"><?php _e( 'Sent Invites', 'buddyboss-theme' ); ?></a>
+						<a class="ab-item" href="<?php echo esc_url( trailingslashit( $invites_link . 'sent-invites' ) ); ?>"><?php _e( 'Sent Invites', 'press-pool' ); ?></a>
 					</li>
 				</ul>
 			</div>
@@ -413,5 +413,5 @@ if( is_user_logged_in() ) {
 	// Action - After buddypress profile menu
 	do_action( THEME_HOOK_PREFIX . 'after_bb_profile_menu' );
 
-	printf( "<li class='logout-link'><a href='%s'>%s</a></li>", wp_logout_url( bp_get_requested_url() ), __( 'Logout', 'buddyboss-theme' ) );
+	printf( "<li class='logout-link'><a href='%s'>%s</a></li>", wp_logout_url( bp_get_requested_url() ), __( 'Logout', 'press-pool' ) );
 }

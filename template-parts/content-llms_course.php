@@ -69,7 +69,7 @@ global $post;
 						the_content( sprintf(
 							wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-								__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'buddyboss-theme' ), array(
+								__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'press-pool' ), array(
 									'span' => array(
 										'class' => array(),
 									),

@@ -70,8 +70,8 @@ if ( ! empty( $course_price ) && ( $course_price_type == 'paynow' || $course_pri
 					if ( ( $course_pricing['type'] === 'open' && $progress['percentage'] === 0 ) || ( $course_pricing['type'] !== 'open' && $has_access && $progress['percentage'] === 0 ) ) {
 
 						echo '<div class="ld-status ld-status-progress ld-primary-background">' .
-							__( 'Start ', 'buddyboss-theme' ) .
-							sprintf( __( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label( 'course' ) ) .
+							__( 'Start ', 'press-pool' ) .
+							sprintf( __( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label( 'course' ) ) .
 						'</div>';
 
 					} else {
@@ -82,18 +82,18 @@ if ( ! empty( $course_price ) && ( $course_price_type == 'paynow' || $course_pri
 
 				} elseif ( $course_pricing['type'] == 'free' ) {
 
-					echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Free', 'buddyboss-theme' ) . '</div>';
+					echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Free', 'press-pool' ) . '</div>';
 
 				} elseif ( $course_pricing['type'] !== 'open' ) {
 
 					echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Not Enrolled',
-							'buddyboss-theme' ) . '</div>';
+							'press-pool' ) . '</div>';
 
 				} elseif ( $course_pricing['type'] === 'open' ) {
 
 					echo '<div class="ld-status ld-status-progress ld-primary-background">' .
-						__( 'Start ', 'buddyboss-theme' ) .
-						sprintf( __( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label( 'course' ) ) .
+						__( 'Start ', 'press-pool' ) .
+						sprintf( __( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label( 'course' ) ) .
 					'</div>';
 
 				}
@@ -111,12 +111,12 @@ if ( ! empty( $course_price ) && ( $course_price_type == 'paynow' || $course_pri
 			$total_lessons = (
 				$lessons_count > 1
 				? sprintf(
-					__( '%1$s %2$s', 'buddyboss-theme' ),
+					__( '%1$s %2$s', 'press-pool' ),
 					$lessons_count,
 					LearnDash_Custom_Label::get_label( 'lessons' )
 				)
 				: sprintf(
-					__( '%1$s %2$s', 'buddyboss-theme' ),
+					__( '%1$s %2$s', 'press-pool' ),
 					$lessons_count,
 					LearnDash_Custom_Label::get_label( 'lesson' )
 				)
@@ -126,7 +126,7 @@ if ( ! empty( $course_price ) && ( $course_price_type == 'paynow' || $course_pri
 				echo '<div class="course-lesson-count">' . $total_lessons . '</div>';
 			} else {
 				echo '<div class="course-lesson-count">' .
-					sprintf( __( '0 %s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label( 'lessons' ) ) .
+					sprintf( __( '0 %s', 'press-pool' ), LearnDash_Custom_Label::get_label( 'lessons' ) ) .
 				'</div>';
 			}
 			?>

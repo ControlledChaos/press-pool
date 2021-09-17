@@ -20,7 +20,7 @@ if ( !function_exists( 'buddyboss_theme_setup' ) ) {
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on BuddyBoss Theme, use a find and replace
-		 * to change 'buddyboss-theme' to the name of your theme in all the template files.
+		 * to change 'press-pool' to the name of your theme in all the template files.
 		 */
 		buddyboss_theme_load_textdomain();
 
@@ -69,10 +69,10 @@ if ( !function_exists( 'buddyboss_theme_setup' ) ) {
 
 		// Adds wp_nav_menu() in two locations with BuddyPress deactivated.
 		register_nav_menus( array(
-			'buddypanel-loggedin'	 => __( 'BuddyPanel - Logged in users', 'buddyboss-theme' ),
-			'buddypanel-loggedout'	 => __( 'BuddyPanel - Logged out users', 'buddyboss-theme' ),
-			'header-menu'			 => __( 'Titlebar', 'buddyboss-theme' ),
-			'header-my-account'		 => __( 'Profile Dropdown', 'buddyboss-theme' ),
+			'buddypanel-loggedin'	 => __( 'BuddyPanel - Logged in users', 'press-pool' ),
+			'buddypanel-loggedout'	 => __( 'BuddyPanel - Logged out users', 'press-pool' ),
+			'header-menu'			 => __( 'Titlebar', 'press-pool' ),
+			'header-my-account'		 => __( 'Profile Dropdown', 'press-pool' ),
 		) );
 
 		/*
@@ -126,7 +126,7 @@ if ( ! function_exists( 'buddyboss_theme_customize_register' ) ) {
  * @return bool True on success, false on failure.
  */
 function buddyboss_theme_load_textdomain() {
-	$domain = 'buddyboss-theme';
+	$domain = 'press-pool';
 
 	/**
 	 * Filters the locale to be loaded for the language files.
@@ -152,7 +152,7 @@ function buddyboss_theme_load_textdomain() {
 
 	// Try custom locations in WP_LANG_DIR.
 	foreach ( $locations as $location ) {
-		if ( load_textdomain( 'buddyboss-theme', $location . $mofile_custom ) ) {
+		if ( load_textdomain( 'press-pool', $location . $mofile_custom ) ) {
 			return true;
 		}
 	}
@@ -354,8 +354,8 @@ function buddyboss_theme_scripts() {
 		'show_notifications' => $show_notifications,
 		'show_messages'      => $show_messages,
 		'translation'        => array(
-			"comment_posted"      => __( "Your comment has been posted.", 'buddyboss-theme' ),
-			"comment_btn_loading" => __( "Please Wait...", 'buddyboss-theme' )
+			"comment_posted"      => __( "Your comment has been posted.", 'press-pool' ),
+			"comment_btn_loading" => __( "Please Wait...", 'press-pool' )
 		)
 	) ) );
 }
@@ -384,8 +384,8 @@ function buddyboss_theme_admin_scripts() {
         wp_register_script( 'buddyboss-theme-learndash-admin-js', get_template_directory_uri() . '/assets/js/plugins/learndash-admin' . $minjs . '.js', array( 'jquery' ) );
         wp_localize_script( 'buddyboss-theme-learndash-admin-js', 'meta_image',
             array(
-                'title' => __( 'Choose or Upload an Image', 'buddyboss-theme' ),
-                'button' => __( 'Use this image', 'buddyboss-theme' ),
+                'title' => __( 'Choose or Upload an Image', 'press-pool' ),
+                'button' => __( 'Use this image', 'press-pool' ),
             )
         );
 
@@ -1049,7 +1049,7 @@ if ( ! function_exists( 'buddyboss_search_input_placeholder_text' ) ) {
 
 		if ( function_exists( 'bp_is_search_autocomplete_enable' ) ) {
 			if ( bp_is_active( 'search' ) && bp_is_search_autocomplete_enable() ) {
-				$string = __( 'Start typing to search...', 'buddyboss-theme' );
+				$string = __( 'Start typing to search...', 'press-pool' );
 			}
 		}
 
@@ -1095,7 +1095,7 @@ if ( ! function_exists( 'buddyboss_theme_stick_to_bottom_field_walker' ) ) {
 			<p class="field-stick-to-bottom description">
                 <label for="edit-menu-item-stick-to-bottom-<?php echo $item->ID; ?>">
                     <input type="checkbox" id="edit-menu-item-stick-to-bottom-<?php echo $item->ID; ?>" class="widefat code edit-menu-item-stick-to-bottom" name="menu-item-stick-to-bottom[<?php echo $item->ID; ?>]" <?php checked( $item->stick_to_bottom, '1' ); ?> value="1" />
-	                <?php _e( 'Stick to Bottom', 'buddyboss-theme' ); ?>
+	                <?php _e( 'Stick to Bottom', 'press-pool' ); ?>
                 </label>
 			</p>
 		</div>

@@ -37,7 +37,7 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 
 	$button_link = apply_filters( 'learndash_course_grid_custom_button_link', $button_link, $post_id );
 
-	$button_text = isset( $button_text ) && ! empty( $button_text ) ? $button_text : __( 'See more...', 'buddyboss-theme' );
+	$button_text = isset( $button_text ) && ! empty( $button_text ) ? $button_text : __( 'See more...', 'press-pool' );
 	$button_text = apply_filters( 'learndash_course_grid_custom_button_text', $button_text, $post_id );
 
 	$options = get_option( 'sfwd_cpt_options' );
@@ -65,7 +65,7 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 	$currency = apply_filters( 'learndash_course_grid_currency', $currency, $course_id );
 
 	$course_options = get_post_meta($post_id, "_sfwd-courses", true);
-	$price = $course_options && isset($course_options['sfwd-courses_course_price']) ? $course_options['sfwd-courses_course_price'] : __( 'Free', 'buddyboss-theme' );
+	$price = $course_options && isset($course_options['sfwd-courses_course_price']) ? $course_options['sfwd-courses_course_price'] : __( 'Free', 'press-pool' );
 	$price_type = $course_options && isset( $course_options['sfwd-courses_course_price_type'] ) ? $course_options['sfwd-courses_course_price_type'] : '';
 	if ( ! empty( $cg_short_description ) ) {
 		$short_description = $cg_short_description;
@@ -94,7 +94,7 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 	} elseif ( is_string( $price ) && ! empty( $price ) ) {
 		$price_text = $price;
 	} elseif ( empty( $price ) ) {
-		$price_text = __( 'Free', 'buddyboss-theme' );
+		$price_text = __( 'Free', 'press-pool' );
 	}
 
 	$class       = 'ld_course_grid_price';
@@ -103,17 +103,17 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 
 	if ( $has_access && ! $is_completed && $price_type != 'open' && empty( $ribbon_text ) ) {
 		$class .= ' ribbon-enrolled';
-		$ribbon_text = __( 'Enrolled', 'buddyboss-theme' );
+		$ribbon_text = __( 'Enrolled', 'press-pool' );
 	} elseif ( $has_access && $is_completed && $price_type != 'open' && empty( $ribbon_text ) ) {
 		$class .= '';
-		$ribbon_text = __( 'Completed', 'buddyboss-theme' );
+		$ribbon_text = __( 'Completed', 'press-pool' );
 	} elseif ( $price_type == 'open' && empty( $ribbon_text ) ) {
 		if ( is_user_logged_in() && ! $is_completed ) {
 			$class .= ' ribbon-enrolled';
-			$ribbon_text = __( 'Enrolled', 'buddyboss-theme' );
+			$ribbon_text = __( 'Enrolled', 'press-pool' );
 		} elseif ( is_user_logged_in() && $is_completed ) {
 			$class .= '';
-			$ribbon_text = __( 'Completed', 'buddyboss-theme' );
+			$ribbon_text = __( 'Completed', 'press-pool' );
 		} else {
 			$class .= ' ribbon-enrolled';
 			$ribbon_text = '';
@@ -232,7 +232,7 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 
 								if ( ( $course_pricing['type'] === 'open' && $progress['percentage'] === 0 ) || ( $course_pricing['type'] !== 'open' && $has_access && $progress['percentage'] === 0 ) ) {
 
-									echo '<div class="ld-status ld-status-progress ld-primary-background">' .sprintf( esc_html_x('Start %s ', 'Start ribbon', 'buddyboss-theme'), $ribbon_title ) . '</div>';
+									echo '<div class="ld-status ld-status-progress ld-primary-background">' .sprintf( esc_html_x('Start %s ', 'Start ribbon', 'press-pool'), $ribbon_title ) . '</div>';
 
 								} else {
 
@@ -242,17 +242,17 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 
 							} elseif ( $course_pricing['type'] == 'free' ) {
 
-								echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Free', 'buddyboss-theme' ) . '</div>';
+								echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Free', 'press-pool' ) . '</div>';
 
 							} elseif ( $course_pricing['type'] !== 'open' ) {
 
-								echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Not Enrolled', 'buddyboss-theme' ) . '</div>';
+								echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Not Enrolled', 'press-pool' ) . '</div>';
 
 							} elseif ( $course_pricing['type'] === 'open' ) {
 
 								echo '<div class="ld-status ld-status-progress ld-primary-background">' .
-									__( 'Start ', 'buddyboss-theme' ) .
-									sprintf( __( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label( 'course' ) ) .
+									__( 'Start ', 'press-pool' ) .
+									sprintf( __( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label( 'course' ) ) .
 								'</div>';
 
 							}
@@ -282,12 +282,12 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 					$total_lessons = (
 						$lessons_count > 1
 						? sprintf(
-							__( '%1$s %2$s', 'buddyboss-theme' ),
+							__( '%1$s %2$s', 'press-pool' ),
 							$lessons_count,
 							LearnDash_Custom_Label::get_label( 'lessons' )
 						)
 						: sprintf(
-							__( '%1$s %2$s ', 'buddyboss-theme' ),
+							__( '%1$s %2$s ', 'press-pool' ),
 							$lessons_count,
 							LearnDash_Custom_Label::get_label( 'lesson' )
 						)
@@ -296,7 +296,7 @@ if ( function_exists( 'is_plugin_active' ) && is_plugin_active('learndash-course
 					if( $lessons_count > 0 ) {
 						echo '<div class="course-lesson-count">' . $total_lessons . '</div>';
 					} else {
-						echo '<div class="course-lesson-count">' . __( '0 ', 'buddyboss-theme' ) . sprintf( __( '%s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label( 'lessons' ) ) . '</div>';
+						echo '<div class="course-lesson-count">' . __( '0 ', 'press-pool' ) . sprintf( __( '%s', 'press-pool' ), LearnDash_Custom_Label::get_label( 'lessons' ) ) . '</div>';
 					}
 					?>
                     <h2 class="bb-course-title"><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>

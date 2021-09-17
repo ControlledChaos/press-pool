@@ -52,7 +52,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
                                 <div>
                                     <span class="bb-course-play-btn-wrapper"><span
                                                 class="bb-course-play-btn"></span></span>
-                                    <div><?php _e( 'Preview this', 'buddyboss-theme' ); ?> <?php echo LearnDash_Custom_Label::get_label( 'course' ); ?></div>
+                                    <div><?php _e( 'Preview this', 'press-pool' ); ?> <?php echo LearnDash_Custom_Label::get_label( 'course' ); ?></div>
                                 </div>
                             </div>
 							<?php
@@ -85,10 +85,10 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 						if ( $course_members_count > 3 ) { ?>
                             <span class="members">
                             <span class="members-count-g"><?php
-							_e( '+', 'buddyboss-theme' );
+							_e( '+', 'press-pool' );
 							echo $course_members_count - 3; ?>
                             </span><?php
-							_e( 'enrolled', 'buddyboss-theme' ); ?>
+							_e( 'enrolled', 'press-pool' ); ?>
                             </span><?php
 						}
 						?>
@@ -119,7 +119,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 					} elseif ( $course_pricing['type'] !== 'open' ) {
 
 						echo '<div class="bb-course-status-content">';
-						echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Not Enrolled', 'buddyboss-theme' ) . '</div>';
+						echo '<div class="ld-status ld-status-incomplete ld-third-background">' . __( 'Not Enrolled', 'press-pool' ) . '</div>';
 						echo '</div>';
 
 					}
@@ -132,14 +132,14 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 
 					if ( empty( $course_progress ) && $course_progress < 100 ) {
 						$btn_advance_class = 'btn-advance-start';
-						$btn_advance_label = sprintf( __( 'Start %s', 'buddyboss-theme' ), LearnDash_Custom_Label::get_label( 'course' ) );
+						$btn_advance_label = sprintf( __( 'Start %s', 'press-pool' ), LearnDash_Custom_Label::get_label( 'course' ) );
 						$resume_link       = buddyboss_theme()->learndash_helper()->boss_theme_course_resume( $course_id );
 					} elseif ( $course_progress == 100 ) {
 						$btn_advance_class = 'btn-advance-completed';
-						$btn_advance_label = __( 'Completed', 'buddyboss-theme' );
+						$btn_advance_label = __( 'Completed', 'press-pool' );
 					} else {
 						$btn_advance_class = 'btn-advance-continue';
-						$btn_advance_label = __( 'Continue', 'buddyboss-theme' );
+						$btn_advance_label = __( 'Continue', 'press-pool' );
 						$resume_link       = buddyboss_theme()->learndash_helper()->boss_theme_course_resume( $course_id );
 					}
 
@@ -151,7 +151,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 							?>
                         <div class="learndash_join_button <?php echo $btn_advance_class; ?>">
                             <a href="<?php echo esc_url( $login_url ); ?>"
-                               class="btn-advance"><?php echo __( 'Login to Enroll', 'buddyboss-theme' ); ?></a>
+                               class="btn-advance"><?php echo __( 'Login to Enroll', 'press-pool' ); ?></a>
                             </div><?php
 						else:
 							if ( $course_price_type == 'free' && false === $is_enrolled ) {
@@ -178,16 +178,16 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 
 						if ( $course_price_type == 'open' ) {
 							?>
-                            <span class="bb-course-type bb-course-type-open"><?php _e( 'Open Registration', 'buddyboss-theme' ); ?></span><?php
+                            <span class="bb-course-type bb-course-type-open"><?php _e( 'Open Registration', 'press-pool' ); ?></span><?php
 						} else {
 							?>
-                            <span class="bb-course-type bb-course-type-free"><?php _e( 'Free', 'buddyboss-theme' ); ?></span><?php
+                            <span class="bb-course-type bb-course-type-free"><?php _e( 'Free', 'press-pool' ); ?></span><?php
 						}
 					} elseif ( $course_price_type == 'closed' ) {
 						$learndash_payment_buttons = learndash_payment_buttons( $course );
 						if ( empty( $learndash_payment_buttons ) ):
 							if ( false === $is_enrolled ) {
-								echo '<span class="ld-status ld-status-incomplete ld-third-background ld-text">' . __( 'This course is currently closed', 'buddyboss-theme' ) . '</span>';
+								echo '<span class="ld-status ld-status-incomplete ld-third-background ld-text">' . __( 'This course is currently closed', 'press-pool' ) . '</span>';
 								if ( ! empty( $course_price ) ) {
 									echo '<span class="bb-course-type bb-course-type-paynow">' . wp_kses_post( $course_pricing['price'] ) . '</span>';
 								}
@@ -241,7 +241,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 						}
 
 						if ( apply_filters( 'learndash_login_modal', true, $course_id, $user_id ) && ! is_user_logged_in() ):
-							echo '<span class="ld-status">' . __( 'or ', 'buddyboss-theme' ) . '<a class="ld-login-text" href="' . esc_attr( $login_url ) . '">' . __( 'Login', 'buddyboss-theme' ) . '</a></span>';
+							echo '<span class="ld-status">' . __( 'or ', 'press-pool' ) . '<a class="ld-login-text" href="' . esc_attr( $login_url ) . '">' . __( 'Login', 'press-pool' ) . '</a></span>';
 						endif;
 
 						if ( false === $is_enrolled ) {
@@ -268,7 +268,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 								<?php
 								if ( '' === $course_price && $course_price_type == 'subscribe' ) {
 									?>
-                                    <span class="bb-course-type bb-course-type-subscribe"><?php _e( 'Free', 'buddyboss-theme' ); ?></span>
+                                    <span class="bb-course-type bb-course-type-subscribe"><?php _e( 'Free', 'press-pool' ); ?></span>
 									<?php
 								} else {
 									echo wp_kses_post( '<span class="ld-currency">' . learndash_30_get_currency_symbol() . '</span> ' );
@@ -323,7 +323,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 				if ( sizeof( $lesson_count ) > 0 || $topics_count > 0 || $course_quizzes_count > 0 || $course_certificate ) { ?>
                     <div class="bb-course-volume">
                     <h4><?php echo LearnDash_Custom_Label::get_label( 'course' ); ?> <?php _e( 'Includes',
-							'buddyboss-theme' ); ?></h4>
+							'press-pool' ); ?></h4>
                     <ul class="bb-course-volume-list">
 						<?php if ( sizeof( $lesson_count ) > 0 ) { ?>
                             <li>
@@ -343,7 +343,7 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 						<?php if ( $course_certificate ) { ?>
                             <li>
                                 <i class="bb-icons bb-icon-badge"></i><?php echo LearnDash_Custom_Label::get_label( 'course' ); ?> <?php _e( 'Certificate',
-									'buddyboss-theme' ); ?></li>
+									'press-pool' ); ?></li>
 						<?php } ?>
                     </ul>
                     </div><?php
@@ -359,11 +359,11 @@ if ( sfwd_lms_has_access( $course->ID, $current_user_id ) ) {
 		if ( wp_oembed_get( $course_video_embed ) ) : ?><?php echo wp_oembed_get( $course_video_embed ); ?><?php elseif ( isset( $file_info['extension'] ) && $file_info['extension'] === 'mp4' ) : ?>
             <video width="100%" controls>
                 <source src="<?php echo $course_video_embed; ?>" type="video/mp4">
-				<?php _e( 'Your browser does not support HTML5 video.', 'buddyboss-theme' ); ?>
+				<?php _e( 'Your browser does not support HTML5 video.', 'press-pool' ); ?>
             </video>
 		<?php
 		else :
-			_e( 'Video format is not supported, use Youtube video or MP4 format.', 'buddyboss-theme' );
+			_e( 'Video format is not supported, use Youtube video or MP4 format.', 'press-pool' );
 		endif;
 	endif; ?>
 </div>

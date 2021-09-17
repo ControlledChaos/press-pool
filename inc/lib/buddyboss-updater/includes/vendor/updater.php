@@ -284,11 +284,11 @@ if ( ! class_exists( 'BBoss_Updates_Helper' ) ) {
 			$raw_response   = wp_remote_post( $this->api_url, $request_string );
 
 			if ( is_wp_error( $raw_response ) ) {
-				$res = new WP_Error( 'plugins_api_failed', __( 'An Unexpected HTTP Error occurred during the API request.</p> <p><a href="?" onclick="document.location.reload(); return false;">Try again</a>', 'buddyboss-theme' ), $raw_response->get_error_message() );
+				$res = new WP_Error( 'plugins_api_failed', __( 'An Unexpected HTTP Error occurred during the API request.</p> <p><a href="?" onclick="document.location.reload(); return false;">Try again</a>', 'press-pool' ), $raw_response->get_error_message() );
 			} else {
 				$res = unserialize( $raw_response['body'] );
 				if ( $res === false ) {
-					$res = new WP_Error( 'plugins_api_failed', __( 'An unknown error occurred', 'buddyboss-theme' ), $raw_response['body'] );
+					$res = new WP_Error( 'plugins_api_failed', __( 'An unknown error occurred', 'press-pool' ), $raw_response['body'] );
 				}
 			}
 

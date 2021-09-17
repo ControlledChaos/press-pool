@@ -232,9 +232,9 @@ final class Icon_Picker_Loader {
 	 */
 	public function _media_view_strings( $strings ) {
 		$strings['iconPicker'] = array(
-			'frameTitle' => __( 'Icon Picker', 'buddyboss-theme' ),
-			'allFilter'  => __( 'All', 'buddyboss-theme' ),
-			'selectIcon' => __( 'Select Icon', 'buddyboss-theme' ),
+			'frameTitle' => __( 'Icon Picker', 'press-pool' ),
+			'allFilter'  => __( 'All', 'press-pool' ),
+			'selectIcon' => __( 'Select Icon', 'press-pool' ),
 		);
 
 		return $strings;

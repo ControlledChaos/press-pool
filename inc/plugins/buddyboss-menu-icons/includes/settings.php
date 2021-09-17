@@ -119,7 +119,7 @@ final class Menu_Icons_Settings {
 					?>
                     <div class="hidden hide buddyboss-menu-icon-settings">
 
-                        <h3><?php _e( 'Icon Types Available', 'buddyboss-theme' ) ?></h3>
+                        <h3><?php _e( 'Icon Types Available', 'press-pool' ) ?></h3>
 
                         <div class="buddyboss-menu-icon-settings-options">
 							<?php
@@ -323,7 +323,7 @@ final class Menu_Icons_Settings {
 	private static function _add_settings_meta_box() {
 		add_meta_box(
 			'menu-icons-settings',
-			__( 'Menu Icons', 'buddyboss-theme' ),
+			__( 'Menu Icons', 'press-pool' ),
 			array( __CLASS__, '_meta_box' ),
 			'nav-menus',
 			'side',
@@ -357,8 +357,8 @@ final class Menu_Icons_Settings {
 	 */
 	public static function _admin_notices() {
 		$messages = array(
-			'updated' => __( '<strong>BuddyBoss Menu Icons Settings</strong> have been successfully updated.', 'buddyboss-theme' ),
-			'reset'   => __( '<strong>BuddyBoss Menu Icons Settings</strong> have been successfully reset.', 'buddyboss-theme' ),
+			'updated' => __( '<strong>BuddyBoss Menu Icons Settings</strong> have been successfully updated.', 'press-pool' ),
+			'reset'   => __( '<strong>BuddyBoss Menu Icons Settings</strong> have been successfully reset.', 'press-pool' ),
 		);
 
 		$message_type = get_transient( self::TRANSIENT_KEY );
@@ -395,7 +395,7 @@ final class Menu_Icons_Settings {
 				<?php
 				printf(
 					'<li><a href="#" class="mi-settings-nav-tab" data-type="menu-icons-settings-extensions">%s</a></li>',
-					esc_html__( 'Extensions', 'buddyboss-theme' )
+					esc_html__( 'Extensions', 'press-pool' )
 				);
 				?>
             </ul>
@@ -418,7 +418,7 @@ final class Menu_Icons_Settings {
                 </div>
 			<?php endforeach; ?>
             <div id="menu-icons-settings-extensions" class="tabs-panel _extensions">
-                <h4 class="hide-if-js"><?php echo esc_html__( 'Extensions', 'buddyboss-theme' ) ?></h4>
+                <h4 class="hide-if-js"><?php echo esc_html__( 'Extensions', 'press-pool' ) ?></h4>
                 <ul>
                     <li><a target="_blank" href="http://wordpress.org/plugins/menu-icons-icomoon/">IcoMoon</a></li>
                 </ul>
@@ -444,8 +444,8 @@ final class Menu_Icons_Settings {
 							self::RESET_KEY
 						)
 					),
-					esc_attr__( 'Discard all changes and reset to default state', 'buddyboss-theme' ),
-					esc_html__( 'Reset', 'buddyboss-theme' )
+					esc_attr__( 'Discard all changes and reset to default state', 'press-pool' ),
+					esc_html__( 'Reset', 'press-pool' )
 				);
 				?>
 			</span>
@@ -454,7 +454,7 @@ final class Menu_Icons_Settings {
 			<span class="spinner"></span>
 				<?php
 				submit_button(
-					__( 'Load Icon Types', 'buddyboss-theme' ),
+					__( 'Load Icon Types', 'press-pool' ),
 					'secondary menu-icons-settings-save',
 					'menu-icons-settings-save',
 					false
@@ -481,13 +481,13 @@ final class Menu_Icons_Settings {
 		$sections = array(
 			'global' => array(
 				'id'          => 'global',
-				'title'       => __( 'Global', 'buddyboss-theme' ),
-				'description' => __( 'Global settings', 'buddyboss-theme' ),
+				'title'       => __( 'Global', 'press-pool' ),
+				'description' => __( 'Global settings', 'press-pool' ),
 				'fields'      => array(
 					array(
 						'id'      => 'icon_types',
 						'type'    => 'checkbox',
-						'label'   => __( 'Icon Types', 'buddyboss-theme' ),
+						'label'   => __( 'Icon Types', 'press-pool' ),
 						'choices' => $icon_types,
 						'value'   => self::get( 'global', 'icon_types' ),
 					),
@@ -503,9 +503,9 @@ final class Menu_Icons_Settings {
 
 			$sections['menu'] = array(
 				'id'          => $menu_key,
-				'title'       => __( 'Current Menu', 'buddyboss-theme' ),
+				'title'       => __( 'Current Menu', 'press-pool' ),
 				'description' => sprintf(
-					__( '"%s" menu settings', 'buddyboss-theme' ),
+					__( '"%s" menu settings', 'press-pool' ),
 					apply_filters( 'single_term_title', $menu_term->name )
 				),
 				'fields'      => self::get_settings_fields( $menu_settings ),
@@ -531,79 +531,79 @@ final class Menu_Icons_Settings {
 			'hide_label'     => array(
 				'id'      => 'hide_label',
 				'type'    => 'select',
-				'label'   => __( 'Hide Label', 'buddyboss-theme' ),
+				'label'   => __( 'Hide Label', 'press-pool' ),
 				'default' => '',
 				'choices' => array(
 					array(
 						'value' => '',
-						'label' => __( 'No', 'buddyboss-theme' ),
+						'label' => __( 'No', 'press-pool' ),
 					),
 					array(
 						'value' => '1',
-						'label' => __( 'Yes', 'buddyboss-theme' ),
+						'label' => __( 'Yes', 'press-pool' ),
 					),
 				),
 			),
 			'position'       => array(
 				'id'      => 'position',
 				'type'    => 'select',
-				'label'   => __( 'Position', 'buddyboss-theme' ),
+				'label'   => __( 'Position', 'press-pool' ),
 				'default' => 'before',
 				'choices' => array(
 					array(
 						'value' => 'before',
-						'label' => __( 'Before', 'buddyboss-theme' ),
+						'label' => __( 'Before', 'press-pool' ),
 					),
 					array(
 						'value' => 'after',
-						'label' => __( 'After', 'buddyboss-theme' ),
+						'label' => __( 'After', 'press-pool' ),
 					),
 				),
 			),
 			'vertical_align' => array(
 				'id'      => 'vertical_align',
 				'type'    => 'select',
-				'label'   => __( 'Vertical Align', 'buddyboss-theme' ),
+				'label'   => __( 'Vertical Align', 'press-pool' ),
 				'default' => 'middle',
 				'choices' => array(
 					array(
 						'value' => 'super',
-						'label' => __( 'Super', 'buddyboss-theme' ),
+						'label' => __( 'Super', 'press-pool' ),
 					),
 					array(
 						'value' => 'top',
-						'label' => __( 'Top', 'buddyboss-theme' ),
+						'label' => __( 'Top', 'press-pool' ),
 					),
 					array(
 						'value' => 'text-top',
-						'label' => __( 'Text Top', 'buddyboss-theme' ),
+						'label' => __( 'Text Top', 'press-pool' ),
 					),
 					array(
 						'value' => 'middle',
-						'label' => __( 'Middle', 'buddyboss-theme' ),
+						'label' => __( 'Middle', 'press-pool' ),
 					),
 					array(
 						'value' => 'baseline',
-						'label' => __( 'Baseline', 'buddyboss-theme' ),
+						'label' => __( 'Baseline', 'press-pool' ),
 					),
 					array(
 						'value' => 'text-bottom',
-						'label' => __( 'Text Bottom', 'buddyboss-theme' ),
+						'label' => __( 'Text Bottom', 'press-pool' ),
 					),
 					array(
 						'value' => 'bottom',
-						'label' => __( 'Bottom', 'buddyboss-theme' ),
+						'label' => __( 'Bottom', 'press-pool' ),
 					),
 					array(
 						'value' => 'sub',
-						'label' => __( 'Sub', 'buddyboss-theme' ),
+						'label' => __( 'Sub', 'press-pool' ),
 					),
 				),
 			),
 			'font_size'      => array(
 				'id'          => 'font_size',
 				'type'        => 'number',
-				'label'       => __( 'Font Size', 'buddyboss-theme' ),
+				'label'       => __( 'Font Size', 'press-pool' ),
 				'default'     => '20',
 				'description' => 'px',
 				'attributes'  => array(
@@ -614,7 +614,7 @@ final class Menu_Icons_Settings {
 			'svg_width'      => array(
 				'id'          => 'svg_width',
 				'type'        => 'number',
-				'label'       => __( 'SVG Width', 'buddyboss-theme' ),
+				'label'       => __( 'SVG Width', 'press-pool' ),
 				'default'     => '1',
 				'description' => 'em',
 				'attributes'  => array(
@@ -625,7 +625,7 @@ final class Menu_Icons_Settings {
 			'image_size'     => array(
 				'id'      => 'image_size',
 				'type'    => 'select',
-				'label'   => __( 'Image Size', 'buddyboss-theme' ),
+				'label'   => __( 'Image Size', 'press-pool' ),
 				'default' => 'thumbnail',
 				'choices' => kucrut_get_image_sizes(),
 			),
@@ -738,12 +738,12 @@ final class Menu_Icons_Settings {
 			'menu_icons_settings_js_data',
 			array(
 				'text'           => array(
-					'title'   => __( 'Select Icon', 'buddyboss-theme' ),
-					'select'  => __( 'Select', 'buddyboss-theme' ),
-					'remove'  => __( 'Remove', 'buddyboss-theme' ),
-					'change'  => __( 'Change', 'buddyboss-theme' ),
-					'all'     => __( 'All', 'buddyboss-theme' ),
-					'preview' => __( 'Preview', 'buddyboss-theme' ),
+					'title'   => __( 'Select Icon', 'press-pool' ),
+					'select'  => __( 'Select', 'press-pool' ),
+					'remove'  => __( 'Remove', 'press-pool' ),
+					'change'  => __( 'Change', 'press-pool' ),
+					'all'     => __( 'All', 'press-pool' ),
+					'preview' => __( 'Preview', 'press-pool' ),
 				),
 				'settingsFields' => self::get_settings_fields(),
 				'activeTypes'    => self::get( 'global', 'icon_types' ),

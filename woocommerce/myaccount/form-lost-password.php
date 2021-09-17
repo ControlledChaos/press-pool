@@ -26,17 +26,17 @@ wc_print_notices(); ?>
     <div class="woocommerce-MyAccount-content">
     
         <div class="wc-MyAccount-sub-heading">
-            <h2><?php esc_html_e( 'Lost your password?', 'buddyboss-theme' ); ?></h2>
+            <h2><?php esc_html_e( 'Lost your password?', 'press-pool' ); ?></h2>
         </div>
         
         <div class="wc-LostPassword">
     
             <form method="post" class="woocommerce-ResetPassword lost_reset_password">
             
-            	<p class="bs_woocommerce_reset_message"><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Please enter your username or email address. You will receive a link to create a new password via email.', 'buddyboss-theme' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
+            	<p class="bs_woocommerce_reset_message"><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Please enter your username or email address. You will receive a link to create a new password via email.', 'press-pool' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
             
             	<p class="woocommerce-form-row woocommerce-form-row--first form-row">
-            		<label for="user_login"><?php esc_html_e( 'Username or email', 'buddyboss-theme' ); ?></label>
+            		<label for="user_login"><?php esc_html_e( 'Username or email', 'press-pool' ); ?></label>
             		<input class="woocommerce-Input woocommerce-Input--text input-text" type="text" name="user_login" id="user_login" />
             	</p>
             
@@ -46,7 +46,7 @@ wc_print_notices(); ?>
             
             	<p class="woocommerce-form-row form-row bs_woocommerce_reset_ctrls">
             		<input type="hidden" name="wc_reset_password" value="true" />
-            		<button type="submit" class="woocommerce-Button button" value="<?php esc_attr_e( 'Reset password', 'buddyboss-theme' ); ?>"><?php esc_html_e( 'Reset password', 'buddyboss-theme' ); ?></button>
+            		<button type="submit" class="woocommerce-Button button" value="<?php esc_attr_e( 'Reset password', 'press-pool' ); ?>"><?php esc_html_e( 'Reset password', 'press-pool' ); ?></button>
             	</p>
             
             	<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>

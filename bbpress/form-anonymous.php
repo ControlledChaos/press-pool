@@ -14,23 +14,23 @@
 	<?php do_action( 'bbp_theme_before_anonymous_form' ); ?>
 
 	<fieldset class="bbp-form bbp-form-anonymous">
-		<legend><?php ( bbp_is_topic_edit() || bbp_is_reply_edit() ) ? _e( 'Author Information', 'buddyboss-theme' ) : _e( 'Your information:', 'buddyboss-theme' ); ?></legend>
+		<legend><?php ( bbp_is_topic_edit() || bbp_is_reply_edit() ) ? _e( 'Author Information', 'press-pool' ) : _e( 'Your information:', 'press-pool' ); ?></legend>
 
 		<?php do_action( 'bbp_theme_anonymous_form_extras_top' ); ?>
 
 		<p>
-			<label for="bbp_anonymous_author"><?php _e( 'Name (required):', 'buddyboss-theme' ); ?></label>
-			<input type="text" id="bbp_anonymous_author"  value="<?php bbp_author_display_name(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_name" placeholder="<?php _e( 'Name (required):', 'buddyboss-theme' ); ?>" />
+			<label for="bbp_anonymous_author"><?php _e( 'Name (required):', 'press-pool' ); ?></label>
+			<input type="text" id="bbp_anonymous_author"  value="<?php bbp_author_display_name(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_name" placeholder="<?php _e( 'Name (required):', 'press-pool' ); ?>" />
 		</p>
 
 		<p>
-			<label for="bbp_anonymous_email"><?php _e( 'Email (will not be published) (required):', 'buddyboss-theme' ); ?></label>
-			<input type="text" id="bbp_anonymous_email"   value="<?php bbp_author_email(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_email" placeholder="<?php _e( 'Email (will not be published) (required):', 'buddyboss-theme' ); ?>" />
+			<label for="bbp_anonymous_email"><?php _e( 'Email (will not be published) (required):', 'press-pool' ); ?></label>
+			<input type="text" id="bbp_anonymous_email"   value="<?php bbp_author_email(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_email" placeholder="<?php _e( 'Email (will not be published) (required):', 'press-pool' ); ?>" />
 		</p>
 
 		<p>
-			<label for="bbp_anonymous_website"><?php _e( 'Website:', 'buddyboss-theme' ); ?></label>
-			<input type="text" id="bbp_anonymous_website" value="<?php bbp_author_url(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_website" placeholder="<?php _e( 'Website:', 'buddyboss-theme' ); ?>" />
+			<label for="bbp_anonymous_website"><?php _e( 'Website:', 'press-pool' ); ?></label>
+			<input type="text" id="bbp_anonymous_website" value="<?php bbp_author_url(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_website" placeholder="<?php _e( 'Website:', 'press-pool' ); ?>" />
 		</p>
 
 		<?php do_action( 'bbp_theme_anonymous_form_extras_bottom' ); ?>

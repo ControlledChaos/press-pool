@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 	<div class="llms-achievement-info">
 		<div class="llms-achievement-content"><?php echo $achievement->get( 'content' ); ?></div>
-		<div class="llms-achievement-date"><?php printf( _x( 'Awarded on %s', 'achievement earned date','buddyboss-theme' ), $achievement->get_earned_date() ); ?></div>
+		<div class="llms-achievement-date"><?php printf( _x( 'Awarded on %s', 'achievement earned date','press-pool' ), $achievement->get_earned_date() ); ?></div>
 	</div>
 
 	<?php do_action( 'lifterlms_after_achievement', $achievement ); ?>

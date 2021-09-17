@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function buddyboss_theme_register_licensed_package( $packages = array() ) {
 	$this_package                = array(
 		'id'       => 'buddyboss_theme',
-		'name'     => __( 'BuddyBoss Theme', 'buddyboss-theme' ),
+		'name'     => __( 'BuddyBoss Theme', 'press-pool' ),
 		'products' => array(
 			// key should be unique for every individual buddyboss product
 			// and if product X is included in 2 different packages, key for product X must be same in both packages.

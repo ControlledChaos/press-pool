@@ -8,7 +8,7 @@ if ( isset( $email ) && '' !== $email ) {
         <span class="bp-icon" aria-hidden="true"></span>
         <p>
 			<?php
-			$text = __( 'Invitations were sent successfully to the following email addresses:', 'buddyboss-theme' );
+			$text = __( 'Invitations were sent successfully to the following email addresses:', 'press-pool' );
 			echo trim ($text.' '. $email );
 			?>
         </p>
@@ -23,7 +23,7 @@ if ( isset( $failed ) && '' !== $failed ) {
         <span class="bp-icon" aria-hidden="true"></span>
         <p>
 			<?php
-			$text = __( 'Invitations did not send as the following email addresses are invalid:', 'buddyboss-theme' );
+			$text = __( 'Invitations did not send as the following email addresses are invalid:', 'press-pool' );
 			echo trim ($text.' '. $failed );
 			?>
         </p>
@@ -39,7 +39,7 @@ if ( isset( $exists ) && '' !== $exists ) {
         <span class="bp-icon" aria-hidden="true"></span>
         <p>
 			<?php
-			$text = __( 'Invitations did not send to the following email addresses, because they are already members:', 'buddyboss-theme' );
+			$text = __( 'Invitations did not send to the following email addresses, because they are already members:', 'press-pool' );
 			echo trim ($text.' '. $exists );
 			?>
         </p>
@@ -51,20 +51,20 @@ if ( isset( $exists ) && '' !== $exists ) {
 <script>window.history.replaceState(null, null, window.location.pathname);</script>
 
 <h2 class="screen-heading general-settings-screen">
-	<?php _e( 'Sent Invites', 'buddyboss-theme' ); ?>
+	<?php _e( 'Sent Invites', 'press-pool' ); ?>
 </h2>
 
 <p class="info invite-info">
-	<?php _e( 'You have sent invitation emails to the following people:', 'buddyboss-theme' ); ?>
+	<?php _e( 'You have sent invitation emails to the following people:', 'press-pool' ); ?>
 </p>
 
 <table class="invite-settings bp-tables-user" id="<?php echo esc_attr( 'member-invites-table' ); ?>">
 	<thead>
 	<tr>
-		<th class="title"><?php esc_html_e( 'Name', 'buddyboss-theme' ); ?></th>
-		<th class="title"><?php esc_html_e( 'Email', 'buddyboss-theme' ); ?></th>
-		<th class="title"><?php esc_html_e( 'Invited', 'buddyboss-theme' ); ?></th>
-		<th class="title"><?php esc_html_e( 'Status', 'buddyboss-theme' ); ?></th>
+		<th class="title"><?php esc_html_e( 'Name', 'press-pool' ); ?></th>
+		<th class="title"><?php esc_html_e( 'Email', 'press-pool' ); ?></th>
+		<th class="title"><?php esc_html_e( 'Invited', 'press-pool' ); ?></th>
+		<th class="title"><?php esc_html_e( 'Status', 'press-pool' ); ?></th>
 	</tr>
 	</thead>
 
@@ -103,9 +103,9 @@ if ( isset( $exists ) && '' !== $exists ) {
 				<td class="field-email">
 					<?php
 					$class = ( '1' === get_post_meta( get_the_ID(), '_bp_invitee_status', true ) ) ? 'registered' : 'revoked-access';
-					$alert_message = ( '1' === get_post_meta( get_the_ID(), '_bp_invitee_status', true ) ) ? __( 'Registered', 'buddyboss-theme' ) : __( 'Are you sure you want to revoke this invitation?', 'buddyboss-theme' );
+					$alert_message = ( '1' === get_post_meta( get_the_ID(), '_bp_invitee_status', true ) ) ? __( 'Registered', 'press-pool' ) : __( 'Are you sure you want to revoke this invitation?', 'press-pool' );
 					$icon = ( '1' === get_post_meta( get_the_ID(), '_bp_invitee_status', true ) ) ? 'bb-icon-check' : 'bb-icon-close-circle';
-					$title = ( '1' === get_post_meta( get_the_ID(), '_bp_invitee_status', true ) ) ? __( 'Registered', 'buddyboss-theme' ) : __( 'Revoke Invite', 'buddyboss-theme' );
+					$title = ( '1' === get_post_meta( get_the_ID(), '_bp_invitee_status', true ) ) ? __( 'Registered', 'press-pool' ) : __( 'Revoke Invite', 'press-pool' );
 					$revoke_link = bp_core_get_user_domain( bp_loggedin_user_id() ) . bp_get_invites_slug() . '/revoke-invite';
 					?>
 					<span class="bp-invitee-status"><a data-revoke-access="<?php echo esc_url( $revoke_link ); ?>" data-name="<?php echo esc_attr( $alert_message ); ?>" id="<?php echo esc_attr( get_the_ID() ); ?>" class="<?php echo esc_attr( $class ); ?>" href="javascript:void(0);"><span class="<?php echo esc_attr( $icon ); ?>"></span><?php echo $title; ?></a></span>
@@ -118,7 +118,7 @@ if ( isset( $exists ) && '' !== $exists ) {
 		?>
 		<tr>
 			<td colspan="4" class="field-name">
-				<span><?php esc_html_e( 'You haven\'t sent any invitations yet.', 'buddyboss-theme' ); ?></span>
+				<span><?php esc_html_e( 'You haven\'t sent any invitations yet.', 'press-pool' ); ?></span>
 			</td>
 		</tr>
 		<?php
@@ -135,8 +135,8 @@ if ( isset( $exists ) && '' !== $exists ) {
 			'format' => '?paged=%#%',
 			'current' => $current_page,
 			'total' => $total_pages,
-			'prev_text'    => __('« Prev', 'buddyboss-theme'),
-			'next_text'    => __('Next »', 'buddyboss-theme'),
+			'prev_text'    => __('« Prev', 'press-pool'),
+			'next_text'    => __('Next »', 'press-pool'),
 		));
 	}
 

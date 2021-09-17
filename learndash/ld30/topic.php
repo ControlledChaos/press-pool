@@ -124,7 +124,7 @@ $topics = learndash_get_topic_list( $lesson_id, $course_id );
                                 $date_format         = get_option( 'date_format' );
                                 $expire_date         = date_i18n( $date_format, $expire_date_calc );
                                 $current             = time();
-                                $expire_string       = ( $expire_date_calc > $current ) ? __( 'Expires at', 'buddyboss-theme' ) : __( 'Expired at', 'buddyboss-theme' );
+                                $expire_string       = ( $expire_date_calc > $current ) ? __( 'Expires at', 'press-pool' ) : __( 'Expired at', 'press-pool' );
 
                                 if ( $expire_date_calc > 0 && abs( intval( $expire_access_days ) )  > 0 && ( !empty( $user_id ) ) ) { ?>
                                 <div class="sfwd-course-expire">

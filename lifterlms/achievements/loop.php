@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 		<aside class="bp-feedback bp-messages info llms-general-notification">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php echo apply_filters( 'lifterlms_no_achievements_text', __( 'You do not have any achievements yet. Enroll in a course to get started!', 'buddyboss-theme' ) ); ?></p>
+			<p><?php echo apply_filters( 'lifterlms_no_achievements_text', __( 'You do not have any achievements yet. Enroll in a course to get started!', 'press-pool' ) ); ?></p>
 		</aside>	
 	<?php endif; ?>
 

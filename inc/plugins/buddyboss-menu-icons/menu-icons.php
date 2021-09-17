@@ -106,7 +106,7 @@ if ( ! class_exists( 'Buddyboss_Menu_Icons' ) ) {
 		 */
 		public function prevented_activating_menu_icons_notice() {
 
-			$this->add_admin_notice( 'prompt_activate_error', 'error', __( '<p><strong>Menu Icons can\'t be activated.</strong></p> <p>The BuddyBoss Themes can\'t work while Menu Icons plugin is active.</p>', 'buddyboss-theme' ) );
+			$this->add_admin_notice( 'prompt_activate_error', 'error', __( '<p><strong>Menu Icons can\'t be activated.</strong></p> <p>The BuddyBoss Themes can\'t work while Menu Icons plugin is active.</p>', 'press-pool' ) );
 		}
 
 		/**
@@ -133,7 +133,7 @@ if ( ! class_exists( 'Buddyboss_Menu_Icons' ) ) {
 				if ( file_exists( $ip_file ) ) {
 					require_once $ip_file;
 				} else {
-					$this->add_admin_notice( 'prompt_activate_error', 'error', __( '<p>Looks like BuddyBoss Menu Icons was installed via Composer. Please activate Icon Picker first.</p>', 'buddyboss-theme' ) );
+					$this->add_admin_notice( 'prompt_activate_error', 'error', __( '<p>Looks like BuddyBoss Menu Icons was installed via Composer. Please activate Icon Picker first.</p>', 'press-pool' ) );
 
 					return;
 				}
@@ -176,9 +176,9 @@ if ( ! class_exists( 'Buddyboss_Menu_Icons' ) ) {
 				deactivate_plugins( Buddyboss_Menu_Icons::get( 'menu_icons_basename' ) );
 
 				$plugins_url  = is_network_admin() ? network_admin_url( 'plugins.php' ) : admin_url( 'plugins.php' );
-				$link_plugins = sprintf( "<a href='%s'>%s</a>", $plugins_url, __( 'deactivate', 'buddyboss-theme' ) );
+				$link_plugins = sprintf( "<a href='%s'>%s</a>", $plugins_url, __( 'deactivate', 'press-pool' ) );
 				// Show admin notice.
-				$this->add_admin_notice( 'prompt_activate_error', 'error', sprintf( __( '<p><strong>Menu Icons is deactivate.</strong></p> <p>BuddyBoss Themes can\'t work while Menu Icons plugin is active. So Menu Icons is been deactivated</p>', 'buddyboss-theme' ), $link_plugins ) );
+				$this->add_admin_notice( 'prompt_activate_error', 'error', sprintf( __( '<p><strong>Menu Icons is deactivate.</strong></p> <p>BuddyBoss Themes can\'t work while Menu Icons plugin is active. So Menu Icons is been deactivated</p>', 'press-pool' ), $link_plugins ) );
 				$warning = true;
 			}
 
@@ -263,7 +263,7 @@ if ( ! class_exists( 'Buddyboss_Menu_Icons' ) ) {
 			// Nothing to do if there are no icon types registered.
 			if ( empty( self::$data['types'] ) ) {
 				if ( WP_DEBUG ) {
-					trigger_error( esc_html__( 'Menu Icons: No registered icon types found.', 'buddyboss-theme' ) );
+					trigger_error( esc_html__( 'Menu Icons: No registered icon types found.', 'press-pool' ) );
 				}
 
 				return;

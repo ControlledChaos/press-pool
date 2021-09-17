@@ -59,7 +59,7 @@ if (!class_exists('\BuddyBossTheme\BuddyBossMultiPostThumbnails')) {
 			// Need these args to be set at a minimum
 			if (null === $this->label || null === $this->id) {
 				if (WP_DEBUG) {
-					trigger_error(sprintf(__("The 'label' and 'id' values of the 'args' parameter of '%s::%s()' are required", 'buddyboss-theme'), __CLASS__, __FUNCTION__));
+					trigger_error(sprintf(__("The 'label' and 'id' values of the 'args' parameter of '%s::%s()' are required", 'press-pool'), __CLASS__, __FUNCTION__));
 				}
 				return;
 			}
@@ -96,7 +96,7 @@ if (!class_exists('\BuddyBossTheme\BuddyBossMultiPostThumbnails')) {
 		 * @return void
 		 */
 		public function add_metabox() {
-			add_meta_box("{$this->post_type}-{$this->id}", __($this->label, 'buddyboss-theme'), array($this, 'thumbnail_meta_box'), $this->post_type, $this->context, $this->priority);
+			add_meta_box("{$this->post_type}-{$this->id}", __($this->label, 'press-pool'), array($this, 'thumbnail_meta_box'), $this->post_type, $this->context, $this->priority);
 		}
 
 		/**
@@ -141,7 +141,7 @@ if (!class_exists('\BuddyBossTheme\BuddyBossMultiPostThumbnails')) {
 				return $form_fields;
 
 			$ajax_nonce = wp_create_nonce("set_post_thumbnail-{$this->post_type}-{$this->id}-{$calling_post_id}");
-			$link = sprintf('<a id="%4$s-%1$s-thumbnail-%2$s" class="%1$s-thumbnail" href="#" onclick="BuddyBossMultiPostThumbnails.setAsThumbnail(\'%2$s\', \'%1$s\', \'%4$s\', \'%5$s\');return false;">' . __( 'Set as %3$s', 'buddyboss-theme' ) . '</a>', $this->id, $post->ID, $this->label, $this->post_type, $ajax_nonce);
+			$link = sprintf('<a id="%4$s-%1$s-thumbnail-%2$s" class="%1$s-thumbnail" href="#" onclick="BuddyBossMultiPostThumbnails.setAsThumbnail(\'%2$s\', \'%1$s\', \'%4$s\', \'%5$s\');return false;">' . __( 'Set as %3$s', 'press-pool' ) . '</a>', $this->id, $post->ID, $this->label, $this->post_type, $ajax_nonce);
 			$form_fields["{$this->post_type}-{$this->id}-thumbnail"] = array(
 				'label' => $this->label,
 				'input' => 'html',
@@ -403,8 +403,8 @@ if (!class_exists('\BuddyBossTheme\BuddyBossMultiPostThumbnails')) {
 				);
 			}
 			$format_string = '<p class="bb-multi-thumb hide-if-no-js"><a title="%1$s" href="%2$s" id="set-%3$s-%4$s-thumbnail" class="%5$s" data-thumbnail_id="%7$s" data-uploader_title="%1$s" data-uploader_button_text="%1$s">%%s</a></p>';
-			$set_thumbnail_link = sprintf( $format_string, sprintf( esc_attr__( "Set %s" , 'buddyboss-theme' ), $this->label ), esc_url($image_library_url), $this->post_type, $this->id, $url_class, $this->label, $thumbnail_id );
-			$content = sprintf( $set_thumbnail_link, sprintf( esc_html__( "Set %s", 'buddyboss-theme' ), $this->label ) );
+			$set_thumbnail_link = sprintf( $format_string, sprintf( esc_attr__( "Set %s" , 'press-pool' ), $this->label ), esc_url($image_library_url), $this->post_type, $this->id, $url_class, $this->label, $thumbnail_id );
+			$content = sprintf( $set_thumbnail_link, sprintf( esc_html__( "Set %s", 'press-pool' ), $this->label ) );
 
 			if ($thumbnail_id && get_post($thumbnail_id)) {
 				$attr = array( 'class' => 'bb-thumbnail' );
@@ -417,9 +417,9 @@ if (!class_exists('\BuddyBossTheme\BuddyBossMultiPostThumbnails')) {
 
 				if (!empty($thumbnail_html)) {
 					$content = sprintf($set_thumbnail_link, $thumbnail_html);
-					$content .= sprintf( '<p class="hide-if-no-js"><a class="components-button is-button is-default is-large" onclick="jQuery(\'#set-%2$s-%3$s-thumbnail\').trigger(\'click\');return false;">%1$s</a></p>', __( 'Replace image', 'buddyboss-theme' ), $this->post_type, $this->id );
+					$content .= sprintf( '<p class="hide-if-no-js"><a class="components-button is-button is-default is-large" onclick="jQuery(\'#set-%2$s-%3$s-thumbnail\').trigger(\'click\');return false;">%1$s</a></p>', __( 'Replace image', 'press-pool' ), $this->post_type, $this->id );
 					$format_string = '<p class="hide-if-no-js"><a href="#" class="components-button is-link is-destructive" id="remove-%1$s-%2$s-thumbnail" onclick="BuddyBossMultiPostThumbnails.removeThumbnail(\'%2$s\', \'%1$s\', \'%4$s\');return false;">%3$s</a></p>';
-					$content .= sprintf( $format_string, $this->post_type, $this->id, sprintf( esc_html__( "Remove %s", 'buddyboss-theme' ), $this->label ), $ajax_nonce );
+					$content .= sprintf( $format_string, $this->post_type, $this->id, sprintf( esc_html__( "Remove %s", 'press-pool' ), $this->label ), $ajax_nonce );
 				}
 			}
 

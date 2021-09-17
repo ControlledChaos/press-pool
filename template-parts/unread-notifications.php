@@ -18,6 +18,6 @@
 	<?php endwhile; ?>
 <?php else : ?>
     <li class="bs-item-wrap">
-        <div class="notification-content"><?php _e( 'No new notifications', 'buddyboss-theme' ); ?>!</div>
+        <div class="notification-content"><?php _e( 'No new notifications', 'press-pool' ); ?>!</div>
     </li>
 <?php endif; ?>

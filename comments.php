@@ -24,14 +24,14 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<!-- .comments-title -->
-	<h4 class="comments-title"><?php esc_html_e( 'Responses', 'buddyboss-theme' ); ?></h4>
+	<h4 class="comments-title"><?php esc_html_e( 'Responses', 'press-pool' ); ?></h4>
 
 	<?php
 	$user_link = function_exists( 'bp_core_get_user_domain' ) ? bp_core_get_user_domain( get_current_user_id() ) : get_author_posts_url( get_current_user_id() );
 
 	// You can start editing here -- including this comment!
 	$args = array(
-		'comment_field'      => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . __( 'Write a response...', 'buddyboss-theme' ) . '"></textarea></p>',
+		'comment_field'      => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . __( 'Write a response...', 'press-pool' ) . '"></textarea></p>',
 		'title_reply'        => '',
 
 		/*
@@ -39,11 +39,11 @@ if ( post_password_required() ) {
 		 * %1$s - user avatar html
 		 * %3$s - User Name
          */
-		'logged_in_as'       => '<p class="logged-in-as">' . sprintf( __( '<a class="comment-author" href="%1$s"><span class="vcard">%2$s</span><span class="name">%3$s</span></a>', 'buddyboss-theme' ), $user_link, get_avatar( get_current_user_id(), 80 ), $user_identity ) . '</p>',
+		'logged_in_as'       => '<p class="logged-in-as">' . sprintf( __( '<a class="comment-author" href="%1$s"><span class="vcard">%2$s</span><span class="name">%3$s</span></a>', 'press-pool' ), $user_link, get_avatar( get_current_user_id(), 80 ), $user_identity ) . '</p>',
 		'class_submit'       => 'submit button outline small',
 		'title_reply_before' => '',
 		'title_reply_after'  => '',
-		'label_submit'       => __( 'Publish', 'buddyboss-theme' ),
+		'label_submit'       => __( 'Publish', 'press-pool' ),
 	);
 
 	comment_form( $args );
@@ -69,7 +69,7 @@ if ( post_password_required() ) {
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'buddyboss-theme' ); ?></p><?php
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'press-pool' ); ?></p><?php
 		endif;
 
 	endif; // Check for have_comments().

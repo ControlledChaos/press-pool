@@ -74,12 +74,12 @@ final class Menu_Icons_Picker {
 			array(
 				array(
 					'id'    => 'type',
-					'label' => __( 'Type', 'buddyboss-theme' ),
+					'label' => __( 'Type', 'press-pool' ),
 					'value' => $meta['type'],
 				),
 				array(
 					'id'    => 'icon',
-					'label' => __( 'Icon', 'buddyboss-theme' ),
+					'label' => __( 'Icon', 'press-pool' ),
 					'value' => $meta['icon'],
 				),
 			),
@@ -173,13 +173,13 @@ final class Menu_Icons_Picker {
 			do_action( 'menu_icons_before_fields', $item, $depth, $args, $id );
 			?>
             <p class="description submitbox">
-                <label><?php esc_html_e( 'Icon:', 'buddyboss-theme' ) ?></label>
+                <label><?php esc_html_e( 'Icon:', 'press-pool' ) ?></label>
                 <?php if ( true === $new ) {
 	                printf( '<a class="_select" title="Change"><i class="_icon buddyboss %s"></i></a>', $icon );
-	                printf( '<a class="_remove submitdelete">%s</a>', esc_html__( 'Remove', 'buddyboss-theme' ) );
+	                printf( '<a class="_remove submitdelete">%s</a>', esc_html__( 'Remove', 'press-pool' ) );
                 } else {
-	                printf( '<a class="_select">%s</a>', esc_html__( 'Select', 'buddyboss-theme' ) );
-	                printf( '<a class="_remove submitdelete hidden">%s</a>', esc_html__( 'Remove', 'buddyboss-theme' ) );
+	                printf( '<a class="_select">%s</a>', esc_html__( 'Select', 'press-pool' ) );
+	                printf( '<a class="_remove submitdelete hidden">%s</a>', esc_html__( 'Remove', 'press-pool' ) );
                 } ?>
             </p>
             <div class="_settings hidden">
@@ -228,7 +228,7 @@ final class Menu_Icons_Picker {
 	 * @return array
 	 */
 	public static function _columns( $columns ) {
-		$columns['icon'] = __( 'Icon', 'buddyboss-theme' );
+		$columns['icon'] = __( 'Icon', 'press-pool' );
 
 		return $columns;
 	}

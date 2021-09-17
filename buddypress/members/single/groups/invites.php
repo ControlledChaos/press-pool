@@ -7,7 +7,7 @@
  */
 ?>
 
-<h2 class="screen-heading group-invites-screen"><?php esc_html_e( 'Group Invites', 'buddyboss-theme' ); ?></h2>
+<h2 class="screen-heading group-invites-screen"><?php esc_html_e( 'Group Invites', 'press-pool' ); ?></h2>
 
 <?php bp_nouveau_group_hook( 'before', 'invites_content' ); ?>
 
@@ -41,7 +41,7 @@
 	                                <?php
 	                                //@todo NO HTML in text domain please
 									$member = new BP_Groups_Member( bp_displayed_user_id(), bp_get_group_id() );
-	                                printf( __( 'Invited by <a href="%s">%s</a> &middot; <span class="last-activity">%s</span>', 'buddyboss-theme' ), $inviter['url'], $inviter['name'], bp_core_time_since( $member->date_modified ) );
+	                                printf( __( 'Invited by <a href="%s">%s</a> &middot; <span class="last-activity">%s</span>', 'press-pool' ), $inviter['url'], $inviter['name'], bp_core_time_since( $member->date_modified ) );
 	                                ?>
 	                            <?php endif; ?>
 							</p>

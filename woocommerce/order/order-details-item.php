@@ -31,7 +31,7 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
         ?>
     </td>
 
-	<td class="woocommerce-table__product-name product-name" data-title="<?php _e( 'Product', 'buddyboss-theme' ); ?>">
+	<td class="woocommerce-table__product-name product-name" data-title="<?php _e( 'Product', 'press-pool' ); ?>">
 		<?php
 		$is_visible        = $product && $product->is_visible();
 		$product_permalink = apply_filters( 'woocommerce_order_item_permalink', $is_visible ? $product->get_permalink( $item ) : '', $item, $order );
@@ -53,14 +53,14 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 
 		do_action( 'woocommerce_order_item_meta_end', $item_id, $item, $order, false );
 		?>
-        <span class="bb_sku_wrapper"><?php esc_html_e( 'SKU:', 'buddyboss-theme' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'buddyboss-theme' ); ?></span></span>
+        <span class="bb_sku_wrapper"><?php esc_html_e( 'SKU:', 'press-pool' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'press-pool' ); ?></span></span>
 	</td>
 
-    <td class="woocommerce-table__product-total product-qty" data-title="<?php _e( 'Qty', 'buddyboss-theme' ); ?>">
+    <td class="woocommerce-table__product-total product-qty" data-title="<?php _e( 'Qty', 'press-pool' ); ?>">
 		<?php echo apply_filters( 'woocommerce_order_item_quantity_html', ' <span class="product-quantity">' . sprintf( '%s', $item->get_quantity() ) . '</span>', $item ); ?>
 	</td>
 
-	<td class="woocommerce-table__product-total product-total" data-title="<?php _e( 'Total', 'buddyboss-theme' ); ?>">
+	<td class="woocommerce-table__product-total product-total" data-title="<?php _e( 'Total', 'press-pool' ); ?>">
 		<?php echo $order->get_formatted_line_subtotal( $item ); ?>
 	</td>
 
@@ -70,7 +70,7 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 
 <tr class="woocommerce-table__product-purchase-note product-purchase-note">
 
-	<td colspan="4" data-title="<?php _e( 'Notes', 'buddyboss-theme' ); ?>"><?php echo wpautop( do_shortcode( wp_kses_post( $purchase_note ) ) ); ?></td>
+	<td colspan="4" data-title="<?php _e( 'Notes', 'press-pool' ); ?>"><?php echo wpautop( do_shortcode( wp_kses_post( $purchase_note ) ) ); ?></td>
 
 </tr>
 

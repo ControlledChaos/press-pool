@@ -45,7 +45,7 @@ $lessons    = learndash_get_lesson_list( $course_id );
 
                 <div class="bb-course-points">
                     <a class="anchor-course-points" href="#learndash-course-content">
-						<?php echo sprintf( esc_html_x('View %s details', 'link: View Course details', 'buddyboss-theme'), LearnDash_Custom_Label::get_label( 'course' ) );?>
+						<?php echo sprintf( esc_html_x('View %s details', 'link: View Course details', 'press-pool'), LearnDash_Custom_Label::get_label( 'course' ) );?>
                         <i class="bb-icons bb-icon-chevron-down"></i>
                     </a>
                 </div>

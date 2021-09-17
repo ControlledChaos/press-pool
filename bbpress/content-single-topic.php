@@ -66,19 +66,19 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11">
                             <path fill="none" stroke="#C8CBCF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44" d="M1 10l4.5-4 4.5 4M1 5l4.5-4L10 5"/>
                         </svg>
-                        <?php _e( 'Original Post', 'buddyboss-theme' ); ?>
+                        <?php _e( 'Original Post', 'press-pool' ); ?>
                     </a>
                     <div class="reply-timeline-container" id="reply-timeline-container">
                         <div class="handle" id="handle">
-                            <span id="currentpost">0</span> <?php _e( 'of', 'buddyboss-theme' ); ?> <span id="totalposts">0</span> <?php _e( 'posts', 'buddyboss-theme' ); ?>
-                            <span class="desc" id="date"><?php _e( 'June 2018', 'buddyboss-theme' ); ?></span>
+                            <span id="currentpost">0</span> <?php _e( 'of', 'press-pool' ); ?> <span id="totalposts">0</span> <?php _e( 'posts', 'press-pool' ); ?>
+                            <span class="desc" id="date"><?php _e( 'June 2018', 'press-pool' ); ?></span>
                         </div>
                     </div>
                     <a href="#" class="lastpostbtn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11">
                             <path fill="none" stroke="#C8CBCF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44" d="M1 1l4.5 4L10 1M1 6l4.5 4L10 6"/>
                         </svg>
-                        <?php _e( 'Now', 'buddyboss-theme' ); ?>
+                        <?php _e( 'Now', 'press-pool' ); ?>
                     </a>
                 </div>
             </div>

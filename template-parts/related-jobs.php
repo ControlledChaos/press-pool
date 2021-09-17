@@ -4,7 +4,7 @@ $related_posts = buddyboss_theme_get_option( 'blog_related_switch' );
 
 <?php if ( is_single() && ! is_related_posts() && !empty( $related_posts ) ) : ?>
 	<div class="post-related-jobs">
-        <h4><?php _e( 'Related Jobs', 'buddyboss-theme' ); ?></h4>
+        <h4><?php _e( 'Related Jobs', 'press-pool' ); ?></h4>
 		<?php
 		global $post, $is_related_posts;
 

@@ -43,16 +43,16 @@ if ( $show_downloads ) {
 	<section class="woocommerce-order-details">
 		<?php do_action( 'woocommerce_order_details_before_order_table', $order ); ?>
 
-		<h2 class="woocommerce-order-details__title"><?php esc_html_e( 'Order details', 'buddyboss-theme' ); ?></h2>
+		<h2 class="woocommerce-order-details__title"><?php esc_html_e( 'Order details', 'press-pool' ); ?></h2>
 
 		<table class="woocommerce-table woocommerce-table--order-details shop_table shop_table_responsive order_details order_details_items">
 
 			<thead>
 				<tr>
 					<th class="woocommerce-table__product-thumb product-thumb"></th>
-					<th class="woocommerce-table__product-name product-name"><?php _e( 'Product', 'buddyboss-theme' ); ?></th>
-					<th class="woocommerce-table__product-name product-qty"><?php _e( 'Qty', 'buddyboss-theme' ); ?></th>
-					<th class="woocommerce-table__product-table product-total"><?php _e( 'Total', 'buddyboss-theme' ); ?></th>
+					<th class="woocommerce-table__product-name product-name"><?php _e( 'Product', 'press-pool' ); ?></th>
+					<th class="woocommerce-table__product-name product-qty"><?php _e( 'Qty', 'press-pool' ); ?></th>
+					<th class="woocommerce-table__product-table product-total"><?php _e( 'Total', 'press-pool' ); ?></th>
 				</tr>
 			</thead>
 
@@ -100,7 +100,7 @@ if ( $show_downloads ) {
 			<tfoot>
 				<?php if ( $order->get_customer_note() ) : ?>
 					<tr>
-						<th><?php esc_html_e( 'Note:', 'buddyboss-theme' ); ?></th>
+						<th><?php esc_html_e( 'Note:', 'press-pool' ); ?></th>
 						<td><?php echo wp_kses_post( nl2br( wptexturize( $order->get_customer_note() ) ) ); ?></td>
 					</tr>
 				<?php endif; ?>

@@ -23,7 +23,7 @@ $posts = tribe_get_related_posts();
 
 if ( is_array( $posts ) && ! empty( $posts ) ) : ?>
 
-<h3 class="tribe-events-related-events-title"><?php printf( __( 'Related %s', 'buddyboss-theme' ), tribe_get_event_label_plural() ); ?></h3>
+<h3 class="tribe-events-related-events-title"><?php printf( __( 'Related %s', 'press-pool' ), tribe_get_event_label_plural() ); ?></h3>
 
 <ul class="tribe-related-events tribe-clearfix">
 	<?php foreach ( $posts as $post ) : ?>

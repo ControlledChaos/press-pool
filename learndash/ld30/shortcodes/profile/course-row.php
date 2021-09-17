@@ -28,7 +28,7 @@ $course_class = apply_filters( 'learndash-course-row-class',
 
             <div class="ld-expand-button ld-button-alternate ld-mobile-only" data-ld-expands="<?php echo esc_attr( 'ld-course-list-item-' . $course_id ); ?>">
                 <span class="ld-icon-arrow-down ld-icon"></span>
-                <span class="ld-text ld-primary-color"><?php esc_html_e( 'Expand', 'buddyboss-theme' ); ?></span>
+                <span class="ld-text ld-primary-color"><?php esc_html_e( 'Expand', 'press-pool' ); ?></span>
             </div> <!--/.ld-expand-button-->
         </div>
         
@@ -41,7 +41,7 @@ $course_class = apply_filters( 'learndash-course-row-class',
             <?php
             $certificateLink = learndash_get_course_certificate_link( $course->ID, $user_id );
             if ( !empty( $certificateLink ) ): ?>
-                <a class="ld-certificate-link" target="_blank" href="<?php echo esc_attr($certificateLink); ?>" aria-label="<?php esc_attr_e( 'Certificate', 'buddyboss-theme' ); ?>"><span class="ld-icon ld-icon-certificate"></span></span></a>
+                <a class="ld-certificate-link" target="_blank" href="<?php echo esc_attr($certificateLink); ?>" aria-label="<?php esc_attr_e( 'Certificate', 'press-pool' ); ?>"><span class="ld-icon ld-icon-certificate"></span></span></a>
             <?php endif; ?>
 
             <?php echo wp_kses_post(learndash_status_bubble($status)); ?>

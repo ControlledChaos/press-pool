@@ -36,27 +36,27 @@ $logo_class = ( $logo_align <= 1 && ( !buddyboss_is_learndash_inner() && !buddyb
 				<?php if( ( class_exists( 'SFWD_LMS' ) && buddyboss_is_learndash_inner() ) || ( class_exists( 'LifterLMS' ) && buddyboss_is_lifterlms_inner() ) ){ ?>
 					<?php if ( is_user_logged_in()) { ?>
 						<a href="#" id="bb-toggle-theme">
-		                    <span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Dark Mode', 'buddyboss-theme' ); ?>"><i class="bb-icon-moon-circle"></i></span>
-		                    <span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Light Mode', 'buddyboss-theme' ); ?>"><i class="bb-icon-sun"></i></span>
+		                    <span class="sfwd-dark-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Dark Mode', 'press-pool' ); ?>"><i class="bb-icon-moon-circle"></i></span>
+		                    <span class="sfwd-light-mode" data-balloon-pos="down" data-balloon="<?php _e( 'Light Mode', 'press-pool' ); ?>"><i class="bb-icon-sun"></i></span>
 		                </a>
-						<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Hide Sidepanel', 'buddyboss-theme' ); ?>"><i class="bb-icon-maximize"></i></a>
-						<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Show Sidepanel', 'buddyboss-theme' ); ?>"><i class="bb-icon-minimize"></i></a>
+						<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Hide Sidepanel', 'press-pool' ); ?>"><i class="bb-icon-maximize"></i></a>
+						<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Show Sidepanel', 'press-pool' ); ?>"><i class="bb-icon-minimize"></i></a>
 					<?php }else{ ?>
 
 						<?php if( $show_search ) : ?>
-							<a data-balloon-pos="left" data-balloon="<?php _e( 'Search', 'buddyboss-theme' ); ?>" href="#" class="push-right header-search-link"><i class="bb-icon-search"></i></a>
+							<a data-balloon-pos="left" data-balloon="<?php _e( 'Search', 'press-pool' ); ?>" href="#" class="push-right header-search-link"><i class="bb-icon-search"></i></a>
 						<?php endif; ?>
 
 						<?php if( $show_shopping_cart && class_exists( 'WooCommerce' ) ) : ?>
 							<?php get_template_part( 'template-parts/cart-dropdown' ); ?>
 						<?php endif; ?>
 
-						<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Hide Sidepanel', 'buddyboss-theme' ); ?>"><i class="bb-icon-maximize"></i></a>
-						<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Show Sidepanel', 'buddyboss-theme' ); ?>"><i class="bb-icon-minimize"></i></a>
+						<a href="#" class="header-maximize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Hide Sidepanel', 'press-pool' ); ?>"><i class="bb-icon-maximize"></i></a>
+						<a href="#" class="header-minimize-link course-toggle-view" data-balloon-pos="left" data-balloon="<?php _e( 'Show Sidepanel', 'press-pool' ); ?>"><i class="bb-icon-minimize"></i></a>
 				<?php } ?>
 			<?php }else{ ?>
 				<?php if( $show_search ) : ?>
-				<a data-balloon-pos="left" data-balloon="<?php _e( 'Search', 'buddyboss-theme' ); ?>" href="#" class="push-right header-search-link"><i class="bb-icon-search"></i></a>
+				<a data-balloon-pos="left" data-balloon="<?php _e( 'Search', 'press-pool' ); ?>" href="#" class="push-right header-search-link"><i class="bb-icon-search"></i></a>
 				<?php endif; ?>
 
 				<?php if( $show_messages && function_exists( 'bp_is_active' ) && bp_is_active( 'messages' )  ) : ?>
@@ -77,7 +77,7 @@ $logo_class = ( $logo_align <= 1 && ( !buddyboss_is_learndash_inner() && !buddyb
 	<div class="header-search-wrap">
         <div class="container">
 			<?php get_search_form(); ?>
-            <a data-balloon-pos="left" data-balloon="<?php _e( 'Close', 'buddyboss-theme' ); ?>" href="#" class="close-search"><i class="bb-icon-close-circle"></i></a>
+            <a data-balloon-pos="left" data-balloon="<?php _e( 'Close', 'press-pool' ); ?>" href="#" class="close-search"><i class="bb-icon-close-circle"></i></a>
         </div>
     </div>
 </div>
@@ -98,7 +98,7 @@ $logo_class = ( $logo_align <= 1 && ( !buddyboss_is_learndash_inner() && !buddyb
 						<?php
 						if ( function_exists( 'bp_is_active' ) && bp_is_active( 'settings' ) ) {
 							$settings_link = trailingslashit( bp_loggedin_user_domain() . bp_get_settings_slug() ); ?>
-							<div class="my-account-link"><a class="ab-item" aria-haspopup="true" href="<?php echo $settings_link; ?>"><?php _e( 'My Account', 'buddyboss-theme' ); ?></a></div><?php
+							<div class="my-account-link"><a class="ab-item" aria-haspopup="true" href="<?php echo $settings_link; ?>"><?php _e( 'My Account', 'press-pool' ); ?></a></div><?php
 						} ?>
 					</div>
 				</div>
@@ -144,12 +144,12 @@ $logo_class = ( $logo_align <= 1 && ( !buddyboss_is_learndash_inner() && !buddyb
 
 		<div class="bb-login-section">
 			<?php if ( !is_user_logged_in() ) { ?>
-				<a href="<?php echo wp_login_url(); ?>" class="button outline small full secondary sign-in"><?php _e( 'Sign in', 'buddyboss-theme' ); ?></a>
+				<a href="<?php echo wp_login_url(); ?>" class="button outline small full secondary sign-in"><?php _e( 'Sign in', 'press-pool' ); ?></a>
 				<?php if ( get_option( 'users_can_register' ) ) { ?>
-					<a href="<?php echo wp_registration_url(); ?>" class="button small full sing-up"><?php _e( 'Sign up', 'buddyboss-theme' ); ?></a>
+					<a href="<?php echo wp_registration_url(); ?>" class="button small full sing-up"><?php _e( 'Sign up', 'press-pool' ); ?></a>
 				<?php } ?>
 			<?php } else { ?>
-				<a href="<?php echo wp_logout_url(); ?>" class="button small full sign-out"><?php _e( 'Logout', 'buddyboss-theme' ); ?></a>
+				<a href="<?php echo wp_logout_url(); ?>" class="button small full sign-out"><?php _e( 'Logout', 'press-pool' ); ?></a>
 			<?php } ?>
 		</div>
 

@@ -134,21 +134,21 @@ if ( !class_exists( '\BuddyBossTheme\WooCommerceHelper' ) ) {
 	    }
 
 	    function override_checkout_fields( $fields ) {
-		    $fields['billing']['billing_first_name']['placeholder'] = __( 'First name', 'buddyboss-theme' );
-		    $fields['billing']['billing_last_name']['placeholder'] = __( 'Last name', 'buddyboss-theme' );
-		    $fields['billing']['billing_company']['placeholder'] = __( 'Company name', 'buddyboss-theme' );
-		    $fields['billing']['billing_city']['placeholder'] = __( 'Town / City', 'buddyboss-theme' );
-		    $fields['billing']['billing_postcode']['placeholder'] = __( 'Postcode / ZIP', 'buddyboss-theme' );
-		    $fields['billing']['billing_phone']['placeholder'] = __( 'Phone', 'buddyboss-theme' );
-		    $fields['billing']['billing_email']['placeholder'] = __( 'Email address', 'buddyboss-theme' );
-		    $fields['billing']['billing_state']['placeholder'] = __( 'State / County', 'buddyboss-theme' );
+		    $fields['billing']['billing_first_name']['placeholder'] = __( 'First name', 'press-pool' );
+		    $fields['billing']['billing_last_name']['placeholder'] = __( 'Last name', 'press-pool' );
+		    $fields['billing']['billing_company']['placeholder'] = __( 'Company name', 'press-pool' );
+		    $fields['billing']['billing_city']['placeholder'] = __( 'Town / City', 'press-pool' );
+		    $fields['billing']['billing_postcode']['placeholder'] = __( 'Postcode / ZIP', 'press-pool' );
+		    $fields['billing']['billing_phone']['placeholder'] = __( 'Phone', 'press-pool' );
+		    $fields['billing']['billing_email']['placeholder'] = __( 'Email address', 'press-pool' );
+		    $fields['billing']['billing_state']['placeholder'] = __( 'State / County', 'press-pool' );
 
-		    $fields['shipping']['shipping_first_name']['placeholder'] = __( 'First name', 'buddyboss-theme' );
-		    $fields['shipping']['shipping_last_name']['placeholder'] = __( 'Last name', 'buddyboss-theme' );
-		    $fields['shipping']['shipping_company']['placeholder'] = __( 'Company name', 'buddyboss-theme' );
-		    $fields['shipping']['shipping_city']['placeholder'] = __( 'Town / City', 'buddyboss-theme' );
-		    $fields['shipping']['shipping_state']['placeholder'] = __( 'State / County', 'buddyboss-theme' );
-		    $fields['shipping']['shipping_postcode']['placeholder'] = __( 'Postcode / ZIP', 'buddyboss-theme' );
+		    $fields['shipping']['shipping_first_name']['placeholder'] = __( 'First name', 'press-pool' );
+		    $fields['shipping']['shipping_last_name']['placeholder'] = __( 'Last name', 'press-pool' );
+		    $fields['shipping']['shipping_company']['placeholder'] = __( 'Company name', 'press-pool' );
+		    $fields['shipping']['shipping_city']['placeholder'] = __( 'Town / City', 'press-pool' );
+		    $fields['shipping']['shipping_state']['placeholder'] = __( 'State / County', 'press-pool' );
+		    $fields['shipping']['shipping_postcode']['placeholder'] = __( 'Postcode / ZIP', 'press-pool' );
 
 		    return $fields;
 	    }
@@ -166,9 +166,9 @@ if ( !class_exists( '\BuddyBossTheme\WooCommerceHelper' ) ) {
 		    global $product;
 		    $check_product_review_count = $product->get_review_count();
 		    if ( $check_product_review_count == 0 ) {
-			    $tabs['reviews']['title'] = __( 'Reviews', 'buddyboss-theme' );
+			    $tabs['reviews']['title'] = __( 'Reviews', 'press-pool' );
 		    } else {
-			    $tabs['reviews']['title'] = __( 'Reviews', 'buddyboss-theme' ) . ' (' . $check_product_review_count . ')';
+			    $tabs['reviews']['title'] = __( 'Reviews', 'press-pool' ) . ' (' . $check_product_review_count . ')';
 		    }
 
 		    return $tabs;

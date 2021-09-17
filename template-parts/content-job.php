@@ -23,7 +23,7 @@ global $post;
 				else :
                     $prefix = "";
                     if( has_post_format( 'link' ) ){
-                        $prefix = __( '[Link]', 'buddyboss-theme' );
+                        $prefix = __( '[Link]', 'press-pool' );
                         $prefix .= " ";//whitespace
                     }
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $prefix, '</a></h2>' );
@@ -55,9 +55,9 @@ global $post;
                 	<li class="date-posted"><?php the_job_publish_date(); ?></li>
                 
                 	<?php if ( is_position_filled() ) : ?>
-                		<li class="position-filled"><?php _e( 'This position has been filled', 'buddyboss-theme' ); ?></li>
+                		<li class="position-filled"><?php _e( 'This position has been filled', 'press-pool' ); ?></li>
                 	<?php elseif ( ! candidates_can_apply() && 'preview' !== $post->post_status ) : ?>
-                		<li class="listing-expired"><?php _e( 'Applications have closed', 'buddyboss-theme' ); ?></li>
+                		<li class="listing-expired"><?php _e( 'Applications have closed', 'press-pool' ); ?></li>
                 	<?php endif; ?>
                 
                 	<?php do_action( 'single_job_listing_meta_end' ); ?>
@@ -83,7 +83,7 @@ global $post;
         					the_content( sprintf(
         					wp_kses(
         					/* translators: %s: Name of current post. Only visible to screen readers */
-        					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'buddyboss-theme' ), array(
+        					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'press-pool' ), array(
         						'span' => array(
         							'class' => array(),
         						),
@@ -110,7 +110,7 @@ global $post;
                     			<?php get_job_manager_template( 'job-application.php' ); ?>
                     		<?php endif; ?>
                             
-                            <h3><?php echo __( 'Contact us', 'buddyboss-theme' ); ?></h3>
+                            <h3><?php echo __( 'Contact us', 'press-pool' ); ?></h3>
                             <div class="name-meta"><?php the_company_name( '<strong>', '</strong>' ); ?></div>
                     		<?php if ( $website = get_the_company_website() ) : ?>
                                 <?php

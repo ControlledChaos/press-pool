@@ -7,8 +7,8 @@
 //$no_results_class = ! BP_Search::instance()->has_search_results() ?  'bp-search-no-results' : '';
 
 $post_title = BP_Search::instance()->has_search_results() ?
-	sprintf( __( 'Showing results for \'%s\'', 'buddyboss-theme' ), $_GET['s'] ):
-	sprintf( __( 'No results for \'%s\'', 'buddyboss-theme' ), $_GET['s'] ) ;
+	sprintf( __( 'Showing results for \'%s\'', 'press-pool' ), $_GET['s'] ):
+	sprintf( __( 'No results for \'%s\'', 'press-pool' ), $_GET['s'] ) ;
 ?>
 
 <div class="bp-search-page buddypress-wrap">

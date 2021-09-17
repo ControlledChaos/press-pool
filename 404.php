@@ -8,10 +8,10 @@
  */
 get_header();
 
-$title       = sprintf( _x( '%s', '404 page title', 'buddyboss-theme' ), buddyboss_theme_get_option( '404_title' ) );
-$desc        = sprintf( _x( '%s', '404 page description', 'buddyboss-theme' ), buddyboss_theme_get_option( '404_desc' ) );
+$title       = sprintf( _x( '%s', '404 page title', 'press-pool' ), buddyboss_theme_get_option( '404_title' ) );
+$desc        = sprintf( _x( '%s', '404 page description', 'press-pool' ), buddyboss_theme_get_option( '404_desc' ) );
 $img         = buddyboss_theme_get_option( '404_image' );
-$button_text = sprintf( _x( '%s', '404 page button text', 'buddyboss-theme' ), buddyboss_theme_get_option( '404_button_text' ) );
+$button_text = sprintf( _x( '%s', '404 page button text', 'press-pool' ), buddyboss_theme_get_option( '404_button_text' ) );
 $button_link = buddyboss_theme_get_option( '404_button_link' );
 
 ?>

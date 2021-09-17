@@ -20,7 +20,7 @@ $group_cover_height = buddyboss_theme_get_option( 'buddyboss_group_cover_height'
 
 	<div id="header-cover-image" class="cover-<?php echo $group_cover_height; ?> <?php echo 'width-' . $group_cover_width; ?>">
 		<?php if ( bp_is_item_admin() && bp_group_use_cover_image_header() ) { ?>
-			<a href="<?php echo $group_cover_link; ?>" class="link-change-cover-image" data-balloon-pos="right" data-balloon="<?php _e('Change Cover Image', 'buddyboss-theme'); ?>">
+			<a href="<?php echo $group_cover_link; ?>" class="link-change-cover-image" data-balloon-pos="right" data-balloon="<?php _e('Change Cover Image', 'press-pool'); ?>">
 				<span class="dashicons dashicons-edit"></span>
 			</a>
 		<?php } ?>
@@ -32,7 +32,7 @@ $group_cover_height = buddyboss_theme_get_option( 'buddyboss_group_cover_height'
 		<?php if ( ! bp_disable_group_avatar_uploads() ) : ?>
 			<div id="item-header-avatar">
 				<?php if ( bp_is_item_admin() ) { ?>
-					<a href="<?php echo $group_avatar; ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Group Photo', 'buddyboss-theme'); ?>">
+					<a href="<?php echo $group_avatar; ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Group Photo', 'press-pool'); ?>">
 						<span class="dashicons dashicons-edit"></span>
 					</a>
 				<?php } ?>

@@ -63,7 +63,7 @@ function buddyboss_updater_cron_schedules( $schedules ) {
 	if ( ! isset( $schedules["four_hours"] ) ) {
 		$schedules["four_hours"] = array(
 			'interval' => 4 * 60 * 60,
-			'display'  => __( 'Once every 4 hours', 'buddyboss-theme' )
+			'display'  => __( 'Once every 4 hours', 'press-pool' )
 		);
 	}
 

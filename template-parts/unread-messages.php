@@ -32,7 +32,7 @@
 								<?php $recipient_name = bp_core_get_user_displayname( $recipient->user_id ); ?>
 
 								<?php if ( empty( $recipient_name ) ) : ?>
-									<?php $recipient_name = __( 'Deleted User', 'buddyboss-theme' ); ?>
+									<?php $recipient_name = __( 'Deleted User', 'press-pool' ); ?>
 								<?php endif; ?>
 
 								<?php $recipient_names[] = ( $recipient_name ) ? ucwords( $recipient_name ) : ''; ?>
@@ -56,9 +56,9 @@
 								<?php $media_ids = explode( ',', $media_ids ); ?>
 
 								<?php if ( sizeof( $media_ids ) < 2 ) : ?>
-									<?php $exerpt = __( 'sent a photo', 'buddyboss-theme' ); ?>
+									<?php $exerpt = __( 'sent a photo', 'press-pool' ); ?>
 								<?php else : ?>
-									<?php $exerpt = __( 'sent some photos', 'buddyboss-theme' ); ?>
+									<?php $exerpt = __( 'sent some photos', 'press-pool' ); ?>
 								<?php endif; ?>
 							<?php endif; ?>
 						<?php endif; ?>
@@ -67,14 +67,14 @@
 							<?php $gif_data = bp_messages_get_meta( $last_message_id, '_gif_data', true ); ?>
 
 							<?php if ( ! empty( $gif_data ) ) : ?>
-								<?php $exerpt = __( 'sent a gif', 'buddyboss-theme' ); ?>
+								<?php $exerpt = __( 'sent a gif', 'press-pool' ); ?>
 							<?php endif; ?>
 						<?php endif; ?>
 					<?php endif; ?>
 
 					<?php
                         if ( bp_loggedin_user_id() === $messages_template->thread->last_sender_id ) {
-                            echo esc_html__('You ', 'buddyboss-theme' ) . ': ' . stripslashes_deep( $exerpt );
+                            echo esc_html__('You ', 'press-pool' ) . ': ' . stripslashes_deep( $exerpt );
                         } else if ( 1 === count( $recipient_names) ) {
                              echo stripslashes_deep( $exerpt );
                         } else {
@@ -87,6 +87,6 @@
 	<?php endwhile; ?>
 <?php else : ?>
     <li class="bs-item-wrap">
-        <div class="notification-content"><?php _e( 'No new messages', 'buddyboss-theme' ); ?>!</div>
+        <div class="notification-content"><?php _e( 'No new messages', 'press-pool' ); ?>!</div>
     </li>
 <?php endif; ?>

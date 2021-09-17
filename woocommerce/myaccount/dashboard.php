@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h2>
         <?php
         printf(
-    		__( 'Hello %1$s', 'buddyboss-theme' ),
+    		__( 'Hello %1$s', 'press-pool' ),
     		'<strong>' . esc_html( $current_user->display_name ) . '</strong>',
     		esc_url( wc_logout_url( wc_get_page_permalink( 'myaccount' ) ) )
     	);
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <p>
         <?php
         printf(
-    		__( 'not %1$s? <a href="%2$s">Log out</a>', 'buddyboss-theme' ),
+    		__( 'not %1$s? <a href="%2$s">Log out</a>', 'press-pool' ),
     		esc_html( $current_user->display_name ),
     		esc_url( wc_logout_url( wc_get_page_permalink( 'myaccount' ) ) )
     	);
@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <p>
             <?php
 		    printf(
-			    __( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a>, and <a href="%3$s">edit your password and account details</a>.', 'buddyboss-theme' ),
+			    __( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a>, and <a href="%3$s">edit your password and account details</a>.', 'press-pool' ),
 			    esc_url( wc_get_endpoint_url( 'orders' ) ),
 			    esc_url( wc_get_endpoint_url( 'edit-address' ) ),
 			    esc_url( wc_get_endpoint_url( 'edit-account' ) )
@@ -61,10 +61,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php
         
         $my_orders_columns = apply_filters( 'woocommerce_my_account_my_orders_columns', array(
-        	'order-number'  => __( 'Order', 'buddyboss-theme' ),
-        	'order-date'    => __( 'Date', 'buddyboss-theme' ),
-        	'order-status'  => __( 'Status', 'buddyboss-theme' ),
-        	'order-total'   => __( 'Total', 'buddyboss-theme' ),
+        	'order-number'  => __( 'Order', 'press-pool' ),
+        	'order-date'    => __( 'Date', 'press-pool' ),
+        	'order-status'  => __( 'Status', 'press-pool' ),
+        	'order-total'   => __( 'Total', 'press-pool' ),
         	'order-actions' => '&nbsp;',
         ) );
         
@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         
         if ( $customer_orders ) : ?>
             <div class="wc-MyAccount-sub-heading">
-                <h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent orders', 'buddyboss-theme' ) ); ?></h2>
+                <h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent orders', 'press-pool' ) ); ?></h2>
             </div>
         	
             <div class="wc-MyAccount-inner-content">
@@ -110,7 +110,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             
             							<?php elseif ( 'order-number' === $column_id ) : ?>
             								<span>
-            									<?php echo _x( '#', 'hash before order number', 'buddyboss-theme' ) . $order->get_order_number(); ?>
+            									<?php echo _x( '#', 'hash before order number', 'press-pool' ) . $order->get_order_number(); ?>
             								</span>
             
             							<?php elseif ( 'order-date' === $column_id ) : ?>
@@ -122,7 +122,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             							<?php elseif ( 'order-total' === $column_id ) : ?>
             								<?php
             								/* translators: 1: formatted order total 2: total order items */
-            								printf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, 'buddyboss-theme' ), $order->get_formatted_order_total(), $item_count );
+            								printf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, 'press-pool' ), $order->get_formatted_order_total(), $item_count );
             								?>
             
             							<?php elseif ( 'order-actions' === $column_id ) : ?>
@@ -156,12 +156,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
         	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-        		'billing' => __( 'Billing address', 'buddyboss-theme' ),
-        		'shipping' => __( 'Shipping address', 'buddyboss-theme' ),
+        		'billing' => __( 'Billing address', 'press-pool' ),
+        		'shipping' => __( 'Shipping address', 'press-pool' ),
         	), $customer_id );
         } else {
         	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-        		'billing' => __( 'Billing address', 'buddyboss-theme' ),
+        		'billing' => __( 'Billing address', 'press-pool' ),
         	), $customer_id );
         }
         
@@ -178,11 +178,11 @@ if ( ! defined( 'ABSPATH' ) ) {
             	<div class="u-column<?php echo ( ( $col = $col * -1 ) < 0 ) ? 1 : 2; ?> col-<?php echo ( ( $oldcol = $oldcol * -1 ) < 0 ) ? 1 : 2; ?> woocommerce-Address">
             		<header class="woocommerce-Address-title title">
             			<h3><?php echo $title; ?></h3>
-                        <a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php _e( 'Edit', 'buddyboss-theme' ); ?></a>
+                        <a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php _e( 'Edit', 'press-pool' ); ?></a>
             		</header>
             		<address><?php
             			$address = wc_get_account_formatted_address( $name );
-            			echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'buddyboss-theme' );
+            			echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'press-pool' );
             		?></address>
             	</div>
             

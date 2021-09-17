@@ -10,10 +10,10 @@ $edit_profile_link = trailingslashit( bp_displayed_user_domain() . bp_get_profil
 ?>
 
 <header class="entry-header profile-loop-header profile-header flex align-items-center">
-	<h1 class="entry-title bb-profile-title"><?php esc_attr_e( 'View Profile', 'buddyboss-theme' ); ?></h1>
+	<h1 class="entry-title bb-profile-title"><?php esc_attr_e( 'View Profile', 'press-pool' ); ?></h1>
 
 	<?php if( bp_is_my_profile() ) { ?>
-		<a href="<?php echo $edit_profile_link; ?>" class="push-right button outline small"><?php esc_attr_e( 'Edit Profile', 'buddyboss-theme' ); ?></a>
+		<a href="<?php echo $edit_profile_link; ?>" class="push-right button outline small"><?php esc_attr_e( 'Edit Profile', 'press-pool' ); ?></a>
 	<?php } ?>
 </header>
 
@@ -108,9 +108,9 @@ $edit_profile_link = trailingslashit( bp_displayed_user_domain() . bp_get_profil
 		<p>
 			<?php
 			if ( bp_is_my_profile() ) {
-				esc_html_e( 'You have not yet added details to your profile.', 'buddyboss-theme' );
+				esc_html_e( 'You have not yet added details to your profile.', 'press-pool' );
 			} else {
-				esc_html_e( 'This member has not yet added details to their profile.', 'buddyboss-theme' );
+				esc_html_e( 'This member has not yet added details to their profile.', 'press-pool' );
 			}
 			?>			
 		</p>

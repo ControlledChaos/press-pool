@@ -6,7 +6,7 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID ); ( $a
         <div class="ld-table-list-title">
 
             <a class="ld-item-icon" href='<?php echo esc_attr( get_post_meta( $assignment->ID, 'file_link', true ) ); ?>' target="_blank">
-                <span class="ld-icon ld-icon-assignment" aria-label="<?php esc_html_e( 'Download Assignment', 'buddyboss-theme' ); ?>"></span>
+                <span class="ld-icon ld-icon-assignment" aria-label="<?php esc_html_e( 'Download Assignment', 'press-pool' ); ?>"></span>
             </a>
 
             <?php
@@ -46,7 +46,7 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID ); ( $a
                      */
                     do_action( 'learndash-assignment-row-comments-before', $assignment, get_the_ID(), $course_id, $user_id ); ?>
 
-                    <a href='<?php echo esc_attr( get_comments_link( $assignment->ID ) ); ?>' data-balloon-pos="up" data-balloon="<?php echo sprintf( esc_attr( '%d Comments', 'placeholder: commentd count', 'buddyboss-theme'), get_comments_number($assignment->ID) ); ?>">
+                    <a href='<?php echo esc_attr( get_comments_link( $assignment->ID ) ); ?>' data-balloon-pos="up" data-balloon="<?php echo sprintf( esc_attr( '%d Comments', 'placeholder: commentd count', 'press-pool'), get_comments_number($assignment->ID) ); ?>">
                         <?php
                         echo esc_html(get_comments_number( $assignment->ID )); ?>
                         <span class="ld-icon ld-icon-comments"></span>
@@ -72,7 +72,7 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID ); ( $a
 
                 <span class="ld-status ld-status-waiting ld-tertiary-background">
                     <span class="ld-icon ld-icon-calendar"></span>
-                    <span class="ld-text"><?php esc_html_e( 'Waiting Review', 'buddyboss-theme' ); ?></span>
+                    <span class="ld-text"><?php esc_html_e( 'Waiting Review', 'press-pool' ); ?></span>
                 </span> <!--/.ld-status-waiting-->
 
                 <?php
@@ -86,10 +86,10 @@ $assignment_points = learndash_get_points_awarded_array( $assignment->ID ); ( $a
                     <span class="ld-icon ld-icon-checkmark"></span>
                     <?php
                     if( $assignment_points ):
-                        echo sprintf( esc_html__( '%s/%s Points Awarded ', 'buddyboss-theme' ), $assignment_points['current'], $assignment_points['max'] ) . ' - ';
+                        echo sprintf( esc_html__( '%s/%s Points Awarded ', 'press-pool' ), $assignment_points['current'], $assignment_points['max'] ) . ' - ';
                     endif;
 
-                    esc_html_e( 'Approved', 'buddyboss-theme' ); ?>
+                    esc_html_e( 'Approved', 'press-pool' ); ?>
                 </span>
 
             <?php

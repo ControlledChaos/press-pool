@@ -129,10 +129,10 @@ final class Icon_Picker_Fontpack {
 		$this->url = apply_filters( 'icon_picker_fontpacks_dir_url', WP_CONTENT_URL . '/fontpacks' );
 
 		$this->messages = array(
-			'no_config'    => __( 'Icon Picker: %1$s was not found in %2$s.', 'buddyboss-theme' ),
-			'config_error' => __( 'Icon Picker: %s contains an error or more.', 'buddyboss-theme' ),
-			'invalid'      => __( 'Icon Picker: %1$s is not set or invalid in %2$s.', 'buddyboss-theme' ),
-			'duplicate'    => __( 'Icon Picker: %1$s is already registered. Please check your font pack config file: %2$s.', 'buddyboss-theme' ),
+			'no_config'    => __( 'Icon Picker: %1$s was not found in %2$s.', 'press-pool' ),
+			'config_error' => __( 'Icon Picker: %s contains an error or more.', 'press-pool' ),
+			'invalid'      => __( 'Icon Picker: %1$s is not set or invalid in %2$s.', 'press-pool' ),
+			'duplicate'    => __( 'Icon Picker: %1$s is already registered. Please check your font pack config file: %2$s.', 'press-pool' ),
 		);
 
 		$this->collect_packs();
@@ -270,7 +270,7 @@ final class Icon_Picker_Fontpack {
 
 		$pack_data = array(
 			'id'             => "pack-{$config['name']}",
-			'name'           => sprintf( __( 'Pack: %s', 'buddyboss-theme' ), $config['name'] ),
+			'name'           => sprintf( __( 'Pack: %s', 'press-pool' ), $config['name'] ),
 			'version'        => $pack_dir->getMTime(),
 			'items'          => $items,
 			'stylesheet_uri' => "{$this->url}/{$pack_dirname}/css/{$config['name']}.css",

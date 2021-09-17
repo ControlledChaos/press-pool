@@ -6,7 +6,7 @@ $related_posts = buddyboss_theme_get_option( 'blog_related_switch' );
 	<?php $posts_array = buddyboss_theme()->related_posts_helper()->get_related_posts(); ?>
 	<?php if ( is_array( $posts_array ) && count( $posts_array ) > 0 ): ?>
 	<div class="post-related-posts">
-        <h4><?php _e( 'Related Articles', 'buddyboss-theme' ); ?></h4>
+        <h4><?php _e( 'Related Articles', 'press-pool' ); ?></h4>
         <div class="post-grid bb-grid">
             <?php
             global $post, $is_related_posts;

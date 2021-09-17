@@ -76,10 +76,10 @@ if ( ! function_exists( 'kucrut_get_image_sizes' ) ) {
 	 */
 	function kucrut_get_image_sizes() {
 		$_sizes = array(
-			'thumbnail' => __( 'Thumbnail', 'buddyboss-theme' ),
-			'medium'    => __( 'Medium', 'buddyboss-theme' ),
-			'large'     => __( 'Large', 'buddyboss-theme' ),
-			'full'      => __( 'Full Size', 'buddyboss-theme' ),
+			'thumbnail' => __( 'Thumbnail', 'press-pool' ),
+			'medium'    => __( 'Medium', 'press-pool' ),
+			'large'     => __( 'Large', 'press-pool' ),
+			'full'      => __( 'Full Size', 'press-pool' ),
 		);
 
 		$_sizes = apply_filters( 'image_size_names_choose', $_sizes );

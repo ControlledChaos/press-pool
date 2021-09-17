@@ -149,7 +149,7 @@ abstract class Kucrut_Form_Field {
 		) {
 			trigger_error(
 				sprintf(
-					esc_html__( '%1$s: Type %2$s is not supported, reverting to text.', 'buddyboss-theme' ),
+					esc_html__( '%1$s: Type %2$s is not supported, reverting to text.', 'press-pool' ),
 					__CLASS__,
 					esc_html( $field['type'] )
 				),
@@ -525,7 +525,7 @@ class Kucrut_Form_Field_Select_Pages extends Kucrut_Form_Field_Select {
 
 
 	public function __construct( $field, $args ) {
-		$this->wp_dropdown_pages_args['show_option_none'] = __( '&mdash; Select &mdash;', 'buddyboss-theme' );
+		$this->wp_dropdown_pages_args['show_option_none'] = __( '&mdash; Select &mdash;', 'press-pool' );
 		parent::__construct( $field, $args );
 	}
 

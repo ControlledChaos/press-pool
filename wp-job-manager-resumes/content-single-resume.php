@@ -25,7 +25,7 @@ if ( resume_manager_user_can_view_resume( $post->ID ) ) : ?>
             
             <li class="candidate-location"><?php the_candidate_location(); ?></li>
 
-			<li class="date-posted" itemprop="datePosted"><date><?php printf( __( 'Updated %s ago', 'buddyboss-theme' ), human_time_diff( get_the_modified_time( 'U' ), current_time( 'timestamp' ) ) ); ?></date></li>
+			<li class="date-posted" itemprop="datePosted"><date><?php printf( __( 'Updated %s ago', 'press-pool' ), human_time_diff( get_the_modified_time( 'U' ), current_time( 'timestamp' ) ) ); ?></date></li>
 
 			<?php do_action( 'single_resume_meta_end' ); ?>
 		</ul>
@@ -37,8 +37,8 @@ if ( resume_manager_user_can_view_resume( $post->ID ) ) : ?>
                 <div class="resume-aside">
         			<div class="bb-candidate-photo"><?php the_candidate_photo(); ?></div>
                     <div class="bb-candidate-data">
-                        <?php get_job_manager_template( 'contact-details.php', array( 'post' => $post ), 'buddyboss-theme', RESUME_MANAGER_PLUGIN_DIR . '/templates/' ); ?>
-                        <h3><?php echo __( 'Profile &amp; Portfolio', 'buddyboss-theme' ); ?></h3>
+                        <?php get_job_manager_template( 'contact-details.php', array( 'post' => $post ), 'press-pool', RESUME_MANAGER_PLUGIN_DIR . '/templates/' ); ?>
+                        <h3><?php echo __( 'Profile &amp; Portfolio', 'press-pool' ); ?></h3>
                         <?php the_resume_links(); ?>
                         <?php if ( get_the_resume_category() ) : ?>
             				<p class="resume-category"><?php the_resume_category(); ?></p>
@@ -59,7 +59,7 @@ if ( resume_manager_user_can_view_resume( $post->ID ) ) : ?>
         		</div>
         
         		<?php if ( $items = get_post_meta( $post->ID, '_candidate_experience', true ) ) : ?>
-        			<h2><?php _e( 'Experience', 'buddyboss-theme' ); ?></h2>
+        			<h2><?php _e( 'Experience', 'press-pool' ); ?></h2>
         			<dl class="resume-manager-experience">
         			<?php
         				foreach( $items as $item ) : ?>
@@ -78,7 +78,7 @@ if ( resume_manager_user_can_view_resume( $post->ID ) ) : ?>
         		<?php endif; ?>
                 
                 <?php if ( $items = get_post_meta( $post->ID, '_candidate_education', true ) ) : ?>
-        			<h2><?php _e( 'Education', 'buddyboss-theme' ); ?></h2>
+        			<h2><?php _e( 'Education', 'press-pool' ); ?></h2>
         			<dl class="resume-manager-education">
         			<?php
         				foreach( $items as $item ) : ?>
@@ -98,7 +98,7 @@ if ( resume_manager_user_can_view_resume( $post->ID ) ) : ?>
         		<?php endif; ?>
                 
                 <?php if ( ( $skills = wp_get_object_terms( $post->ID, 'resume_skill', array( 'fields' => 'names' ) ) ) && is_array( $skills ) ) : ?>
-        			<h2><?php _e( 'Skills', 'buddyboss-theme' ); ?></h2>
+        			<h2><?php _e( 'Skills', 'press-pool' ); ?></h2>
         			<ul class="resume-manager-skills">
         				<?php echo '<li>' . implode( '</li><li>', $skills ) . '</li>'; ?>
         			</ul>

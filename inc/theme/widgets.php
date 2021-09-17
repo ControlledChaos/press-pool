@@ -18,10 +18,10 @@ class Boss_Widget_Recent_Posts extends WP_Widget {
 	public function __construct() {
 		$widget_ops				 = array(
 			'classname'						 => 'bb_widget_recent_posts',
-			'description'					 => __( 'Your site\'s most recent Posts. Option to display post featured image.', 'buddyboss-theme' ),
+			'description'					 => __( 'Your site\'s most recent Posts. Option to display post featured image.', 'press-pool' ),
 			'customize_selective_refresh'	 => true,
 		);
-		parent::__construct( 'boss-recent-posts', __( '(BB) Recent Posts', 'buddyboss-theme' ), $widget_ops );
+		parent::__construct( 'boss-recent-posts', __( '(BB) Recent Posts', 'press-pool' ), $widget_ops );
 		$this->alt_option_name	 = 'bb_widget_recent_posts';
 	}
 
@@ -40,7 +40,7 @@ class Boss_Widget_Recent_Posts extends WP_Widget {
 			$args[ 'widget_id' ] = $this->id;
 		}
 
-		$title = (!empty( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'Recent Posts', 'buddyboss-theme' );
+		$title = (!empty( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'Recent Posts', 'press-pool' );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -79,7 +79,7 @@ class Boss_Widget_Recent_Posts extends WP_Widget {
 				<?php while ( $r->have_posts() ) : $r->the_post(); ?>
 					<li>
 						<?php if ( $show_image && has_post_thumbnail() ) { ?>
-							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'buddyboss-theme' ), the_title_attribute( 'echo=0' ) ) ); ?>" class="entry-media entry-img">
+							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'press-pool' ), the_title_attribute( 'echo=0' ) ) ); ?>" class="entry-media entry-img">
 								<?php the_post_thumbnail(); ?>
 							</a>
                         <?php } ?>
@@ -134,17 +134,17 @@ class Boss_Widget_Recent_Posts extends WP_Widget {
 		$show_date	 = isset( $instance[ 'show_date' ] ) ? (bool) $instance[ 'show_date' ] : false;
         $show_image	 = isset( $instance[ 'show_image' ] ) ? (bool) $instance[ 'show_image' ] : true;
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts to show:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts to show:', 'press-pool' ); ?></label>
 			<input class="tiny-text" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" /></p>
 
 		<p><input class="checkbox" type="checkbox"<?php checked( $show_date ); ?> id="<?php echo $this->get_field_id( 'show_date' ); ?>" name="<?php echo $this->get_field_name( 'show_date' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display post date?', 'buddyboss-theme' ); ?></label></p>
+			<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display post date?', 'press-pool' ); ?></label></p>
             
         <p><input class="checkbox" type="checkbox"<?php checked( $show_image ); ?> id="<?php echo $this->get_field_id( 'show_image' ); ?>" name="<?php echo $this->get_field_name( 'show_image' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_image' ); ?>"><?php _e( 'Display post featured image?', 'buddyboss-theme' ); ?></label></p>
+			<label for="<?php echo $this->get_field_id( 'show_image' ); ?>"><?php _e( 'Display post featured image?', 'press-pool' ); ?></label></p>
 		<?php
 	}
 
@@ -168,10 +168,10 @@ class Boss_Follow_Us extends WP_Widget {
 	public function __construct() {
 		$widget_ops				 = array(
 			'classname'						 => 'widget_follow_us',
-			'description'					 => __( 'Follow Us Links', 'buddyboss-theme' ),
+			'description'					 => __( 'Follow Us Links', 'press-pool' ),
 			'customize_selective_refresh'	 => true,
 		);
-		parent::__construct( 'boss-follow-us', __( '(BB) Follow Us', 'buddyboss-theme' ), $widget_ops );
+		parent::__construct( 'boss-follow-us', __( '(BB) Follow Us', 'press-pool' ), $widget_ops );
 		$this->alt_option_name	 = 'widget_follow_us';
 	}
 
@@ -190,7 +190,7 @@ class Boss_Follow_Us extends WP_Widget {
 			$args[ 'widget_id' ] = $this->id;
 		}
 
-		$title = (!empty( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'Follow', 'buddyboss-theme' );
+		$title = (!empty( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'Follow', 'press-pool' );
 
 		// Social Links
 		$facebook	 = (!empty( $instance[ 'facebook' ] ) ) ? $instance[ 'facebook' ] : '';
@@ -280,19 +280,19 @@ class Boss_Follow_Us extends WP_Widget {
 		$instagram	 = isset( $instance[ 'instagram' ] ) ? esc_url( $instance[ 'instagram' ] ) : '';
 		$linkedin	 = isset( $instance[ 'linkedin' ] ) ? esc_url( $instance[ 'linkedin' ] ) : '';
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" /></p>
-		<p><label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook Link:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook Link:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'facebook' ); ?>" name="<?php echo $this->get_field_name( 'facebook' ); ?>" type="url" value="<?php echo $facebook; ?>" /></p>
-		<p><label for="<?php echo $this->get_field_id( 'twitter' ); ?>"><?php _e( 'Twitter Link:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'twitter' ); ?>"><?php _e( 'Twitter Link:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'twitter' ); ?>" name="<?php echo $this->get_field_name( 'twitter' ); ?>" type="url" value="<?php echo $twitter; ?>" /></p>
-		<p><label for="<?php echo $this->get_field_id( 'google' ); ?>"><?php _e( 'Google Link:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'google' ); ?>"><?php _e( 'Google Link:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'google' ); ?>" name="<?php echo $this->get_field_name( 'google' ); ?>" type="url" value="<?php echo $google; ?>" /></p>
-		<p><label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'Youtube Link:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'Youtube Link:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'youtube' ); ?>" name="<?php echo $this->get_field_name( 'youtube' ); ?>" type="url" value="<?php echo $youtube; ?>" /></p>
-		<p><label for="<?php echo $this->get_field_id( 'instagram' ); ?>"><?php _e( 'Instagram Link:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'instagram' ); ?>"><?php _e( 'Instagram Link:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'instagram' ); ?>" name="<?php echo $this->get_field_name( 'instagram' ); ?>" type="url" value="<?php echo $instagram; ?>" /></p>
-		<p><label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php _e( 'LinkedIn Link:', 'buddyboss-theme' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php _e( 'LinkedIn Link:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'linkedin' ); ?>" name="<?php echo $this->get_field_name( 'linkedin' ); ?>" type="url" value="<?php echo $linkedin; ?>" /></p>
 		<?php
 	}
@@ -317,10 +317,10 @@ class Boss_Post_Author extends WP_Widget {
 	public function __construct() {
 		$widget_ops				 = array(
 			'classname'						 => 'widget_post_author',
-			'description'					 => __( 'Post author widget, only visible on single post.', 'buddyboss-theme' ),
+			'description'					 => __( 'Post author widget, only visible on single post.', 'press-pool' ),
 			'customize_selective_refresh'	 => true,
 		);
-		parent::__construct( 'boss-post-author', __( '(BB) Post Author', 'buddyboss-theme' ), $widget_ops );
+		parent::__construct( 'boss-post-author', __( '(BB) Post Author', 'press-pool' ), $widget_ops );
 		$this->alt_option_name	 = 'widget_post_author';
 	}
 
@@ -339,7 +339,7 @@ class Boss_Post_Author extends WP_Widget {
 			$args[ 'widget_id' ] = $this->id;
 		}
 
-		$title = (!empty( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'About Author', 'buddyboss-theme' );
+		$title = (!empty( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'About Author', 'press-pool' );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -402,11 +402,11 @@ class Boss_Post_Author extends WP_Widget {
 		$profile_setting_page = admin_url('admin.php?page=bp-profile-setup');
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'buddyboss-theme' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'press-pool' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
 		</p>
 		<p>
-			<?php echo sprintf( __( 'To display social links in this widget, go to <a href="%s">Profile Fields</a> and add the "Social Networks" profile field. This widget will then display the social networks added to the post author\'s profile.', 'buddyboss-theme' ), $profile_setting_page) ?>
+			<?php echo sprintf( __( 'To display social links in this widget, go to <a href="%s">Profile Fields</a> and add the "Social Networks" profile field. This widget will then display the social networks added to the post author\'s profile.', 'press-pool' ), $profile_setting_page) ?>
 		</p>
 		<?php
 	}

@@ -21,7 +21,7 @@ $class = 'bb-standard';
 				<h1 class="page-title">
 				<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( "Showing results for '%s'", 'buddyboss-theme' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( "Showing results for '%s'", 'press-pool' ), '<span>' . get_search_query() . '</span>' );
 					?>
 					</h1>
 			</header><!-- .page-header -->

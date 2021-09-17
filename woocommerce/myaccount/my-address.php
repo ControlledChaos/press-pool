@@ -24,12 +24,12 @@ $customer_id = get_current_user_id();
 
 if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
 	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-		'billing' => __( 'Billing address', 'buddyboss-theme' ),
-		'shipping' => __( 'Shipping address', 'buddyboss-theme' ),
+		'billing' => __( 'Billing address', 'press-pool' ),
+		'shipping' => __( 'Shipping address', 'press-pool' ),
 	), $customer_id );
 } else {
 	$get_addresses = apply_filters( 'woocommerce_my_account_get_addresses', array(
-		'billing' => __( 'Billing address', 'buddyboss-theme' ),
+		'billing' => __( 'Billing address', 'press-pool' ),
 	), $customer_id );
 }
 
@@ -40,9 +40,9 @@ $col    = 1;
 <div class="MyAccount-content--address">
 
 	<div class="wc-MyAccount-sub-heading">
-		<h2><?php _e( 'Addresses', 'buddyboss-theme' ); ?></h2>
+		<h2><?php _e( 'Addresses', 'press-pool' ); ?></h2>
 		<p>
-			<?php echo apply_filters( 'woocommerce_my_account_my_address_description', __( 'The following addresses will be used on the checkout page by default.', 'buddyboss-theme' ) ); ?>
+			<?php echo apply_filters( 'woocommerce_my_account_my_address_description', __( 'The following addresses will be used on the checkout page by default.', 'press-pool' ) ); ?>
 		</p>
 	</div>
 
@@ -59,9 +59,9 @@ $col    = 1;
 				</header>
 				<address><?php
 					$address = wc_get_account_formatted_address( $name );
-					echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'buddyboss-theme' );
+					echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'press-pool' );
 				?></address>
-				<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php _e( 'Edit', 'buddyboss-theme' ); ?></a>
+				<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php _e( 'Edit', 'press-pool' ); ?></a>
 			</div>
 
 		<?php endforeach; ?>

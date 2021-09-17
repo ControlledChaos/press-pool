@@ -43,7 +43,7 @@ if ( !function_exists( 'buddyboss_theme_body_classes' ) ) {
 	function buddyboss_theme_body_classes( $classes ) {
 
 	    // BuddyBoss theme class
-		$classes[] = 'buddyboss-theme';
+		$classes[] = 'press-pool';
 
 		// BuddyPanel Class
 		$show_buddypanel = buddyboss_theme_get_option('buddypanel');
@@ -363,7 +363,7 @@ if ( ! function_exists( 'buddyboss_theme_entry_header_image' ) ) {
 			?>
             <div class="ratio-wrap">
                 <a href="<?php the_permalink(); ?>"
-                   title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'buddyboss-theme' ), the_title_attribute( 'echo=0' ) ) ); ?>"
+                   title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'press-pool' ), the_title_attribute( 'echo=0' ) ) ); ?>"
                    class="entry-media entry-img">
 					<?php the_post_thumbnail(); ?>
                 </a>
@@ -378,7 +378,7 @@ if ( ! function_exists( 'buddyboss_theme_entry_header_image' ) ) {
 				?>
                 <div class="ratio-wrap">
                     <a href="<?php the_permalink(); ?>"
-                       title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'buddyboss-theme' ), the_title_attribute( 'echo=0' ) ) ); ?>"
+                       title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'press-pool' ), the_title_attribute( 'echo=0' ) ) ); ?>"
                        class="entry-media entry-img">
                         <img src="<?php echo $first_img; ?>">
                     </a>
@@ -399,7 +399,7 @@ if ( ! function_exists( 'buddyboss_theme_entry_header_thumbnail' ) ) {
 			?>
             <div class="ratio-wrap">
                 <a href="<?php the_permalink(); ?>"
-                   title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'buddyboss-theme' ), the_title_attribute( 'echo=0' ) ) ); ?>"
+                   title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'press-pool' ), the_title_attribute( 'echo=0' ) ) ); ?>"
                    class="entry-media entry-img">
 					<?php the_post_thumbnail(); ?>
                 </a>
@@ -664,12 +664,12 @@ if ( !function_exists( 'buddyboss_comment' ) ) {
 
 			<div class="comment-content-wrap">
 				<div class="comment-meta comment-metadata">
-					<?php printf( __( '%s', 'buddyboss-theme' ), sprintf( '<cite class="fn comment-author">%s</cite>', get_comment_author_link( $comment ) ) ); ?>
-					<a class="comment-date" href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>"><?php printf( __( '%1$s', 'buddyboss-theme' ), get_comment_date( '', $comment ), get_comment_time() ); ?></a>
+					<?php printf( __( '%s', 'press-pool' ), sprintf( '<cite class="fn comment-author">%s</cite>', get_comment_author_link( $comment ) ) ); ?>
+					<a class="comment-date" href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>"><?php printf( __( '%1$s', 'press-pool' ), get_comment_date( '', $comment ), get_comment_time() ); ?></a>
 				</div>
 
 				<?php if ( '0' == $comment->comment_approved ) { ?>
-					<p><em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'buddyboss-theme' ) ?></em></p>
+					<p><em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'press-pool' ) ?></em></p>
 				<?php } ?>
 
 				<div class="comment-text">
@@ -687,7 +687,7 @@ if ( !function_exists( 'buddyboss_comment' ) ) {
 					) ) );
 					?>
 
-					<?php edit_comment_link( __( 'Edit', 'buddyboss-theme' ), '', '' ); ?>
+					<?php edit_comment_link( __( 'Edit', 'press-pool' ), '', '' ); ?>
 				</footer>
 			</div>
 		</article><?php
@@ -726,7 +726,7 @@ if ( !function_exists( 'buddyboss_pagination' ) ) {
 		}
 
 		$class	 = ( true ) ? ' post-infinite-scroll' : '';
-		$label	 = __( 'Load More', 'buddyboss-theme' );
+		$label	 = __( 'Load More', 'press-pool' );
 
 		if ( !is_single() && ( $nextpage <= $max_page ) ) {
 			$attr = 'data-page=' . $nextpage . ' data-template=' . $template;
@@ -1155,41 +1155,41 @@ if ( !function_exists( 'buddyboss_theme_bp_get_add_friend_button' ) ) {
 
 		switch ( $button['id'] ) {
 			case 'pending' :
-				$button['link_text'] = __( '<i class="bb-icon-connection-remove"></i><span class="bb-friend-button-tag">Cancel connection request</span>', 'buddyboss-theme' );
+				$button['link_text'] = __( '<i class="bb-icon-connection-remove"></i><span class="bb-friend-button-tag">Cancel connection request</span>', 'press-pool' );
 				$button['button_attr'] = array_merge(
 					array(
 						'data-balloon-pos' => 'down',
-						'data-balloon' => __( 'Cancel connection request', 'buddyboss-theme' ),
+						'data-balloon' => __( 'Cancel connection request', 'press-pool' ),
 					), $button['button_attr']
 				);
 				break;
 
 			case 'awaiting_response' :
-				$button['link_text'] = __( '<i class="bb-icon-connection-waiting"></i><span class="bb-friend-button-tag">Connect Requested</span>', 'buddyboss-theme' );
+				$button['link_text'] = __( '<i class="bb-icon-connection-waiting"></i><span class="bb-friend-button-tag">Connect Requested</span>', 'press-pool' );
 				$button['button_attr'] = array_merge(
 					array(
 						'data-balloon-pos' => 'down',
-						'data-balloon' => __( 'Connect Requested', 'buddyboss-theme' ),
+						'data-balloon' => __( 'Connect Requested', 'press-pool' ),
 					), $button['button_attr']
 				);
 				break;
 
 			case 'is_friend' :
-				$button['link_text'] = __( '<i class="bb-icon-connected"></i><span class="bb-friend-button-tag">Connected</span>', 'buddyboss-theme' );
+				$button['link_text'] = __( '<i class="bb-icon-connected"></i><span class="bb-friend-button-tag">Connected</span>', 'press-pool' );
 				$button['button_attr'] = array_merge(
 					array(
 						'data-balloon-pos' => 'down',
-						'data-balloon' => __( 'Connected', 'buddyboss-theme' ),
+						'data-balloon' => __( 'Connected', 'press-pool' ),
 					), $button['button_attr']
 				);
 				break;
 
 			default:
-				$button['link_text'] = __( '<i class="bb-icon-connection-request"></i><span class="bb-friend-button-tag">Connect</span>', 'buddyboss-theme' );
+				$button['link_text'] = __( '<i class="bb-icon-connection-request"></i><span class="bb-friend-button-tag">Connect</span>', 'press-pool' );
 				$button['button_attr'] = array_merge(
 					array(
 						'data-balloon-pos' => 'down',
-						'data-balloon' => __( 'Connect', 'buddyboss-theme' ),
+						'data-balloon' => __( 'Connect', 'press-pool' ),
 					), $button['button_attr']
 				);
 				break;
@@ -1249,11 +1249,11 @@ if ( !function_exists( 'buddyboss_theme_followers_count' ) ) {
 			}
 
 			if( $total_followers == 0 ) {
-				$followers = __('<b>0</b> followers', 'buddyboss-theme');
+				$followers = __('<b>0</b> followers', 'press-pool');
 			} else if ( $total_followers == 1 ) {
-				$followers = __('<b>1</b> follower', 'buddyboss-theme');
+				$followers = __('<b>1</b> follower', 'press-pool');
 			} else {
-				$followers = sprintf( __('<b>%s</b> followers', 'buddyboss-theme'), $total_followers );
+				$followers = sprintf( __('<b>%s</b> followers', 'press-pool'), $total_followers );
 			} ?>
 
 			<div class="followers-wrap"><?php echo $followers; ?></div><?php
@@ -1288,11 +1288,11 @@ if ( !function_exists( 'buddyboss_theme_following_count' ) ) {
 			}
 
 			if( $total_following == 0 ) {
-				$following = __('<b>0</b> following', 'buddyboss-theme');
+				$following = __('<b>0</b> following', 'press-pool');
 			} else if ( $total_following == 1 ) {
-				$following = __('<b>1</b> following', 'buddyboss-theme');
+				$following = __('<b>1</b> following', 'press-pool');
 			} else {
-				$following = sprintf( __('<b>%s</b> following', 'buddyboss-theme'), $total_following );
+				$following = sprintf( __('<b>%s</b> following', 'press-pool'), $total_following );
 			} ?>
 
 			<div class="following-wrap"><?php echo $following; ?></div><?php
@@ -1339,7 +1339,7 @@ if ( !function_exists( 'buddyboss_theme_add_logout_link' ) ) {
 
 	function buddyboss_theme_add_logout_link() {
 		if( !function_exists( 'bp_is_active' ) ) {
-			echo '<li class="logout-link"><a href="'.esc_url( wp_logout_url() ).'">'.__('Logout', 'buddyboss-theme').'</a></li>';
+			echo '<li class="logout-link"><a href="'.esc_url( wp_logout_url() ).'">'.__('Logout', 'press-pool').'</a></li>';
 		}
 	}
 
@@ -1494,7 +1494,7 @@ if ( ! function_exists( 'buddyboss_theme_get_header_notifications' ) ) {
 
         if ( ! is_user_logged_in() ) {
 	        wp_send_json_success( array(
-		        'message' => __( 'You need to be loggedin.', 'buddyboss-theme' )
+		        'message' => __( 'You need to be loggedin.', 'press-pool' )
 	        ) );
         }
 
@@ -1518,7 +1518,7 @@ if ( ! function_exists( 'buddyboss_theme_get_header_unread_messages' ) ) {
 	function buddyboss_theme_get_header_unread_messages() {
 		if ( ! is_user_logged_in() ) {
 			wp_send_json_success( array(
-				'message' => __( 'You need to be loggedin.', 'buddyboss-theme' )
+				'message' => __( 'You need to be loggedin.', 'press-pool' )
 			) );
 		}
 

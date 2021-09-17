@@ -38,7 +38,7 @@ function buddyboss_theme_helper_add_buddyboss_menu_for_memberpress_buddypress() 
 	global $bp;
 
 	$main_slug = apply_filters( 'mepr-bp-info-main-nav-slug', 'mp-membership' );
-	$name      = apply_filters( 'mepr-bp-info-main-nav-name', _x( 'Membership', 'ui', 'buddyboss-theme' ) );
+	$name      = apply_filters( 'mepr-bp-info-main-nav-name', _x( 'Membership', 'ui', 'press-pool' ) );
 	?>
     <li id="wp-admin-bar-mp-membership" class="menupop">
         <a class="ab-item" aria-haspopup="true" href="<?php echo $bp->loggedin_user->domain . $main_slug . '/'; ?>">
@@ -48,18 +48,18 @@ function buddyboss_theme_helper_add_buddyboss_menu_for_memberpress_buddypress() 
             <ul id="wp-admin-bar-mp-membership-default" class="ab-submenu">
                 <li id="wp-admin-bar-mp-info">
                     <a class="ab-item" href="<?php echo $bp->loggedin_user->domain . $main_slug . '/'; ?>">
-						<?php echo _x( 'Info', 'ui', 'buddyboss-theme' ); ?>
+						<?php echo _x( 'Info', 'ui', 'press-pool' ); ?>
                     </a>
                 </li>
                 <li id="wp-admin-bar-mp-subscriptions">
                     <a class="ab-item"
                        href="<?php echo $bp->loggedin_user->domain . $main_slug . '/mp-subscriptions/'; ?>">
-						<?php echo _x( 'Subscriptions', 'ui', 'buddyboss-theme' ); ?>
+						<?php echo _x( 'Subscriptions', 'ui', 'press-pool' ); ?>
                     </a>
                 </li>
                 <li id="wp-admin-bar-mp-payments">
                     <a class="ab-item" href="<?php echo $bp->loggedin_user->domain . $main_slug . '/mp-payments/'; ?>">
-						<?php echo _x( 'Payments', 'ui', 'buddyboss-theme' ); ?>
+						<?php echo _x( 'Payments', 'ui', 'press-pool' ); ?>
                     </a>
                 </li>
             </ul>

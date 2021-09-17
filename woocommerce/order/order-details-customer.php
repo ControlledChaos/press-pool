@@ -29,10 +29,10 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 	<?php endif; ?>
     <div class="woocommerce-customer-details--billwrap">
         <div class="woocommerce-customer-details--maincolumn">
-        	<h2 class="woocommerce-column__title"><?php _e( 'Billing address', 'buddyboss-theme' ); ?></h2>
+        	<h2 class="woocommerce-column__title"><?php _e( 'Billing address', 'press-pool' ); ?></h2>
         
         	<address>
-        		<?php echo wp_kses_post( $order->get_formatted_billing_address( __( 'N/A', 'buddyboss-theme' ) ) ); ?>
+        		<?php echo wp_kses_post( $order->get_formatted_billing_address( __( 'N/A', 'press-pool' ) ) ); ?>
         	</address>
         </div>
         
@@ -52,9 +52,9 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 		</div><!-- /.col-1 -->
 
 		<div class="woocommerce-column woocommerce-column--2 woocommerce-column--shipping-address col-2">
-			<h2 class="woocommerce-column__title"><?php esc_html_e( 'Shipping address', 'buddyboss-theme' ); ?></h2>
+			<h2 class="woocommerce-column__title"><?php esc_html_e( 'Shipping address', 'press-pool' ); ?></h2>
 			<address>
-				<?php echo wp_kses_post( $order->get_formatted_shipping_address( esc_html__( 'N/A', 'buddyboss-theme' ) ) ); ?>
+				<?php echo wp_kses_post( $order->get_formatted_shipping_address( esc_html__( 'N/A', 'press-pool' ) ) ); ?>
 			</address>
 		</div><!-- /.col-2 -->
 

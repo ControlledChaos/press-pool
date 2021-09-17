@@ -17,7 +17,7 @@ remove_filter( 'bp_get_add_follow_button', 'buddyboss_theme_bp_get_add_follow_bu
 
 			<div id="item-header-avatar">
 				<?php if ( bp_is_my_profile() && ! bp_disable_avatar_uploads() ) { ?>
-					<a href="<?php bp_members_component_link( 'profile', 'change-avatar' ); ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Profile Photo', 'buddyboss-theme'); ?>">
+					<a href="<?php bp_members_component_link( 'profile', 'change-avatar' ); ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Profile Photo', 'press-pool'); ?>">
 						<span class="dashicons dashicons-edit"></span>
 					</a>
 				<?php } ?>

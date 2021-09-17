@@ -26,29 +26,29 @@ global $product;
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
     
-    <h4 class="pr-sub-heading"><?php echo __( 'Specs', 'buddyboss-theme' ); ?></h4>
+    <h4 class="pr-sub-heading"><?php echo __( 'Specs', 'press-pool' ); ?></h4>
     
     <?php if ( $product->has_dimensions() ) : ?>
 		<span class="dimensions_wrapper pr-atts-row">
-			<span class="pr-atts-title"><?php _e( 'Dimensions:', 'buddyboss-theme' ) ?></span>
+			<span class="pr-atts-title"><?php _e( 'Dimensions:', 'press-pool' ) ?></span>
 			<span class="product_dimensions"><?php echo esc_html( wc_format_dimensions( $product->get_dimensions( false ) ) ); ?></span>
 		</span>
 	<?php endif; ?>
 
 	<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 
-		<span class="sku_wrapper pr-atts-row"><span class="pr-atts-title"><?php esc_html_e( 'SKU:', 'buddyboss-theme' ); ?></span> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'buddyboss-theme' ); ?></span></span>
+		<span class="sku_wrapper pr-atts-row"><span class="pr-atts-title"><?php esc_html_e( 'SKU:', 'press-pool' ); ?></span> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'press-pool' ); ?></span></span>
 
 	<?php endif; ?>
 
-	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in pr-atts-row">' . _n( '<span class="pr-atts-title">Category:</span>', '<span class="pr-atts-title">Categories:</span>', count( $product->get_category_ids() ), 'buddyboss-theme' ) . ' ', '</span>' ); ?>
+	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in pr-atts-row">' . _n( '<span class="pr-atts-title">Category:</span>', '<span class="pr-atts-title">Categories:</span>', count( $product->get_category_ids() ), 'press-pool' ) . ' ', '</span>' ); ?>
 
-	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as pr-atts-row">' . _n( '<span class="pr-atts-title">Tag:</span>', '<span class="pr-atts-title">Tags:</span>', count( $product->get_tag_ids() ), 'buddyboss-theme' ) . ' ', '</span>' ); ?>
+	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as pr-atts-row">' . _n( '<span class="pr-atts-title">Tag:</span>', '<span class="pr-atts-title">Tags:</span>', count( $product->get_tag_ids() ), 'press-pool' ) . ' ', '</span>' ); ?>
     
     <?php
     $availability = $product->get_availability(); 
     if ( ! empty( $availability['availability'] ) ) { ?>
-        <span class="sku_wrapper pr-atts-row"><span class="pr-atts-title"><?php echo __( 'Availability:', 'buddyboss-theme' ); ?></span><?php echo wc_get_stock_html( $product ); ?></span>
+        <span class="sku_wrapper pr-atts-row"><span class="pr-atts-title"><?php echo __( 'Availability:', 'press-pool' ); ?></span><?php echo wc_get_stock_html( $product ); ?></span>
     <?php } ?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>

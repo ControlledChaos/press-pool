@@ -26,14 +26,14 @@
                         }
                     }
 
-	                echo sprintf( __( "Discussions tagged with '%s' ", 'buddyboss-theme' ), $bbp_topic_tag );
+	                echo sprintf( __( "Discussions tagged with '%s' ", 'press-pool' ), $bbp_topic_tag );
                 } else {
 	                if ( bbp_is_shortcode() && bbp_is_query_name( 'bbp_view' ) && 'popular' === bbpress()->current_view_id ) {
-		                _e( 'Popular Discussions', 'buddyboss-theme' );
+		                _e( 'Popular Discussions', 'press-pool' );
                     } else if ( bbp_is_shortcode() && bbp_is_query_name( 'bbp_view' ) && 'no-replies' === bbpress()->current_view_id ) {
-		                _e( 'Unanswered Discussions', 'buddyboss-theme' );
+		                _e( 'Unanswered Discussions', 'press-pool' );
                     } else {
-		                _e( 'All Discussions', 'buddyboss-theme' );
+		                _e( 'All Discussions', 'press-pool' );
 	                }
                 }
                  ?>
