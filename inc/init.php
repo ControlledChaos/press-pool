@@ -8,7 +8,7 @@ if ( !class_exists( '\BuddyBossTheme\BaseTheme' ) ) {
 		# --------- Constants ------------------
 
 		const VERSION	 = '0.1';
-		const NAME	 = 'BuddyBoss Theme';
+		const NAME	 = 'Press Pool';
 
 		# --------- Variables ------------------
 
